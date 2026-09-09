@@ -1,5 +1,6 @@
 import fs from "node:fs";
 import path from "node:path";
+import { ExcelFiller, UpdateControl } from "./controls";
 
 type Numberish = number | string | null | undefined;
 
@@ -148,9 +149,9 @@ function outcomeLabel(row: Prediction): string {
 }
 
 function pickLabel(row: Prediction): string {
-  if (row.predicted_outcome === "home_win") return "Thuis";
-  if (row.predicted_outcome === "away_win") return "Uit";
-  return "Gelijk";
+  if (row.predicted_outcome === "home_win") return "1 · Thuis";
+  if (row.predicted_outcome === "away_win") return "2 · Uit";
+  return "3 · Gelijk";
 }
 
 function groupByRound(rows: Prediction[]): [string, Prediction[]][] {
@@ -184,8 +185,10 @@ function ModelLine({ row }: { row: Prediction }) {
 export default function Home() {
   const data = loadDashboard();
   const rounds = groupByRound(data.upcoming);
-  const nextRound = rounds[0]?.[0];
-  const upcomingOdds = data.upcoming.filter((row) => row.probability_source !== "xgboost").length;
+  const regularRoundSize = Math.max(0, ...rounds.map(([, rows]) => rows.length));
+  const [nextRound = "volgt", focusRows = []] = rounds.find(([, rows]) => rows.length === regularRoundSize) || [];
+  const upcomingOdds = focusRows.filter((row) => row.probability_source !== "xgboost").length;
+  const excelPicks = focusRows.map((row) => ({ homeTeam: row.home_team, awayTeam: row.away_team, outcome: row.predicted_outcome }));
 
   return (
     <main>
@@ -201,9 +204,9 @@ export default function Home() {
             <a href="#gespeeld">Gespeeld</a>
             <a href="#stand">Stand</a>
             <a href="#kampioen">Kampioen</a>
-            <a href="#model">Model</a>
+            <a href="#bijwerken">Bijwerken</a>
           </nav>
-          <a className="download" href={data.downloads.upcoming_csv}>CSV</a>
+          <a className="download" href="#excel">Excel</a>
         </div>
       </header>
 
@@ -211,30 +214,32 @@ export default function Home() {
         <section className="summary" aria-label="Samenvatting">
           <div className="summary-main">
             <p className="eyebrow">Lokaal model · bijgewerkt {data.metadata.generated_at_utc.slice(0, 16).replace("T", " ")} UTC</p>
-            <h1>Speelronde {nextRound || "volgt"}</h1>
-            <p>{data.upcoming.length} wedstrijden te spelen. Voor {upcomingOdds} toekomstige wedstrijden zijn al losse pre-match odds gekoppeld.</p>
+            <h1>Speelronde {nextRound}</h1>
+            <p>De {focusRows.length} wedstrijden voor het aankomende invulweekend. Bij {upcomingOdds} wedstrijden zijn actuele kansen gebruikt.</p>
           </div>
-          <div className="metric"><span>Test 2025/26</span><strong>{percent(data.metadata.model_accuracy)}</strong><small>winnaar goed</small></div>
-          <div className="metric"><span>Zonder odds</span><strong>{percent(data.benchmarks.xgboost_without_odds.accuracy)}</strong><small>dezelfde testset</small></div>
-          <div className="metric"><span>Dit seizoen</span><strong>{percent(data.metadata.current_season_accuracy)}</strong><small>eerlijke preseasoncheck</small></div>
+          <div className="metric"><span>Historische controle</span><strong>{percent(data.metadata.model_accuracy)}</strong><small>keuzes goed</small></div>
+          <div className="metric"><span>Dit seizoen</span><strong>{percent(data.metadata.current_season_accuracy)}</strong><small>keuzes goed</small></div>
+          <div className="metric"><span>Afwezigen</span><strong>{number(data.metadata.likely_starters_unavailable)}</strong><small>mogelijke basisspelers</small></div>
         </section>
+
+        <ExcelFiller picks={excelPicks} round={nextRound} />
 
         <section id="voorspellingen" className="section">
           <div className="section-heading">
             <div>
               <h2>Voorspellingen</h2>
-              <p>Per wedstrijd één keuze: thuis, gelijk of uit. Blessures en beschikbare odds zijn vóór de aftrap verwerkt.</p>
+              <p>Per wedstrijd één keuze: 1 voor thuis, 2 voor uit of 3 voor gelijk. Afwezige spelers en actuele kansen zijn verwerkt.</p>
             </div>
           </div>
           <div className="round-stack">
-            {rounds.map(([round, rows], roundIndex) => (
-              <details className="round" key={round} open={roundIndex < 2}>
+            {focusRows.length > 0 && (
+              <details className="round" open>
                 <summary>
-                  <span><strong>Speelronde {round}</strong><small>{rows.length} wedstrijden</small></span>
+                  <span><strong>Speelronde {nextRound}</strong><small>{focusRows.length} wedstrijden</small></span>
                   <span className="round-toggle" aria-hidden="true" />
                 </summary>
                 <div className="match-list">
-                  {rows.map((row) => (
+                  {focusRows.map((row) => (
                     <article className="match" key={row.match_key}>
                       <div className="match-time">{kickoff(row.kickoff_utc)}</div>
                       <div className="teams">
@@ -248,7 +253,7 @@ export default function Home() {
                       </div>
                       <div className="source">
                         <span className={row.probability_source !== "xgboost" ? "badge odds" : "badge"}>
-                          {row.probability_source === "market_calibrated" ? "markt gekalibreerd" : row.probability_source === "xgboost+odds" ? "markt + model" : "model"}
+                          {row.probability_source === "xgboost" ? "Model" : "Actuele kansen"}
                         </span>
                         <small>{percent(Math.max(number(row.prob_home_win), number(row.prob_draw), number(row.prob_away_win)))} zekerheid</small>
                       </div>
@@ -256,7 +261,7 @@ export default function Home() {
                   ))}
                 </div>
               </details>
-            ))}
+            )}
           </div>
         </section>
 
@@ -346,22 +351,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="model" className="section model-band">
-          <div className="section-heading"><div><h2>Modelcontrole</h2><p>Alle cijfers komen uit chronologische splits; de testset is nooit gebruikt om te trainen.</p></div></div>
-          <div className="benchmark-grid">
-            <div><span>Outcome-strategie</span><strong>{percent(data.benchmarks.selected.accuracy)}</strong><small>log loss {decimal(data.benchmarks.selected.log_loss, 3)}</small></div>
-            <div><span>XGBoost zonder odds</span><strong>{percent(data.benchmarks.xgboost_without_odds.accuracy)}</strong><small>zelfde testset</small></div>
-            <div><span>Odds alleen</span><strong>{percent(data.benchmarks.market_only.accuracy)}</strong><small>{data.benchmarks.market_only.rows} wedstrijden</small></div>
-            <div><span>2026/27 tot nu</span><strong>{percent(data.benchmarks.current_season.accuracy)}</strong><small>{data.benchmarks.current_season.rows} wedstrijden</small></div>
-          </div>
-          <details className="importance">
-            <summary>Belangrijkste modelvariabelen bekijken</summary>
-            <div className="importance-list">
-              {data.feature_importance.slice(0, 15).map((row) => <div key={row.feature}><span>{row.feature}</span><b>{percent(row.importance, 2)}</b></div>)}
-            </div>
-          </details>
-          <p className="source-note">Historie: {data.metadata.historical_matches} wedstrijden, laatste uitslag {data.metadata.latest_result}. Blessures: {data.metadata.injury_status}; schorsingen: {data.metadata.suspension_status}; live selecties: {data.metadata.current_squad_status}. ESPN-status: {data.metadata.espn_status}.</p>
-        </section>
+        <UpdateControl />
       </div>
     </main>
   );

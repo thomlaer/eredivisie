@@ -7,6 +7,7 @@
   --line: #d9dfdc;
   --green: #087f5b;
   --green-dark: #075f46;
+  --green-soft: #e3f4ed;
   --orange: #c85d13;
   --red: #b42318;
   --yellow: #f4c95d;
@@ -140,7 +141,7 @@ h2 { margin: 0; font-size: 21px; }
   min-width: 62px;
   border: 1px solid #b8d8ce;
   border-radius: 7px;
-  background: var(--greenSoft);
+  background: var(--green-soft);
   color: var(--green-dark);
   font-size: 12px;
   font-weight: 900;
@@ -209,6 +210,43 @@ td small { display: block; margin-top: 3px; color: var(--muted); }
 .source-note { margin: 12px 0 0; color: var(--muted); font-size: 12px; line-height: 1.5; }
 .warning { color: var(--red); font-weight: 800; }
 
+.tool-panel {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+  box-shadow: var(--shadow);
+  padding: 16px;
+}
+.excel-tool { display: grid; grid-template-columns: minmax(260px, 1fr) auto; gap: 12px; align-items: end; }
+.file-picker, .update-tool label { display: grid; gap: 7px; color: var(--muted); font-size: 11px; font-weight: 900; text-transform: uppercase; }
+.file-picker input, .update-tool input {
+  width: 100%;
+  min-height: 42px;
+  border: 1px solid var(--line);
+  border-radius: 7px;
+  background: var(--surface-soft);
+  color: var(--ink);
+  padding: 9px 11px;
+}
+.file-picker strong { color: var(--ink); font-size: 13px; text-transform: none; }
+.primary-button {
+  min-height: 42px;
+  border: 0;
+  border-radius: 7px;
+  background: var(--green);
+  color: #fff;
+  cursor: pointer;
+  font-weight: 900;
+  padding: 10px 18px;
+}
+.primary-button:disabled { cursor: not-allowed; opacity: 0.48; }
+.tool-note, .tool-status { grid-column: 1 / -1; margin: 0; color: var(--muted); font-size: 12px; line-height: 1.45; }
+.tool-status { color: var(--green-dark); font-weight: 800; }
+.tool-status.error { color: var(--red); }
+.update-section { max-width: 700px; }
+.update-tool { display: grid; grid-template-columns: minmax(220px, 1fr) auto; gap: 12px; align-items: end; }
+.actions-link { grid-column: 1 / -1; color: var(--green-dark); font-size: 12px; font-weight: 900; text-decoration: underline; }
+
 @media (max-width: 900px) {
   .summary { grid-template-columns: repeat(3, 1fr); }
   .summary-main { grid-column: 1 / -1; }
@@ -246,4 +284,6 @@ td small { display: block; margin-top: 3px; color: var(--muted); }
   .benchmark-grid > div:nth-last-child(-n + 2) { border-bottom: 0; }
   .importance-list { grid-template-columns: 1fr; }
   .importance-list div:nth-child(odd) { border-right: 0; }
+  .excel-tool, .update-tool { grid-template-columns: 1fr; }
+  .excel-tool .primary-button, .update-tool .primary-button { width: 100%; }
 }

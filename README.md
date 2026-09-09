@@ -49,6 +49,12 @@ om 08:00 UTC en kan ook handmatig worden gestart. Op GitHub wordt `--force-live`
 actuele selecties en spelerprestaties worden daardoor altijd vernieuwd, terwijl de grote
 historische downloads alleen worden opgehaald wanneer dat nodig is.
 
+De website toont alleen de eerstvolgende volledige speelronde als wekelijkse invulronde.
+Oudere inhaalwedstrijden kunnen daardoor nooit meer per ongeluk de hoofdtitel bepalen. Via
+`Excel invullen` wordt een aangeleverd `.xlsx`-bestand volledig in de browser verwerkt. De
+kolom `TOTOSCORE` krijgt per gekoppelde wedstrijd 1, 2 of 3 en de download houdt dezelfde
+bestandsnaam; het bestand wordt niet naar de server geupload.
+
 ## Belangrijkste uitvoer
 
 - `outputs/latest/upcoming_predictions.csv`
@@ -93,6 +99,16 @@ Niet alle WK-variabelen zijn letterlijk gekopieerd. FIFA-ranking, neutraal terre
 
 De belangrijkste nog ontbrekende kandidaatvariabelen zijn historische blessures/schorsingen per speeldag, verwachte basisplaatsen vlak voor de aftrap, speler-xG/xA en schotkwaliteit, keeperkwaliteit en belasting uit Europese/bekerwedstrijden. Die zijn pas verantwoord toe te voegen met een gedateerd historisch archief; alleen actuele waarden in oude trainingsrijen zetten zou data leakage veroorzaken.
 
-## Later naar GitHub/Vercel
+## GitHub en Vercel
 
-De map `dashboard` is al een zelfstandige Next.js-app. Een latere GitHub Action hoeft alleen `python rebuild.py` te draaien, de compacte bestanden onder `dashboard/public` te committen en daarna de app naar Vercel te deployen. API-sleutels zijn voor de huidige bronnen niet nodig.
+De productie-app staat in Vercel met `dashboard` als Root Directory. De GitHub-koppeling
+bouwt automatisch een nieuwe productieversie nadat de Action vernieuwde dashboarddata naar
+`main` heeft gepusht. Voor de databronnen zijn geen API-sleutels nodig.
+
+De knop `Handmatig bijwerken` gebruikt twee Vercel Environment Variables:
+
+- `UPDATE_CODE`: een zelfgekozen code die je op de website invoert;
+- `GITHUB_ACTIONS_TOKEN`: een fine-grained GitHub-token met alleen toegang tot
+  `thomlaer/eredivisie` en repositorypermission `Actions: Read and write`.
+
+De token blijft uitsluitend op de server en wordt nooit naar de browser gestuurd.
