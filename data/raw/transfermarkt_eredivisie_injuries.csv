@@ -1,0 +1,75 @@
+player_id,player,team,club_id,position,injury,since,since_date,expected_return,expected_return_date,market_value_m,availability,absence_type,source
+928330,Amine Lachkar,Willem II,403,Defensief middenveld,Liesblessure,7 aug. 2025,2025-08-07,,,0.5,0.0,injury,Transfermarkt
+662131,Ahmetcan Kaplan,NEC,467,Centrale verdediger,Knieblessure,28 jul. 2026,2026-07-28,,,7.0,0.0,injury,Transfermarkt
+315283,Kaj Sierhuis,NEC,467,Centrumspits,Onbekende blessure,7 sep. 2026,2026-09-07,,,1.8,0.0,injury,Transfermarkt
+283223,Emre Mor,NEC,467,Rechtsbuiten,Lichte blessure,4 sep. 2026,2026-09-04,,,0.5,0.0,injury,Transfermarkt
+104597,Bram Nuytinck,NEC,467,Centrale verdediger,Enkelblessure,9 sep. 2026,2026-09-09,,,0.2,0.0,injury,Transfermarkt
+82410,Bryan Linssen,NEC,467,Centrumspits,Onbekende blessure,6 sep. 2026,2026-09-06,,,0.3,0.0,injury,Transfermarkt
+1152029,Thijs Muller,Willem II,403,Aanvallend middenveld,Gebroken teen,20 aug. 2026,2026-08-20,,,0.35,0.0,injury,Transfermarkt
+1101894,Armin Culum,Willem II,403,Linksbuiten,Voetblessure,4 jul. 2026,2026-07-04,,,0.4,0.0,injury,Transfermarkt
+1054634,Anass Zarrouk,Willem II,403,Defensief middenveld,Operatie,28 mrt. 2026,2026-03-28,,,0.25,0.0,injury,Transfermarkt
+708989,Deveron Fonville,NEC,467,Centrale verdediger,Enkelblessure,30 aug. 2026,2026-08-30,,,1.5,0.0,injury,Transfermarkt
+411287,Justin Hoogma,Willem II,403,Centrale verdediger,Knieblessure,4 sep. 2026,2026-09-04,,,0.45,0.0,injury,Transfermarkt
+312493,Vito van Crooij,Willem II,403,Aanvallend middenveld,Enkelblessure,1 sep. 2026,2026-09-01,,,0.9,0.0,injury,Transfermarkt
+264857,Jari Schuurman,Willem II,403,Aanvallend middenveld,Rugblessure,11 dec. 2025,2025-12-11,,,0.45,0.0,injury,Transfermarkt
+182891,Thomas Didillon-Hödl,Willem II,403,Keeper,Hamstringblessure,9 aug. 2026,2026-08-09,,,0.7,0.0,injury,Transfermarkt
+931525,Wout Asselman,SC Cambuur,133,Defensief middenveld,Onbekende blessure,21 aug. 2026,2026-08-21,,,0.4,0.0,injury,Transfermarkt
+296227,Iván Márquez,Fortuna Sittard,385,Centrale verdediger,Onbekende blessure,5 jul. 2026,2026-07-05,,,0.45,0.0,injury,Transfermarkt
+186704,Kristoffer Peterson,Fortuna Sittard,385,Linksbuiten,Onbekende blessure,7 aug. 2026,2026-08-07,,,0.45,0.0,injury,Transfermarkt
+746987,Sven Simons,Fortuna Sittard,385,Centraal middenveld,Hamstringblessure,3 jul. 2026,2026-07-03,,,0.45,0.0,injury,Transfermarkt
+1235502,Yassin Moslih,NEC,467,Centrale verdediger,Onbekende blessure,31 jul. 2026,2026-07-31,,,,0.0,injury,Transfermarkt
+804775,Max de Ligt,Sparta Rotterdam,468,Centrale verdediger,Onbekende blessure,3 sep. 2026,2026-09-03,,,0.075,0.0,injury,Transfermarkt
+12282,Daley Blind,Ajax,610,Centrale verdediger,Onbekende blessure,14 aug. 2026,2026-08-14,,,1.2,0.0,injury,Transfermarkt
+598491,Rayane Bounida,Ajax,610,Aanvallend middenveld,Onbekende blessure,7 jul. 2026,2026-07-07,,,5.0,0.0,injury,Transfermarkt
+457092,Simon Janssen,Excelsior,798,Linkervleugelverdediger,Verstuiking,9 sep. 2026,2026-09-09,,,0.4,0.0,injury,Transfermarkt
+116471,Hobie Verhulst,AZ,1090,Keeper,Lichte blessure,28 aug. 2026,2026-08-28,,,0.15,0.0,injury,Transfermarkt
+577394,Denso Kasius,AZ,1090,Rechtervleugelverdediger,Liesblessure,24 jul. 2026,2026-07-24,,,6.0,0.0,injury,Transfermarkt
+859035,Kees Smit,AZ,1090,Aanvallend middenveld,Liesblessure,31 aug. 2026,2026-08-31,,,25.0,0.0,injury,Transfermarkt
+703626,Cameron Peupion,ADO Den Haag,1268,Linksbuiten,Onbekende blessure,3 aug. 2026,2026-08-03,,,0.45,0.0,injury,Transfermarkt
+724025,Matej Sin,ADO Den Haag,1268,Aanvallend middenveld,Onbekende blessure,22 aug. 2026,2026-08-22,,,3.0,0.0,injury,Transfermarkt
+227039,Younes Namli,PEC Zwolle,1269,Rechtsbuiten,Onbekende blessure,23 apr. 2026,2026-04-23,,,1.0,0.0,injury,Transfermarkt
+85904,Gerrit Nauber,Go Ahead Eagles,1435,Centrale verdediger,Gebroken been,23 okt. 2025,2025-10-23,,,0.3,0.0,injury,Transfermarkt
+158104,Nick Marsman,Go Ahead Eagles,1435,Keeper,Onbekende blessure,24 aug. 2026,2026-08-24,,,0.125,0.0,injury,Transfermarkt
+741582,Tomas Galvez,Go Ahead Eagles,1435,Linkervleugelverdediger,Onbekende blessure,15 jul. 2026,2026-07-15,,,0.75,0.0,injury,Transfermarkt
+805149,Giovanni van Zwam,Go Ahead Eagles,1435,Centrale verdediger,Onbekende blessure,26 aug. 2026,2026-08-26,,,0.3,0.0,injury,Transfermarkt
+257987,Bart Nieuwkoop,Feyenoord,234,Rechtervleugelverdediger,Onbekende blessure,15 mrt. 2026,2026-03-15,,,1.5,0.0,injury,Transfermarkt
+963511,Daan Visser,SC Cambuur,133,Defensief middenveld,Kruisband operatie,29 sep. 2025,2025-09-29,,,0.25,0.0,injury,Transfermarkt
+182582,Joris van Overeem,FC Utrecht,200,Defensief middenveld,Onbekende blessure,20 aug. 2026,2026-08-20,,,1.0,0.0,injury,Transfermarkt
+422932,Niklas Vesterlund,FC Utrecht,200,Rechtervleugelverdediger,Liesblessure,31 aug. 2026,2026-08-31,,,1.5,0.0,injury,Transfermarkt
+557410,Noah Ohio,FC Utrecht,200,Centrumspits,Operatie aan de knie,21 apr. 2026,2026-04-21,,,0.6,0.0,injury,Transfermarkt
+565436,Alonzo Engwanda,FC Utrecht,200,Defensief middenveld,Hamstringblessure,21 mei 2026,2026-05-21,,,8.0,0.0,injury,Transfermarkt
+711517,Kevin Paredes,FC Utrecht,200,Linker middenveld,Knieblessure,23 aug. 2026,2026-08-23,,,2.0,0.0,injury,Transfermarkt
+723008,Miliano Jonathans,FC Utrecht,200,Rechtsbuiten,Kruisband ingescheurd,7 mrt. 2026,2026-03-07,,,0.75,0.0,injury,Transfermarkt
+237244,Marco Rente,FC Groningen,202,Rechtervleugelverdediger,Rugblessure,23 aug. 2026,2026-08-23,,,1.3,0.0,injury,Transfermarkt
+913289,Tyrique Mercera,FC Groningen,202,Rechtervleugelverdediger,Onbekende blessure,14 aug. 2026,2026-08-14,,,0.6,0.0,injury,Transfermarkt
+1143430,Ryan Metu,FC Groningen,202,Linksbuiten,Onbekende blessure,10 aug. 2026,2026-08-10,,,0.6,0.0,injury,Transfermarkt
+1189915,Mikkel Bro Hansen,PSV,383,Centrumspits,Onbekende blessure,18 aug. 2026,2026-08-18,,,0.8,0.0,injury,Transfermarkt
+374212,Gijs Smal,Feyenoord,234,Linkervleugelverdediger,Enkelblessure,1 jul. 2026,2026-07-01,,,5.5,0.0,injury,Transfermarkt
+384461,Jakub Moder,Feyenoord,234,Centraal middenveld,Operatie aan de knie,23 apr. 2026,2026-04-23,,,10.0,0.0,injury,Transfermarkt
+593862,Thomas Beelen,Feyenoord,234,Centrale verdediger,Gebroken been,19 jul. 2025,2025-07-19,,,5.0,0.0,injury,Transfermarkt
+167329,Alassane Pléa,PSV,383,Centrumspits,Onbekende blessure,14 aug. 2026,2026-08-14,,,2.5,0.0,injury,Transfermarkt
+800976,Adamo Nagalo,PSV,383,Centrale verdediger,Onbekende blessure,1 jul. 2026,2026-07-01,,,2.8,0.0,injury,Transfermarkt
+747016,Sami Ouaissa,PSV,383,Rechtsbuiten,Hamstringblessure,12 aug. 2026,2026-08-12,,,8.0,0.0,injury,Transfermarkt
+397486,Dennis Man,PSV,383,Rechtsbuiten,Onbekende blessure,29 aug. 2026,2026-08-29,,,15.0,0.0,injury,Transfermarkt
+386914,Sam Lammers,PSV,383,Centrumspits,Lichte blessure,26 aug. 2026,2026-08-26,,,4.0,0.0,injury,Transfermarkt
+761326,Stav Lemkin,FC Twente,317,Centrale verdediger,Onbekende blessure,4 aug. 2026,2026-08-04,,,6.0,0.0,injury,Transfermarkt
+562702,Mees Hilgers,Heerenveen,306,Centrale verdediger,Trainingsachterstand,31 aug. 2026,2026-08-31,,,3.0,0.0,injury,Transfermarkt
+1030525,Mats Egbring,Heerenveen,306,Rechtervleugelverdediger,Enkelblessure,10 aug. 2026,2026-08-10,,,0.3,0.0,injury,Transfermarkt
+694186,Kristian Hlynsson,FC Twente,317,Aanvallend middenveld,Lichte blessure,26 aug. 2026,2026-08-26,,,6.0,0.0,injury,Transfermarkt
+899163,Marcus Linday,Heerenveen,306,Centraal middenveld,Knieblessure,28 aug. 2026,2026-08-28,,,5.0,0.0,injury,Transfermarkt
+526566,Darko Nejasmic,NEC,467,Defensief middenveld,Rust,7 sep. 2026,2026-09-07,11 sep. 2026,2026-09-11,4.0,0.0,injury,Transfermarkt
+903359,Marius Broholm,FC Utrecht,200,Rechtsbuiten,Trainingsachterstand,20 aug. 2026,2026-08-20,11 sep. 2026,2026-09-11,5.0,0.0,injury,Transfermarkt
+578544,Noah Naujoks,Excelsior,798,Aanvallend middenveld,Onbekende blessure,14 aug. 2026,2026-08-14,12 sep. 2026,2026-09-12,1.5,0.0,injury,Transfermarkt
+340325,Reiss Nelson,Feyenoord,234,Linksbuiten,Trainingsachterstand,2 sep. 2026,2026-09-02,19 sep. 2026,2026-09-19,8.0,0.0,injury,Transfermarkt
+658536,Simon Adingra,Ajax,610,Linksbuiten,Enkelblessure,3 sep. 2026,2026-09-03,28 sep. 2026,2026-09-28,22.0,0.0,injury,Transfermarkt
+987366,Aaron Bouwman,Ajax,610,Centrale verdediger,Gekneusde longen,6 sep. 2026,2026-09-06,1 okt. 2026,2026-10-01,3.5,0.0,injury,Transfermarkt
+583920,Siebe Wylin,Fortuna Sittard,385,Rechtervleugelverdediger,Onbekende blessure,27 aug. 2026,2026-08-27,9 okt. 2026,2026-10-09,0.3,0.0,injury,Transfermarkt
+400548,Victor Jensen,FC Utrecht,200,Aanvallend middenveld,Knieblessure,18 jan. 2026,2026-01-18,15 okt. 2026,2026-10-15,2.5,0.0,injury,Transfermarkt
+486814,Filip Krastev,PEC Zwolle,1269,Aanvallend middenveld,Achillespees operatie,11 mei 2026,2026-05-11,1 nov. 2026,2026-11-01,3.0,0.0,injury,Transfermarkt
+624698,Pim Saathof,Go Ahead Eagles,1435,Centrale verdediger,Kruisband gescheurd,31 mei 2025,2025-05-31,1 jan. 2027,2027-01-01,0.075,0.0,injury,Transfermarkt
+548348,Kiliann Sildillia,PSV,383,Rechtervleugelverdediger,Operatie,29 aug. 2026,2026-08-29,1 jan. 2027,2027-01-01,7.0,0.0,injury,Transfermarkt
+793099,Stije Resink,AZ,1090,Defensief middenveld,Kruisbandblessure,1 mrt. 2026,2026-03-01,1 jan. 2027,2027-01-01,7.0,0.0,injury,Transfermarkt
+855731,Jordan Bos,Feyenoord,234,Linkervleugelverdediger,Operatie aan de knie,4 jul. 2026,2026-07-04,1 jan. 2027,2027-01-01,12.0,0.0,injury,Transfermarkt
+347900,Jerdy Schouten,PSV,383,Defensief middenveld,Kruisband gescheurd,4 apr. 2026,2026-04-04,1 mei 2027,2027-05-01,20.0,0.0,injury,Transfermarkt
+1126894,Malcolm Jeng,FC Groningen,202,Centrale verdediger,Gescheurde achillespees,12 aug. 2026,2026-08-12,1 mei 2027,2027-05-01,2.0,0.0,injury,Transfermarkt
+593163,Rijk Janse,FC Groningen,202,Keeper,Kruisband gescheurd,28 aug. 2026,2026-08-28,1 jul. 2027,2027-07-01,0.05,0.0,injury,Transfermarkt

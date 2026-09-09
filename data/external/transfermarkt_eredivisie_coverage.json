@@ -1,0 +1,11 @@
+{
+  "source": "C:\\Users\\thoml\\OneDrive\\Documenten\\voetbal_prediction\\data\\kagglehub\\datasets\\davidcariboo\\player-scores\\versions\\671",
+  "games": 4210,
+  "games_with_22_starters": 3879,
+  "players": 2146,
+  "first_date": "2012-08-10",
+  "last_date": "2026-05-17",
+  "rows_with_both_prior_lineups": 4190,
+  "fixture_proxy_rows": 306,
+  "current_squad_players": 508
+}

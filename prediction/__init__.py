@@ -1,0 +1,2 @@
+"""Eredivisie prediction package."""
+

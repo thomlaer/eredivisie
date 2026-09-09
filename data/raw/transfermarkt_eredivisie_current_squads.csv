@@ -1,0 +1,493 @@
+player_id,player,team,club_id,position,position_group,market_value_m,age,snapshot_date,roster_source,minutes_per_app,goals_per90,assists_per90,cards_per90,days_since,season_appearances,season_minutes,season_goals,season_assists,season_yellow_cards,season_second_yellow,season_red_cards,selected_proxy
+724025,Matej Sin,ADO Den Haag,1268,Aanvallend middenveld,mid,3.0,22.0,2026-09-09,Transfermarkt live,42.5,0.2117647058823529,0.0,0.0,132.0,0,0,0,0,0,0,0,1
+930998,Yannick Eduardo,ADO Den Haag,1268,Centrumspits,att,2.5,20.0,2026-09-09,Transfermarkt live,69.4,0.14434643143544507,0.0,0.0,,5,347,2,0,0,0,0,1
+997478,Othniël Raterink,ADO Den Haag,1268,Rechtervleugelverdediger,def,1.0,20.0,2026-09-09,Transfermarkt live,78.75,0.0,0.0,0.0,,4,315,0,0,0,0,0,1
+538642,Juho Kilo,ADO Den Haag,1268,Centraal middenveld,mid,0.75,24.0,2026-09-09,Transfermarkt live,90.0,0.0,0.06666666666666667,0.13333333333333333,,5,450,0,1,2,0,0,1
+559319,Kilian Nikièma,ADO Den Haag,1268,Keeper,gk,0.7,23.0,2026-09-09,Transfermarkt live,90.0,0.0,0.0,0.0,,5,450,0,0,0,0,0,1
+548937,Evan Rottier,ADO Den Haag,1268,Aanvallend middenveld,mid,0.6,24.0,2026-09-09,Transfermarkt live,71.0,0.07171314741035857,0.14342629482071714,0.14342629482071714,,5,355,1,2,2,0,0,1
+460619,Pascal Mulder,ADO Den Haag,1268,Centrale verdediger,def,0.5,27.0,2026-09-09,Transfermarkt live,86.6,0.0,0.0,0.06751687921980495,,5,433,0,0,1,0,0,1
+595240,Milan Hokke,ADO Den Haag,1268,Centrale verdediger,def,0.4,22.0,2026-09-09,Transfermarkt live,90.0,0.0,0.06666666666666667,0.0,,5,450,0,1,0,0,0,1
+587333,Sekou Sylla,ADO Den Haag,1268,Linkervleugelverdediger,def,0.4,27.0,2026-09-09,Transfermarkt live,74.2,0.07081038552321008,0.0,0.0,,5,371,1,0,0,0,0,1
+412952,Nigel Thomas,ADO Den Haag,1268,Linksbuiten,att,0.3,25.0,2026-09-09,Transfermarkt live,57.75,0.07957559681697612,0.07957559681697612,0.0,,4,231,1,1,0,0,0,1
+177821,Daryl van Mieghem,ADO Den Haag,1268,Rechtsbuiten,att,0.15,36.0,2026-09-09,Transfermarkt live,64.4,0.0,0.0,0.0,,5,322,0,0,0,0,0,1
+719382,Matteo Waem,ADO Den Haag,1268,Centrale verdediger,def,0.8,26.0,2026-09-09,Transfermarkt live,42.25,0.0,0.0,0.0,,4,169,0,0,0,0,0,0
+629039,Luka Reischl,ADO Den Haag,1268,Centrumspits,att,0.8,22.0,2026-09-09,Transfermarkt live,28.5,0.0,0.0,0.0,,2,57,0,0,0,0,0,0
+633057,Donát Bárány,ADO Den Haag,1268,Centrumspits,att,0.8,26.0,2026-09-09,Transfermarkt live,,0.0,0.0,0.0,,0,0,0,0,0,0,0,0
+658530,Jonas Jensen-Abbew,ADO Den Haag,1268,Centrale verdediger,def,0.75,24.0,2026-09-09,Transfermarkt live,45.0,0.0,0.0,0.0,,1,45,0,0,0,0,0,0
+703626,Cameron Peupion,ADO Den Haag,1268,Linksbuiten,att,0.45,23.0,2026-09-09,Transfermarkt live,,0.0,0.0,0.0,,0,0,0,0,0,0,0,0
+692020,Lasse Wilhelm,ADO Den Haag,1268,Centrale verdediger,def,0.4,23.0,2026-09-09,Transfermarkt live,8.5,0.0,0.0,0.0,,2,17,0,0,0,0,0,0
+487924,Jan Zamburek,ADO Den Haag,1268,Centraal middenveld,mid,0.4,25.0,2026-09-09,Transfermarkt live,42.666666666666664,0.0,0.0,0.12428040113417371,108.0,3,128,0,0,0,0,0,0
+848089,Illaijh de Ruijter,ADO Den Haag,1268,Linksbuiten,att,0.4,19.0,2026-09-09,Transfermarkt live,39.6,0.0,0.0,0.0,,5,198,0,0,0,0,0,0
+433091,Jalen Hawkins,ADO Den Haag,1268,Rechtsbuiten,att,0.4,25.0,2026-09-09,Transfermarkt live,37.25,0.0,0.0,0.0,,4,149,0,0,0,0,0,0
+953857,Jesse Bal,ADO Den Haag,1268,Centrumspits,att,0.4,19.0,2026-09-09,Transfermarkt live,35.6,0.08348794063079777,0.0,0.0,,5,178,1,0,0,0,0,0
+348778,Niclas Thiede,ADO Den Haag,1268,Keeper,gk,0.35,27.0,2026-09-09,Transfermarkt live,,0.0,0.0,0.0,,0,0,0,0,0,0,0,0
+617754,Mylian Jiménez,ADO Den Haag,1268,Centraal middenveld,mid,0.3,23.0,2026-09-09,Transfermarkt live,51.333333333333336,0.0,0.0,0.08538899430740038,,3,154,0,0,1,0,0,0
+928630,Finn de Bruin,ADO Den Haag,1268,Aanvallend middenveld,mid,0.175,22.0,2026-09-09,Transfermarkt live,43.666666666666664,0.0,0.08729388942774007,0.0,,3,131,0,1,0,0,0,0
+1104230,Sanyika Bergtop,ADO Den Haag,1268,Rechtervleugelverdediger,def,0.05,19.0,2026-09-09,Transfermarkt live,,0.0,0.0,0.0,,0,0,0,0,0,0,0,0
+981969,Sem Eekhout,ADO Den Haag,1268,Keeper,gk,,19.0,2026-09-09,Transfermarkt live,,0.0,0.0,0.0,,0,0,0,0,0,0,0,0
+989995,Caleb Kramer,ADO Den Haag,1268,Keeper,gk,,20.0,2026-09-09,Transfermarkt live,,0.0,0.0,0.0,,0,0,0,0,0,0,0,0
+1088642,Dani van Loenen,ADO Den Haag,1268,Linksbuiten,att,,19.0,2026-09-09,Transfermarkt live,,0.0,0.0,0.0,,0,0,0,0,0,0,0,0
+859035,Kees Smit,AZ,1090,Aanvallend middenveld,mid,25.0,20.0,2026-09-09,Transfermarkt live,65.2,0.18002320299060767,0.41685372781380714,0.34344426614985935,122.0,5,326,0,2,1,0,0,1
+646707,Wouter Goes,AZ,1090,Centrale verdediger,def,15.0,22.0,2026-09-09,Transfermarkt live,90.0,0.0,0.0625,0.0,108.0,6,540,0,1,0,0,0,1
+361074,Peer Koopmeiners,AZ,1090,Defensief middenveld,mid,12.0,26.0,2026-09-09,Transfermarkt live,89.16666666666667,0.20140571360083553,0.0627177700348432,0.0,108.0,6,535,1,1,0,0,0,1
+678546,Mexx Meerdink,AZ,1090,Centrumspits,att,8.0,23.0,2026-09-09,Transfermarkt live,79.16666666666667,0.6054545454545455,0.06545454545454546,0.20454545454545456,108.0,6,475,3,1,0,0,0,1
+957241,Elijah Dijkstra,AZ,1090,Rechtervleugelverdediger,def,6.0,20.0,2026-09-09,Transfermarkt live,80.33333333333333,0.06512301013024602,0.0,0.0,108.0,6,482,1,0,0,0,0,1
+959106,Weslley Patati,AZ,1090,Rechtsbuiten,att,4.5,22.0,2026-09-09,Transfermarkt live,56.666666666666664,0.14516129032258066,0.166215217926619,0.07258064516129033,108.0,6,340,2,0,1,0,0,1
+426849,Jari De Busser,AZ,1090,Keeper,gk,4.0,26.0,2026-09-09,Transfermarkt live,90.0,0.0,0.0,0.0,122.0,6,540,0,0,0,0,0,1
+1066953,Mateo Chávez,AZ,1090,Linkervleugelverdediger,def,4.0,22.0,2026-09-09,Transfermarkt live,75.33333333333333,0.32648667034617307,0.3962315008535599,0.32648667034617307,69.0,6,452,1,4,1,0,0,1
+800995,Ro-Zangelo Daal,AZ,1090,Linksbuiten,att,3.0,22.0,2026-09-09,Transfermarkt live,85.66666666666667,0.31824611032531824,0.06364922206506365,0.14940416197308354,108.0,6,514,5,1,1,0,0,1
+747017,Dave Kwakman,AZ,1090,Centraal middenveld,mid,1.5,22.0,2026-09-09,Transfermarkt live,78.16666666666667,0.06574141709276844,0.3046402409830441,0.07963294129675849,108.0,6,469,1,1,0,0,0,1
+801031,Lewis Schouten,AZ,1090,Centrale verdediger,def,0.7,22.0,2026-09-09,Transfermarkt live,90.0,0.0625,0.0,0.0625,108.0,6,540,1,0,1,0,0,1
+793099,Stije Resink,AZ,1090,Defensief middenveld,mid,7.0,23.0,2026-09-09,Transfermarkt live,83.0,0.4337349397590361,0.0,0.108433734939759,185.0,0,0,0,0,0,0,0,0
+704772,Rome-Jayden Owusu-Oduro,AZ,1090,Keeper,gk,6.0,22.0,2026-09-09,Transfermarkt live,93.0,0.0,0.0967741935483871,0.0967741935483871,108.0,0,0,0,0,0,0,0,0
+315254,Mees de Wit,AZ,1090,Linkervleugelverdediger,def,6.0,28.0,2026-09-09,Transfermarkt live,22.0,0.20293021204954498,0.20293021204954498,0.20293021204954498,115.0,4,88,0,0,0,0,0,0
+577394,Denso Kasius,AZ,1090,Rechtervleugelverdediger,def,6.0,23.0,2026-09-09,Transfermarkt live,45.8,0.0,0.3930131004366812,0.1965065502183406,108.0,0,0,0,0,0,0,0,0
+409344,Calvin Stengs,AZ,1090,Rechtsbuiten,att,4.5,27.0,2026-09-09,Transfermarkt live,33.333333333333336,0.08181818181818182,0.24545454545454545,0.0,,6,200,1,3,0,0,0,0
+1078350,Ayoub Oufkir,AZ,1090,Rechtsbuiten,att,3.0,20.0,2026-09-09,Transfermarkt live,8.6,0.19088016967126192,0.0,0.5372353162521808,108.0,5,43,2,0,2,0,0,0
+185817,Jizz Hornkamp,AZ,1090,Centrumspits,att,2.5,28.0,2026-09-09,Transfermarkt live,45.0,0.6614338042909471,0.2354788069073783,0.0,179.0,1,45,2,0,0,0,0,0
+747487,Valdemar Byskov,AZ,1090,Centraal middenveld,mid,2.2,21.0,2026-09-09,Transfermarkt live,26.0,0.0,0.09719222462203024,0.0,,1,26,0,1,0,0,0,0
+733438,Seiya Maikuma,AZ,1090,Rechtervleugelverdediger,def,2.0,28.0,2026-09-09,Transfermarkt live,12.6,0.0,0.0,0.0,115.0,5,63,0,0,0,0,0,0
+936294,Rion Ichihara,AZ,1090,Centrale verdediger,def,1.5,21.0,2026-09-09,Transfermarkt live,10.0,0.0,0.0,0.0,132.0,1,10,0,0,0,0,0,0
+1129402,Bendegúz Kovács,AZ,1090,Centrumspits,att,1.5,19.0,2026-09-09,Transfermarkt live,,0.0,0.0,0.0,,0,0,0,0,0,0,0,0
+253765,Wesley Hoedt,AZ,1090,Centrale verdediger,def,1.2,32.0,2026-09-09,Transfermarkt live,,0.0,0.0,0.0,,0,0,0,0,0,0,0,0
+104223,Jordy Clasie,AZ,1090,Defensief middenveld,mid,0.8,35.0,2026-09-09,Transfermarkt live,37.0,0.12656981731756362,0.12656981731756362,0.37970945195269096,108.0,3,111,0,0,0,0,0,0
+990008,Wassim Bouziane,AZ,1090,Linksbuiten,att,0.45,19.0,2026-09-09,Transfermarkt live,17.75,0.0,1.0,0.0,228.0,0,0,0,0,0,0,0,0
+1058353,Andrea Natali,AZ,1090,Centrale verdediger,def,0.4,18.0,2026-09-09,Transfermarkt live,,0.0,0.0,0.0,,0,0,0,0,0,0,0,0
+79045,Jeroen Zoet,AZ,1090,Keeper,gk,0.25,35.0,2026-09-09,Transfermarkt live,82.8,0.0,0.10869565217391298,0.0,151.0,0,0,0,0,0,0,0,0
+116471,Hobie Verhulst,AZ,1090,Keeper,gk,0.15,33.0,2026-09-09,Transfermarkt live,90.0,0.0,0.0,0.0,171.0,0,0,0,0,0,0,0,0
+1024701,Hessel de Wit,AZ,1090,Centraal middenveld,mid,0.15,19.0,2026-09-09,Transfermarkt live,18.0,0.0,0.0,0.0,,1,18,0,0,0,0,0,0
+559327,Youri Baas,Ajax,610,Centrale verdediger,def,20.0,23.0,2026-09-09,Transfermarkt live,74.14285714285714,0.06342494714587738,0.0,0.12684989429175475,108.0,7,519,1,0,1,0,0,1
+668267,Marcos Leonardo,Ajax,610,Centrumspits,att,20.0,23.0,2026-09-09,Transfermarkt live,36.22222222222222,0.1468189233278956,0.0,0.0734094616639478,,9,326,2,0,1,0,0,1
+683571,Tolu Arokodare,Ajax,610,Centrumspits,att,20.0,25.0,2026-09-09,Transfermarkt live,40.142857142857146,0.3810330228619814,0.15241320914479256,0.0,,7,281,5,2,0,0,0,1
+187492,Julian Brandt,Ajax,610,Aanvallend middenveld,mid,15.0,30.0,2026-09-09,Transfermarkt live,55.25,0.20119225037257824,0.0,0.0,,8,442,3,0,0,0,0,1
+930571,Oscar Gloukh,Ajax,610,Aanvallend middenveld,mid,13.0,22.0,2026-09-09,Transfermarkt live,61.77777777777778,0.36511687465077297,0.17967731421121252,0.11786412739802571,115.0,9,556,4,1,0,0,0,1
+420064,Caio Henrique,Ajax,610,Linkervleugelverdediger,def,12.0,29.0,2026-09-09,Transfermarkt live,65.55555555555556,0.0,0.12080536912751678,0.0,,9,590,0,2,0,0,0,1
+1105532,Jorthy Mokio,Ajax,610,Defensief middenveld,mid,8.0,18.0,2026-09-09,Transfermarkt live,49.7,0.06442376521116679,0.13671976108404715,0.20114352629521395,108.0,10,497,1,1,2,0,0,1
+468309,Lucas Rosa,Ajax,610,Rechtervleugelverdediger,def,5.0,26.0,2026-09-09,Transfermarkt live,77.0,0.0,0.06607929515418502,0.2643171806167401,108.0,6,462,0,1,2,0,0,1
+987366,Aaron Bouwman,Ajax,610,Centrale verdediger,def,3.5,19.0,2026-09-09,Transfermarkt live,89.4,0.0,0.0,0.2388329195477768,144.0,10,894,0,0,2,0,0,1
+74857,Marc ter Stegen,Ajax,610,Keeper,gk,3.0,34.0,2026-09-09,Transfermarkt live,90.0,0.0,0.0,0.0,,6,540,0,0,0,0,0,1
+129554,Steven Berghuis,Ajax,610,Rechtsbuiten,att,2.0,34.0,2026-09-09,Transfermarkt live,70.33333333333333,0.3525989071292107,0.29354207436399216,0.23518207738361385,108.0,9,633,2,5,0,0,0,1
+658536,Simon Adingra,Ajax,610,Linksbuiten,att,22.0,24.0,2026-09-09,Transfermarkt live,,0.0,0.0,0.0,,0,0,0,0,0,0,0,0
+264372,Viktor Tsygankov,Ajax,610,Rechtsbuiten,att,15.0,28.0,2026-09-09,Transfermarkt live,29.0,0.0,0.0,0.0,,1,29,0,0,0,0,0,0
+228948,Thilo Kehrer,Ajax,610,Centrale verdediger,def,12.0,29.0,2026-09-09,Transfermarkt live,6.0,0.0,0.0,0.0,,1,6,0,0,0,0,0,0
+287579,Sofyan Amrabat,Ajax,610,Defensief middenveld,mid,10.0,30.0,2026-09-09,Transfermarkt live,36.0,0.0,0.0,0.0,,1,36,0,0,0,0,0,0
+283196,Kasper Dolberg,Ajax,610,Centrumspits,att,7.0,28.0,2026-09-09,Transfermarkt live,59.166666666666664,0.07171314741035857,0.33528224763284525,0.0,108.0,6,355,1,0,0,0,0,0
+765743,Dies Janse,Ajax,610,Centrale verdediger,def,6.5,20.0,2026-09-09,Transfermarkt live,46.666666666666664,0.08653846153846154,0.17307692307692307,0.08653846153846154,108.0,3,140,0,0,0,0,0,0
+701055,Anton Gaaei,Ajax,610,Rechtervleugelverdediger,def,5.0,23.0,2026-09-09,Transfermarkt live,87.6,0.14020206386082446,0.07293748986979305,0.20746663785185585,108.0,5,438,1,0,2,0,0,0
+598491,Rayane Bounida,Ajax,610,Aanvallend middenveld,mid,5.0,20.0,2026-09-09,Transfermarkt live,36.4,0.2472527472527472,0.2472527472527472,0.4945054945054945,108.0,0,0,0,0,0,0,0,0
+339328,Owen Wijndal,Ajax,610,Linkervleugelverdediger,def,3.0,26.0,2026-09-09,Transfermarkt live,60.4,0.17253852275193512,0.0,0.09766331476524628,164.0,5,302,1,0,0,0,0,0
+374326,Oliver Edvardsen,Ajax,610,Linksbuiten,att,3.0,27.0,2026-09-09,Transfermarkt live,34.833333333333336,0.555431944070357,0.555431944070357,0.47427775110372045,115.0,6,209,1,1,0,0,0,0
+396077,Maarten Paes,Ajax,610,Keeper,gk,2.0,28.0,2026-09-09,Transfermarkt live,90.0,0.0,0.0,0.0,123.0,4,360,0,0,0,0,0,0
+182932,Davy Klaassen,Ajax,610,Centraal middenveld,mid,2.0,33.0,2026-09-09,Transfermarkt live,68.77777777777777,0.44860340449543873,0.0,0.1184990125082291,108.0,9,619,5,0,2,0,0,0
+1194905,Abdellah Ouazane,Ajax,610,Aanvallend middenveld,mid,1.5,17.0,2026-09-09,Transfermarkt live,41.888888888888886,0.07047768206734534,0.211433046202036,0.07047768206734534,,9,377,1,3,1,0,0,0
+12282,Daley Blind,Ajax,610,Centrale verdediger,def,1.2,36.0,2026-09-09,Transfermarkt live,78.75,0.0,0.0,0.0,,4,315,0,0,0,0,0,0
+923667,Joeri Heerkens,Ajax,610,Keeper,gk,1.0,20.0,2026-09-09,Transfermarkt live,0.0,0.0,0.0,0.0,,0,0,0,0,0,0,0,0
+1009765,Jofre Torrents,Ajax,610,Linkervleugelverdediger,def,1.0,19.0,2026-09-09,Transfermarkt live,8.0,0.0,0.0,0.0,,1,8,0,0,0,0,0,0
+775257,Aymen Sliti,Excelsior,798,Rechtsbuiten,att,2.0,20.0,2026-09-09,Transfermarkt live,41.2,0.081374321880651,0.081374321880651,0.0,143.0,5,206,1,1,0,0,0,1
+806245,Irakli Yegoian,Excelsior,798,Aanvallend middenveld,mid,1.8,22.0,2026-09-09,Transfermarkt live,87.0,0.20927827945129934,0.2696629213483146,0.07444681877714204,108.0,5,435,2,4,0,0,0,1
+605395,Casper Widell,Excelsior,798,Centrale verdediger,def,1.5,23.0,2026-09-09,Transfermarkt live,75.0,0.1411764705882353,0.07058823529411765,0.0,108.0,5,375,1,0,0,0,0,1
+301696,Stijn van Gassel,Excelsior,798,Keeper,gk,1.0,29.0,2026-09-09,Transfermarkt live,90.0,0.0,0.13333333333333333,0.0,108.0,5,450,0,1,0,0,0,1
+596178,Rick Meissen,Excelsior,798,Centrale verdediger,def,0.8,24.0,2026-09-09,Transfermarkt live,90.0,0.06666666666666667,0.08207934336525308,0.06666666666666667,108.0,5,450,1,0,1,0,0,1
+595238,Lennard Hartjes,Excelsior,798,Centraal middenveld,mid,0.8,23.0,2026-09-09,Transfermarkt live,86.8,0.07386817540135042,0.0,0.06746626686656672,108.0,5,434,0,0,1,0,0,1
+745625,Jan Plug,Excelsior,798,Centrale verdediger,def,0.7,21.0,2026-09-09,Transfermarkt live,90.0,0.0,0.0,0.06666666666666667,,5,450,0,0,1,0,0,1
+942960,Daniel van Vianen,Excelsior,798,Defensief middenveld,mid,0.6,23.0,2026-09-09,Transfermarkt live,63.5,0.0,0.0,0.0,,4,254,0,0,0,0,0,1
+457092,Simon Janssen,Excelsior,798,Linkervleugelverdediger,def,0.4,25.0,2026-09-09,Transfermarkt live,76.2,0.0,0.3684582454869851,0.0702576112412178,129.0,5,381,0,3,1,0,0,1
+1021770,Ilano Silva Timas,Excelsior,798,Linksbuiten,att,0.35,23.0,2026-09-09,Transfermarkt live,36.0,0.0,0.08333333333333333,0.0,,5,180,0,1,0,0,0,1
+806281,David Garden,Excelsior,798,Centrumspits,att,0.35,22.0,2026-09-09,Transfermarkt live,71.6,0.21462639109697934,0.0,0.0,,5,358,3,0,0,0,0,1
+578544,Noah Naujoks,Excelsior,798,Aanvallend middenveld,mid,1.5,24.0,2026-09-09,Transfermarkt live,90.0,0.46822955341041683,0.09547045719741164,0.09547045719741164,108.0,1,90,2,0,0,0,0,0
+804034,Valentin Sulzbacher,Excelsior,798,Centraal middenveld,mid,1.0,21.0,2026-09-09,Transfermarkt live,19.0,0.09793253536452666,0.0,0.09793253536452666,,1,19,1,0,1,0,0,0
+897481,Eric da Silva Moreira,Excelsior,798,Rechtervleugelverdediger,def,0.8,20.0,2026-09-09,Transfermarkt live,55.666666666666664,0.0,0.0,0.0,,3,167,0,0,0,0,0,0
+1131926,Osman Turay,Excelsior,798,Linkervleugelverdediger,def,0.6,18.0,2026-09-09,Transfermarkt live,27.0,0.0,0.0,0.0,,2,54,0,0,0,0,0,0
+461963,Celton Biai,Excelsior,798,Keeper,gk,0.55,26.0,2026-09-09,Transfermarkt live,,0.0,0.0,0.0,,0,0,0,0,0,0,0,0
+1235199,Yacqub Finey,Excelsior,798,Aanvallend middenveld,mid,0.5,22.0,2026-09-09,Transfermarkt live,10.0,0.0,0.0,0.0,,1,10,0,0,0,0,0,0
+213268,Alireza Jahanbakhsh,Excelsior,798,Rechtsbuiten,att,0.5,33.0,2026-09-09,Transfermarkt live,18.666666666666668,0.0,0.0,0.0,,3,56,0,0,0,0,0,0
+1154876,Kasey Bos,Excelsior,798,Linkervleugelverdediger,def,0.4,22.0,2026-09-09,Transfermarkt live,25.0,0.0,0.0,0.0,,2,50,0,0,0,0,0,0
+941867,Mario Domínguez,Excelsior,798,Centrumspits,att,0.4,22.0,2026-09-09,Transfermarkt live,10.0,0.0,0.0,0.0,,1,10,0,0,0,0,0,0
+1152022,Marlon van de Wetering,Excelsior,798,Rechtervleugelverdediger,def,0.175,18.0,2026-09-09,Transfermarkt live,,0.0,0.0,0.0,,0,0,0,0,0,0,0,0
+908857,Ágúst Orri Thorsteinsson,Excelsior,798,Linksbuiten,att,0.15,21.0,2026-09-09,Transfermarkt live,68.33333333333333,0.0,0.0,0.08144796380090498,,3,205,0,0,1,0,0,0
+775044,Nesto Groen,Excelsior,798,Centrumspits,att,0.1,22.0,2026-09-09,Transfermarkt live,20.6,0.0897308075772682,0.0,0.0897308075772682,382.0,5,103,1,0,1,0,0,0
+1088035,Tijmen Holla,Excelsior,798,Keeper,gk,0.075,20.0,2026-09-09,Transfermarkt live,60.0,0.0,0.0,0.0,389.0,0,0,0,0,0,0,0,0
+1175060,Guilliano Cairo,Excelsior,798,Centrale verdediger,def,0.075,20.0,2026-09-09,Transfermarkt live,8.0,0.0,0.0,0.0,,1,8,0,0,0,0,0,0
+719209,Thijmen Blokzijl,FC Groningen,202,Centrale verdediger,def,4.0,21.0,2026-09-09,Transfermarkt live,90.0,0.0,0.13431040962044338,0.06764374295377673,108.0,5,450,0,1,0,0,0,1
+671738,Thom van Bergen,FC Groningen,202,Aanvallend middenveld,mid,3.0,22.0,2026-09-09,Transfermarkt live,90.0,0.5337041156840934,0.200074156470152,0.06674082313681866,108.0,5,450,3,2,0,0,0,1
+387197,Etienne Vaessen,FC Groningen,202,Keeper,gk,2.5,31.0,2026-09-09,Transfermarkt live,90.0,0.0,0.06666666666666667,0.20701754385964907,108.0,5,450,0,1,1,0,0,1
+816974,Tygo Land,FC Groningen,202,Defensief middenveld,mid,2.5,20.0,2026-09-09,Transfermarkt live,82.2,0.2933222384023299,0.14354066985645927,0.0,108.0,5,411,1,1,0,0,0,1
+671737,David van der Werff,FC Groningen,202,Rechtsbuiten,att,2.0,22.0,2026-09-09,Transfermarkt live,83.8,0.2184565521276283,0.23221257355017702,0.06823351023502654,108.0,5,419,2,1,1,0,0,1
+653725,Tika de Jonge,FC Groningen,202,Centraal middenveld,mid,1.8,23.0,2026-09-09,Transfermarkt live,88.4,0.09328852412947986,0.09328852412947986,0.09328852412947986,108.0,5,442,0,0,0,0,0,1
+671735,Jorg Schreuders,FC Groningen,202,Rechtervleugelverdediger,def,1.7,22.0,2026-09-09,Transfermarkt live,81.0,0.07328095102389771,0.284492936530554,0.07328095102389771,108.0,5,405,0,2,0,0,0,1
+705121,Márk Csinger,FC Groningen,202,Centrale verdediger,def,1.0,23.0,2026-09-09,Transfermarkt live,65.75,0.0,0.0,0.15477214101461736,,4,263,0,0,2,0,0,1
+464444,Brynjólfur Willumsson,FC Groningen,202,Centrumspits,att,0.9,26.0,2026-09-09,Transfermarkt live,70.4,0.21565495207667731,0.0,0.23440755660508403,123.0,5,352,3,0,0,0,0,1
+297693,Pelle Clement,FC Groningen,202,Linksbuiten,att,0.6,30.0,2026-09-09,Transfermarkt live,82.2,0.0,0.12381742890815953,0.24763485781631914,108.0,5,411,0,0,0,0,0,1
+671734,Wouter Prins,FC Groningen,202,Linkervleugelverdediger,def,0.45,22.0,2026-09-09,Transfermarkt live,82.4,0.0,0.0,0.0,108.0,5,412,0,0,0,0,0,1
+663237,Jacob Ondrejka,FC Groningen,202,Linksbuiten,att,5.5,24.0,2026-09-09,Transfermarkt live,20.5,0.0,0.0,0.09164969450101833,,4,82,0,0,1,0,0,0
+1126894,Malcolm Jeng,FC Groningen,202,Centrale verdediger,def,2.0,21.0,2026-09-09,Transfermarkt live,42.8,0.0,0.0,0.0,339.0,0,0,0,0,0,0,0,0
+237244,Marco Rente,FC Groningen,202,Rechtervleugelverdediger,def,1.3,29.0,2026-09-09,Transfermarkt live,19.5,0.10796242907468194,0.21592485814936402,0.10796242907468194,108.0,2,39,0,0,0,0,0,0
+913289,Tyrique Mercera,FC Groningen,202,Rechtervleugelverdediger,def,0.6,22.0,2026-09-09,Transfermarkt live,19.0,0.0,0.43418365432548767,0.6512754814882314,123.0,1,19,0,0,0,0,0,0
+1143430,Ryan Metu,FC Groningen,202,Linksbuiten,att,0.6,18.0,2026-09-09,Transfermarkt live,9.0,0.0,0.0,0.0,115.0,1,9,0,0,0,0,0,0
+232015,Oskar Zawada,FC Groningen,202,Centrumspits,att,0.5,30.0,2026-09-09,Transfermarkt live,28.0,0.9259894368612387,0.0,0.0,179.0,2,56,0,0,0,0,0,0
+930390,Nikolas Brandis,FC Groningen,202,Linkervleugelverdediger,def,0.375,21.0,2026-09-09,Transfermarkt live,15.333333333333334,0.0,0.0,0.0,,3,46,0,0,0,0,0,0
+1053908,Travis Hernes,FC Groningen,202,Centraal middenveld,mid,0.35,20.0,2026-09-09,Transfermarkt live,7.2,0.0,0.0,0.42026793431287807,108.0,5,36,0,0,1,0,0,0
+406889,Pelle Boevink,FC Groningen,202,Keeper,gk,0.3,28.0,2026-09-09,Transfermarkt live,,0.0,0.0,0.0,,0,0,0,0,0,0,0,0
+1331451,Alvin Nordin,FC Groningen,202,Centraal middenveld,mid,0.3,18.0,2026-09-09,Transfermarkt live,8.0,0.0,0.0,0.0,,1,8,0,0,0,0,0,0
+847498,Nils Eggens,FC Groningen,202,Centrumspits,att,0.275,21.0,2026-09-09,Transfermarkt live,9.0,0.09803921568627451,0.0,0.0,,2,18,1,0,0,0,0,0
+728516,Lovro Stubljar,FC Groningen,202,Keeper,gk,0.15,22.0,2026-09-09,Transfermarkt live,0.0,0.0,0.0,0.0,,0,0,0,0,0,0,0,0
+1172424,Elvis van der Laan,FC Groningen,202,Centrale verdediger,def,0.1,18.0,2026-09-09,Transfermarkt live,43.0,0.0,0.0,0.0,,4,172,0,0,0,0,0,0
+593163,Rijk Janse,FC Groningen,202,Keeper,gk,0.05,24.0,2026-09-09,Transfermarkt live,84.0,0.0,0.0,0.0,164.0,0,0,0,0,0,0,0,0
+1052786,Jesper Mosselaar,FC Groningen,202,Centrale verdediger,def,,21.0,2026-09-09,Transfermarkt live,,0.0,0.0,0.0,,0,0,0,0,0,0,0,0
+1189172,Ruud Nijstad,FC Twente,317,Centrale verdediger,def,10.0,18.0,2026-09-09,Transfermarkt live,90.0,0.11586918643613454,0.0,0.0,108.0,8,720,1,0,0,0,0,1
+547499,Bart van Rooij,FC Twente,317,Rechtervleugelverdediger,def,10.0,25.0,2026-09-09,Transfermarkt live,87.7,0.051505584540694184,0.2043054853447536,0.0,108.0,10,877,0,2,0,0,0,1
+1002305,Sondre Ørjasæter,FC Twente,317,Linksbuiten,att,7.0,22.0,2026-09-09,Transfermarkt live,73.55555555555556,0.2036253695423373,0.4814608737623265,0.05761843790012804,108.0,9,662,0,6,1,0,0,1
+416660,Ramiz Zerrouki,FC Twente,317,Defensief middenveld,mid,6.5,28.0,2026-09-09,Transfermarkt live,83.5,0.11644564554509902,0.05187319884726225,0.22019204323962352,71.0,10,835,1,1,3,0,0,1
+591363,Daan Rots,FC Twente,317,Rechtsbuiten,att,5.0,25.0,2026-09-09,Transfermarkt live,73.44444444444444,0.3030904843559346,0.12024861116370145,0.1779039602988712,108.0,9,661,2,1,2,0,0,1
+412941,Thomas van den Belt,FC Twente,317,Centraal middenveld,mid,4.5,25.0,2026-09-09,Transfermarkt live,38.44444444444444,0.16541482361878618,0.0,0.23764596326565612,115.0,9,346,0,0,1,0,0,1
+228645,Wout Weghorst,FC Twente,317,Centrumspits,att,2.0,34.0,2026-09-09,Transfermarkt live,86.22222222222223,0.3677381347995529,0.3905093501706897,0.20664028277091329,108.0,9,776,4,3,1,0,0,1
+202788,Robin Pröpper,FC Twente,317,Centrale verdediger,def,1.2,32.0,2026-09-09,Transfermarkt live,81.875,0.05787781350482315,0.0,0.1157556270096463,108.0,8,655,1,0,2,0,0,1
+53696,Lars Unnerstall,FC Twente,317,Keeper,gk,1.0,36.0,2026-09-09,Transfermarkt live,93.75,0.0,0.0,0.0,122.0,8,750,0,0,0,0,0,1
+656132,Aske Adelgaard,FC Twente,317,Linkervleugelverdediger,def,1.0,22.0,2026-09-09,Transfermarkt live,73.875,0.12195622715887158,0.061594054120642214,0.060362173038229376,115.0,8,591,1,0,1,0,0,1
+808578,Daouda Weidmann,FC Twente,317,Centraal middenveld,mid,0.75,23.0,2026-09-09,Transfermarkt live,72.625,0.12153950033760973,0.43788296616961264,0.06076975016880486,108.0,8,581,2,3,1,0,0,1
+761326,Stav Lemkin,FC Twente,317,Centrale verdediger,def,6.0,23.0,2026-09-09,Transfermarkt live,90.0,0.0,0.0,0.25,108.0,2,180,0,0,1,0,0,0
+694186,Kristian Hlynsson,FC Twente,317,Aanvallend middenveld,mid,6.0,22.0,2026-09-09,Transfermarkt live,43.0,0.3880540669503454,0.15522162678013812,0.0,108.0,7,301,0,0,0,0,0,0
+333640,Joël Drommel,FC Twente,317,Keeper,gk,4.0,29.0,2026-09-09,Transfermarkt live,90.0,0.0,0.08333333333333333,0.0,108.0,2,180,0,1,0,0,0,0
+866328,Younes Taha,FC Twente,317,Rechtsbuiten,att,4.0,23.0,2026-09-09,Transfermarkt live,65.71428571428571,0.20552102905044076,0.43201690995808634,0.278689116924411,108.0,7,460,2,1,2,0,0,0
+1045990,Filip Thorvaldsen,FC Twente,317,Rechtsbuiten,att,2.0,20.0,2026-09-09,Transfermarkt live,14.6,0.0,0.0,0.0,,5,73,0,0,0,0,0,0
+618086,Max Bruns,FC Twente,317,Centrale verdediger,def,1.5,23.0,2026-09-09,Transfermarkt live,69.28571428571429,0.3069836922693888,0.0,0.11203784389393752,145.0,7,485,3,0,0,0,0,0
+205940,Marko Pjaca,FC Twente,317,Linksbuiten,att,1.5,31.0,2026-09-09,Transfermarkt live,59.888888888888886,0.6471885669396017,0.1250868658790827,0.0,108.0,9,539,6,2,0,0,0,0
+508639,Naci Ünüvar,FC Twente,317,Linksbuiten,att,1.0,23.0,2026-09-09,Transfermarkt live,22.0,0.0,0.23133153062134132,0.13371764775800077,129.0,1,22,0,1,0,0,0,0
+704075,Gijs Besselink,FC Twente,317,Centraal middenveld,mid,0.6,22.0,2026-09-09,Transfermarkt live,,0.0,0.0,0.0,,0,0,0,0,0,0,0,0
+1024739,Jordy Bawuah,FC Twente,317,Defensief middenveld,mid,0.5,19.0,2026-09-09,Transfermarkt live,,0.0,0.0,0.0,,0,0,0,0,0,0,0,0
+964757,Krzysztof Kurowski,FC Twente,317,Linkervleugelverdediger,def,0.45,20.0,2026-09-09,Transfermarkt live,29.0,0.0,0.09394572025052192,0.0,,2,58,0,1,0,0,0,0
+742943,Michal Rosiak,FC Twente,317,Rechtervleugelverdediger,def,0.3,20.0,2026-09-09,Transfermarkt live,,0.0,0.0,0.0,,0,0,0,0,0,0,0,0
+997646,Lucas Vennegoor of Hesselink,FC Twente,317,Centrumspits,att,0.25,20.0,2026-09-09,Transfermarkt live,29.285714285714285,0.08144796380090498,0.0,0.0,171.0,7,205,1,0,0,0,0,0
+895089,Juliën Mesbahi,FC Twente,317,Centrale verdediger,def,0.15,20.0,2026-09-09,Transfermarkt live,,0.0,0.0,0.0,,0,0,0,0,0,0,0,0
+25520,Remko Pasveer,FC Twente,317,Keeper,gk,0.1,42.0,2026-09-09,Transfermarkt live,90.0,0.0,0.0,0.0,129.0,0,0,0,0,0,0,0,0
+1014172,Yannick Gerritsen,FC Twente,317,Keeper,gk,0.05,20.0,2026-09-09,Transfermarkt live,0.0,0.0,0.0,0.0,,0,0,0,0,0,0,0,0
+565436,Alonzo Engwanda,FC Utrecht,200,Defensief middenveld,mid,8.0,23.0,2026-09-09,Transfermarkt live,90.0,0.0,0.0,0.0,108.0,0,0,0,0,0,0,0,1
+782476,Yoann Cathline,FC Utrecht,200,Linksbuiten,att,6.0,24.0,2026-09-09,Transfermarkt live,65.2,0.07818759230479642,0.3031941079374885,0.07818759230479642,108.0,5,326,0,2,0,0,0,1
+646739,Ángel Alarcón,FC Utrecht,200,Rechtsbuiten,att,6.0,22.0,2026-09-09,Transfermarkt live,77.4,0.1630493858473133,0.1630493858473133,0.0,123.0,5,387,0,0,0,0,0,1
+1045344,Artem Stepanov,FC Utrecht,200,Centrumspits,att,5.0,19.0,2026-09-09,Transfermarkt live,85.75,0.6562318604438018,0.0,0.14481094127111827,123.0,4,343,4,0,2,0,0,1
+340459,Dani de Wit,FC Utrecht,200,Aanvallend middenveld,mid,3.5,28.0,2026-09-09,Transfermarkt live,83.0,0.27583823021085374,0.138264777048047,0.41341168337366047,108.0,5,415,1,0,2,0,0,1
+248658,Vasilios Barkas,FC Utrecht,200,Keeper,gk,3.0,32.0,2026-09-09,Transfermarkt live,90.0,0.0,0.0,0.14285714285714285,108.0,4,360,0,0,1,0,0,1
+570597,Matisse Didden,FC Utrecht,200,Centrale verdediger,def,3.0,24.0,2026-09-09,Transfermarkt live,75.0,0.24561236623067775,0.0,0.08561236623067776,129.0,3,225,2,0,0,0,0,1
+314915,Siebe Horemans,FC Utrecht,200,Rechtervleugelverdediger,def,3.0,28.0,2026-09-09,Transfermarkt live,77.6,0.0,0.0,0.06987577639751552,108.0,5,388,0,0,1,0,0,1
+536477,Arthur Zagré,FC Utrecht,200,Linkervleugelverdediger,def,2.0,24.0,2026-09-09,Transfermarkt live,81.0,0.14187192118226602,0.14187192118226602,0.20886699507389161,108.0,5,405,0,0,2,0,0,1
+422932,Niklas Vesterlund,FC Utrecht,200,Rechtervleugelverdediger,def,1.5,27.0,2026-09-09,Transfermarkt live,81.5,0.08047322228690985,0.22729214561480546,0.08047322228690985,108.0,4,326,0,2,0,0,0,1
+361066,Davy van den Berg,FC Utrecht,200,Centraal middenveld,mid,1.2,26.0,2026-09-09,Transfermarkt live,59.4,0.0,0.15037593984962405,0.07518796992481203,,5,297,0,2,1,0,0,1
+903359,Marius Broholm,FC Utrecht,200,Rechtsbuiten,att,5.0,21.0,2026-09-09,Transfermarkt live,29.0,0.0,0.0,0.0,,1,29,0,0,0,0,0,0
+400548,Victor Jensen,FC Utrecht,200,Aanvallend middenveld,mid,2.5,26.0,2026-09-09,Transfermarkt live,61.9,0.8723747980613894,0.0,0.1453957996768982,227.0,0,0,0,0,0,0,0,0
+711517,Kevin Paredes,FC Utrecht,200,Linker middenveld,mid,2.0,23.0,2026-09-09,Transfermarkt live,23.0,0.0,0.0,0.0,,3,69,0,0,0,0,0,0
+875581,Adrian Blake,FC Utrecht,200,Linksbuiten,att,2.0,21.0,2026-09-09,Transfermarkt live,29.4,0.798348085333457,0.08595988538681948,0.0,108.0,5,147,2,1,0,0,0,0
+488755,Jakov Medic,FC Utrecht,200,Centrale verdediger,def,1.5,28.0,2026-09-09,Transfermarkt live,29.0,0.0,0.0,0.0,,1,29,0,0,0,0,0,0
+562665,Nikolas Panagiotou,FC Utrecht,200,Centrale verdediger,def,1.0,26.0,2026-09-09,Transfermarkt live,90.0,0.0,0.0,0.0,,1,90,0,0,0,0,0,0
+182582,Joris van Overeem,FC Utrecht,200,Defensief middenveld,mid,1.0,32.0,2026-09-09,Transfermarkt live,90.0,0.094587493431424,0.3783499737256963,0.18549658434051491,108.0,1,90,0,0,1,0,0,0
+590777,Guus Offerhaus,FC Utrecht,200,Centrale verdediger,def,0.8,25.0,2026-09-09,Transfermarkt live,54.8,0.07666098807495741,0.0,0.3833049403747871,108.0,5,274,0,0,2,0,0,0
+951398,Neville Ogidi Nwankwo,FC Utrecht,200,Centrale verdediger,def,0.8,23.0,2026-09-09,Transfermarkt live,57.333333333333336,0.0,0.0,0.08395522388059702,108.0,3,172,0,0,0,0,0,0
+1041648,Ferdinand Pohl,FC Utrecht,200,Centrale verdediger,def,0.8,19.0,2026-09-09,Transfermarkt live,62.0,0.0,0.0,0.087890625,,2,124,0,0,1,0,0,0
+926491,Sem van Duijn,FC Utrecht,200,Centrumspits,att,0.8,22.0,2026-09-09,Transfermarkt live,80.9,0.4449938195302843,0.2224969097651421,0.0,108.0,0,0,0,0,0,0,0,0
+723008,Miliano Jonathans,FC Utrecht,200,Rechtsbuiten,att,0.75,22.0,2026-09-09,Transfermarkt live,25.3,0.7114624505928854,0.0,0.3557312252964427,179.0,0,0,0,0,0,0,0,0
+557410,Noah Ohio,FC Utrecht,200,Centrumspits,att,0.6,23.0,2026-09-09,Transfermarkt live,,0.0,0.0,0.0,,0,0,0,0,0,0,0,0
+738475,Oualid Agougil,FC Utrecht,200,Defensief middenveld,mid,0.5,21.0,2026-09-09,Transfermarkt live,16.833333333333332,0.0,0.0,0.8910891089108911,192.0,0,0,0,0,0,0,0,0
+1136980,Emmanuel Chigozie Owen,FC Utrecht,200,Rechtsbuiten,att,0.35,19.0,2026-09-09,Transfermarkt live,6.0,0.0,0.0,0.0,,1,6,0,0,0,0,0,0
+937571,Per Kloosterboer,FC Utrecht,200,Centrale verdediger,def,0.275,21.0,2026-09-09,Transfermarkt live,26.0,0.0,0.0,0.0,,2,52,0,0,0,0,0,0
+607133,Kevin Gadellaa,FC Utrecht,200,Keeper,gk,0.25,23.0,2026-09-09,Transfermarkt live,0.0,0.0,0.0,0.0,,0,0,0,0,0,0,0,0
+933914,Mees Eppink,FC Utrecht,200,Keeper,gk,0.175,20.0,2026-09-09,Transfermarkt live,,0.0,0.0,0.0,,0,0,0,0,0,0,0,0
+55619,Nordin Amrabat,FC Utrecht,200,Rechtsbuiten,att,0.1,39.0,2026-09-09,Transfermarkt live,,0.0,0.0,0.0,,0,0,0,0,0,0,0,0
+1081906,Jamie Schuldes,FC Utrecht,200,Centrale verdediger,def,,19.0,2026-09-09,Transfermarkt live,,0.0,0.0,0.0,,0,0,0,0,0,0,0,0
+997903,Givairo Read,Feyenoord,234,Rechtervleugelverdediger,def,25.0,20.0,2026-09-09,Transfermarkt live,81.2,0.18541536475322584,0.2543280753198414,0.0927076823766129,108.0,5,406,0,1,0,0,0,1
+917911,Anis Hadj Moussa,Feyenoord,234,Rechtsbuiten,att,23.0,24.0,2026-09-09,Transfermarkt live,86.5,0.3166222136400391,0.23515852230898265,0.23515852230898265,71.0,4,346,1,1,1,0,0,1
+601495,Luciano Valente,Feyenoord,234,Aanvallend middenveld,mid,18.0,22.0,2026-09-09,Transfermarkt live,89.2,0.2709783373738953,0.14076796746695858,0.14076796746695858,108.0,5,446,3,0,0,0,0,1
+598791,Tsuyoshi Watanabe,Feyenoord,234,Centrale verdediger,def,10.0,29.0,2026-09-09,Transfermarkt live,77.75,0.07696993136372658,0.0,0.07696993136372658,80.0,4,311,0,0,0,0,0,1
+617060,Mika Mármol,Feyenoord,234,Centrale verdediger,def,10.0,25.0,2026-09-09,Transfermarkt live,90.0,0.0,0.06666666666666667,0.0,,5,450,0,1,0,0,0,1
+571149,Gjivai Zechiël,Feyenoord,234,Centraal middenveld,mid,10.0,22.0,2026-09-09,Transfermarkt live,88.0,0.4761433109054271,0.47814132996345504,0.20548857542948865,108.0,5,440,4,3,1,0,0,1
+569845,Charles Vanhoutte,Feyenoord,234,Defensief middenveld,mid,7.0,27.0,2026-09-09,Transfermarkt live,67.6,0.0,0.0,0.07269789983844911,,5,338,0,0,1,0,0,1
+867357,Nacho Ferri,Feyenoord,234,Centrumspits,att,6.0,21.0,2026-09-09,Transfermarkt live,27.75,0.0,0.08902077151335312,0.0,,4,111,0,1,0,0,0,1
+553282,Tjark Ernst,Feyenoord,234,Keeper,gk,4.0,23.0,2026-09-09,Transfermarkt live,90.0,0.0,0.0,0.0,,5,450,0,0,0,0,0,1
+288253,Jeremiah St. Juste,Feyenoord,234,Centrale verdediger,def,3.0,29.0,2026-09-09,Transfermarkt live,90.0,0.0,0.0,0.22477522477522477,122.0,4,360,0,0,0,0,0,1
+1233996,Gaoussou Diarra,Feyenoord,234,Linksbuiten,att,1.7,23.0,2026-09-09,Transfermarkt live,61.2,0.0,0.07462686567164178,0.0,108.0,5,306,0,1,0,0,0,1
+667965,Oussama Targhalline,Feyenoord,234,Defensief middenveld,mid,16.0,24.0,2026-09-09,Transfermarkt live,44.5,0.0,0.27789711674391027,0.18069252868735397,108.0,4,178,0,1,1,0,0,0
+855731,Jordan Bos,Feyenoord,234,Linkervleugelverdediger,def,12.0,23.0,2026-09-09,Transfermarkt live,86.7,0.1038062283737024,0.2076124567474048,0.1038062283737024,68.0,0,0,0,0,0,0,0,0
+593519,Sem Steijn,Feyenoord,234,Aanvallend middenveld,mid,11.0,24.0,2026-09-09,Transfermarkt live,31.5,0.23760494218279737,0.33106288610803103,0.0,108.0,2,63,0,1,0,0,0,0
+384461,Jakub Moder,Feyenoord,234,Centraal middenveld,mid,10.0,27.0,2026-09-09,Transfermarkt live,80.3,0.112079701120797,0.112079701120797,0.336239103362391,143.0,0,0,0,0,0,0,0,0
+340325,Reiss Nelson,Feyenoord,234,Linksbuiten,att,8.0,26.0,2026-09-09,Transfermarkt live,,0.0,0.0,0.0,,0,0,0,0,0,0,0,0
+374212,Gijs Smal,Feyenoord,234,Linkervleugelverdediger,def,5.5,29.0,2026-09-09,Transfermarkt live,50.2,0.0,0.35856573705179284,0.0,108.0,0,0,0,0,0,0,0,0
+593862,Thomas Beelen,Feyenoord,234,Centrale verdediger,def,5.0,25.0,2026-09-09,Transfermarkt live,73.6,0.0,0.0,0.0,487.0,0,0,0,0,0,0,0,0
+987370,Thijs Kraaijeveld,Feyenoord,234,Centrale verdediger,def,5.0,19.0,2026-09-09,Transfermarkt live,28.25,0.0,0.0,0.2608825883417691,108.0,4,113,0,0,0,0,0,0
+568158,Javi López,Feyenoord,234,Linkervleugelverdediger,def,5.0,24.0,2026-09-09,Transfermarkt live,51.5,0.0,0.0,0.0,,2,103,0,0,0,0,0,0
+479649,Gonçalo Borges,Feyenoord,234,Rechtsbuiten,att,3.0,25.0,2026-09-09,Transfermarkt live,26.0,0.31693116724575077,0.0,0.15846558362287536,143.0,1,26,0,0,0,0,0,0
+369554,Mats Deijl,Feyenoord,234,Rechtervleugelverdediger,def,2.0,29.0,2026-09-09,Transfermarkt live,10.0,0.0,0.1132455330928613,0.1132455330928613,108.0,1,10,0,0,0,0,0,0
+1087982,Tobias van den Elshout,Feyenoord,234,Aanvallend middenveld,mid,2.0,19.0,2026-09-09,Transfermarkt live,10.0,0.0,0.24863404751672905,0.0,108.0,1,10,0,0,0,0,0,0
+257987,Bart Nieuwkoop,Feyenoord,234,Rechtervleugelverdediger,def,1.5,30.0,2026-09-09,Transfermarkt live,32.4,0.2777777777777778,0.0,0.2777777777777778,171.0,0,0,0,0,0,0,0,0
+1242183,Jivayno Zinhagel,Feyenoord,234,Linksbuiten,att,1.5,17.0,2026-09-09,Transfermarkt live,19.0,0.0,0.0,0.0,,1,19,0,0,0,0,0,0
+517811,Shaqueel van Persie,Feyenoord,234,Centrumspits,att,1.5,19.0,2026-09-09,Transfermarkt live,14.6,1.8499486125385407,1.8499486125385407,0.9249743062692704,108.0,5,73,0,0,0,0,0,0
+255294,Florian Kastenmeier,Feyenoord,234,Keeper,gk,1.0,29.0,2026-09-09,Transfermarkt live,,0.0,0.0,0.0,,0,0,0,0,0,0,0,0
+1016034,Tijme Wessels,Feyenoord,234,Centrale verdediger,def,0.6,19.0,2026-09-09,Transfermarkt live,18.0,0.0,0.0,0.0,,1,18,0,0,0,0,0,0
+264176,Liam Bossin,Feyenoord,234,Keeper,gk,0.35,30.0,2026-09-09,Transfermarkt live,0.0,0.0,0.0,0.0,,0,0,0,0,0,0,0,0
+746973,Mannou Berger,Feyenoord,234,Keeper,gk,0.075,21.0,2026-09-09,Transfermarkt live,0.0,0.0,0.0,0.0,,0,0,0,0,0,0,0,0
+503638,Mohamed Ihattaren,Fortuna Sittard,385,Aanvallend middenveld,mid,3.0,24.0,2026-09-09,Transfermarkt live,65.6,0.4319626716381955,0.5707657341558701,0.21209296479780468,108.0,5,328,3,2,0,0,0,1
+900072,Philip Brittijn,Fortuna Sittard,385,Centraal middenveld,mid,1.6,22.0,2026-09-09,Transfermarkt live,87.8,0.14885118811851253,0.0,0.39376173529705233,108.0,5,439,1,0,1,0,0,1
+576682,Jasper Dahlhaus,Fortuna Sittard,385,Linkervleugelverdediger,def,1.4,24.0,2026-09-09,Transfermarkt live,72.6,0.0,0.07125890736342043,0.22323288041336922,108.0,5,363,0,1,1,0,0,1
+659521,Edouard Michut,Fortuna Sittard,385,Centraal middenveld,mid,1.2,23.0,2026-09-09,Transfermarkt live,68.8,0.07234726688102894,0.14469453376205788,0.07234726688102894,165.0,5,344,1,2,1,0,0,1
+678641,Justin Hubner,Fortuna Sittard,385,Centrale verdediger,def,1.0,22.0,2026-09-09,Transfermarkt live,90.0,0.08230452674897114,0.0,0.13333333333333333,108.0,5,450,0,0,2,0,0,1
+728864,Lequincio Zeefuik,Fortuna Sittard,385,Centrumspits,att,0.85,21.0,2026-09-09,Transfermarkt live,84.2,0.3594277407358139,0.06813020439061317,0.30068589573657467,129.0,5,421,3,1,1,0,0,1
+205128,Mattijs Branderhorst,Fortuna Sittard,385,Keeper,gk,0.8,32.0,2026-09-09,Transfermarkt live,90.0,0.0,0.0,0.0,108.0,5,450,0,0,0,0,0,1
+361070,Ole Romeny,Fortuna Sittard,385,Centrumspits,att,0.8,26.0,2026-09-09,Transfermarkt live,55.666666666666664,0.08434864104967198,0.0,0.2530459231490159,,3,167,1,0,0,0,1,1
+485586,Syb van Ottele,Fortuna Sittard,385,Centrale verdediger,def,0.6,24.0,2026-09-09,Transfermarkt live,52.0,0.0,0.0,0.12186315219353672,108.0,5,260,0,0,0,0,0,1
+565434,Anthony Descotte,Fortuna Sittard,385,Centrumspits,att,0.6,23.0,2026-09-09,Transfermarkt live,45.8,0.19949103244113672,0.0,0.11977446911075586,122.0,5,229,1,0,0,0,0,1
+82281,Ivo Pinto,Fortuna Sittard,385,Rechtervleugelverdediger,def,0.25,36.0,2026-09-09,Transfermarkt live,81.0,0.0,0.16119280627145566,0.09222728903007635,108.0,5,405,0,1,0,0,0,1
+492313,Rodrigo Guth,Fortuna Sittard,385,Centrale verdediger,def,1.2,25.0,2026-09-09,Transfermarkt live,62.0,0.0,0.0,0.08287292817679558,,3,186,0,0,1,0,0,0
+566911,Yassin Oukili,Fortuna Sittard,385,Centraal middenveld,mid,0.7,25.0,2026-09-09,Transfermarkt live,45.8,0.17329687680517572,0.0,0.34659375361035155,108.0,5,229,0,0,0,0,0,0
+296227,Iván Márquez,Fortuna Sittard,385,Centrale verdediger,def,0.45,32.0,2026-09-09,Transfermarkt live,68.9,0.1306240928882438,0.0,0.1306240928882438,122.0,0,0,0,0,0,0,0,0
+746987,Sven Simons,Fortuna Sittard,385,Centraal middenveld,mid,0.45,22.0,2026-09-09,Transfermarkt live,,0.0,0.0,0.0,,0,0,0,0,0,0,0,0
+186704,Kristoffer Peterson,Fortuna Sittard,385,Linksbuiten,att,0.45,31.0,2026-09-09,Transfermarkt live,39.9,0.225563909774436,0.0,0.225563909774436,108.0,0,0,0,0,0,0,0,0
+639974,Nick de Groot,Fortuna Sittard,385,Linkervleugelverdediger,def,0.4,25.0,2026-09-09,Transfermarkt live,24.8,0.0,0.0,0.0,,5,124,0,0,0,0,0,0
+583920,Siebe Wylin,Fortuna Sittard,385,Rechtervleugelverdediger,def,0.3,23.0,2026-09-09,Transfermarkt live,70.0,0.0,0.0,0.0,,3,210,0,0,0,0,0,0
+595247,Shiloh 't Zand,Fortuna Sittard,385,Aanvallend middenveld,mid,0.3,23.0,2026-09-09,Transfermarkt live,63.5,0.24671710438608185,0.0,0.0779896013864818,550.0,4,254,1,0,1,0,0,0
+235108,Luuk Koopmans,Fortuna Sittard,385,Keeper,gk,0.2,32.0,2026-09-09,Transfermarkt live,90.0,0.0,0.0,0.0,130.0,0,0,0,0,0,0,0,0
+1161423,Moussa Gbemou,Fortuna Sittard,385,Centraal middenveld,mid,0.2,19.0,2026-09-09,Transfermarkt live,1.6666666666666667,0.0,0.0,0.0,,3,5,0,0,0,0,0,0
+1491843,Gani Büyükhan,Fortuna Sittard,385,Aanvallend middenveld,mid,0.15,16.0,2026-09-09,Transfermarkt live,3.0,0.0,0.0,0.0,,1,3,0,0,0,0,0,0
+810846,Kaylen,Fortuna Sittard,385,Keeper,gk,,22.0,2026-09-09,Transfermarkt live,,0.0,0.0,0.0,,0,0,0,0,0,0,0,0
+422760,Mathis Suray,Go Ahead Eagles,1435,Linksbuiten,att,3.5,25.0,2026-09-09,Transfermarkt live,88.6,0.35020296399490786,0.2060865179064684,0.0,108.0,5,443,2,2,0,0,0,1
+426280,Melle Meulensteen,Go Ahead Eagles,1435,Centraal middenveld,mid,2.5,27.0,2026-09-09,Transfermarkt live,82.75,0.07311129163281885,0.07311129163281885,0.07311129163281885,108.0,4,331,1,1,0,0,0,1
+464454,Stefán Ingi Sigurdarson,Go Ahead Eagles,1435,Centrumspits,att,2.0,25.0,2026-09-09,Transfermarkt live,43.2,0.4159592529711375,0.0,0.0,108.0,5,216,2,0,0,0,0,1
+326329,Joris Kramer,Go Ahead Eagles,1435,Centrale verdediger,def,1.8,30.0,2026-09-09,Transfermarkt live,90.0,0.0701754385964912,0.0,0.13684210526315788,108.0,5,450,0,0,1,0,0,1
+529223,Dean James,Go Ahead Eagles,1435,Linkervleugelverdediger,def,1.7,26.0,2026-09-09,Transfermarkt live,82.4,0.0,0.06859756097560976,0.21117909649073394,115.0,5,412,0,1,1,0,0,1
+332530,Alfons Sampsted,Go Ahead Eagles,1435,Rechtervleugelverdediger,def,1.5,28.0,2026-09-09,Transfermarkt live,83.8,0.0,0.2346567059302132,0.0,108.0,5,419,0,1,0,0,0,1
+361112,Evert Linthorst,Go Ahead Eagles,1435,Defensief middenveld,mid,1.2,26.0,2026-09-09,Transfermarkt live,88.0,0.0,0.32438869482375354,0.0,108.0,5,440,0,1,0,0,0,1
+566930,Julius Dirksen,Go Ahead Eagles,1435,Centrale verdediger,def,0.8,23.0,2026-09-09,Transfermarkt live,82.75,0.15181961994566212,0.0,0.3823475682041675,108.0,4,331,1,0,2,0,0,1
+265324,Victor Edvardsen,Go Ahead Eagles,1435,Aanvallend middenveld,mid,0.8,30.0,2026-09-09,Transfermarkt live,81.0,0.34684912335264156,0.41783617773976595,0.06997628581425179,122.0,5,405,3,2,0,0,0,1
+541601,Søren Tengstedt,Go Ahead Eagles,1435,Rechtsbuiten,att,0.7,26.0,2026-09-09,Transfermarkt live,83.6,0.5983091263819639,0.13657056145675264,0.0,108.0,5,418,4,2,0,0,0,1
+328770,Kjetil Haug,Go Ahead Eagles,1435,Keeper,gk,0.4,28.0,2026-09-09,Transfermarkt live,90.0,0.0,0.0,0.0,,5,450,0,0,0,0,0,1
+741582,Tomas Galvez,Go Ahead Eagles,1435,Linkervleugelverdediger,def,0.75,21.0,2026-09-09,Transfermarkt live,,0.0,0.0,0.0,,0,0,0,0,0,0,0,0
+465326,Richonell Margaret,Go Ahead Eagles,1435,Centrumspits,att,0.6,26.0,2026-09-09,Transfermarkt live,16.0,0.0,0.5566321692161794,0.8349482538242692,108.0,3,48,0,0,0,0,0,0
+893929,Erik Flataker,Go Ahead Eagles,1435,Centrumspits,att,0.6,21.0,2026-09-09,Transfermarkt live,53.25,0.08086253369272237,0.0,0.0,,4,213,1,0,0,0,0,0
+528211,Tino Jukic,Go Ahead Eagles,1435,Centrale verdediger,def,0.5,24.0,2026-09-09,Transfermarkt live,,0.0,0.0,0.0,,0,0,0,0,0,0,0,0
+486043,Thibo Baeten,Go Ahead Eagles,1435,Linksbuiten,att,0.5,24.0,2026-09-09,Transfermarkt live,12.8,0.0,0.2373584640270061,0.2373584640270061,108.0,5,64,0,0,0,0,0,0
+1088311,Yassir Salah Rahmouni,Go Ahead Eagles,1435,Centraal middenveld,mid,0.45,20.0,2026-09-09,Transfermarkt live,41.0,0.0,0.0,0.42299859000469997,115.0,2,82,0,0,0,0,0,0
+715510,Oskar Sivertsen,Go Ahead Eagles,1435,Linksbuiten,att,0.45,22.0,2026-09-09,Transfermarkt live,17.666666666666668,0.0,0.2732950270427116,0.0,108.0,3,53,0,0,0,0,0,0
+921306,Eus Waayers,Go Ahead Eagles,1435,Rechtervleugelverdediger,def,0.35,20.0,2026-09-09,Transfermarkt live,31.0,0.0,0.966702470461869,0.0,164.0,1,31,0,0,0,0,0,0
+85904,Gerrit Nauber,Go Ahead Eagles,1435,Centrale verdediger,def,0.3,34.0,2026-09-09,Transfermarkt live,76.9,0.1170351105331599,0.0,0.2340702210663199,314.0,0,0,0,0,0,0,0,0
+805149,Giovanni van Zwam,Go Ahead Eagles,1435,Centrale verdediger,def,0.3,22.0,2026-09-09,Transfermarkt live,39.666666666666664,0.0,0.0,0.0,108.0,3,119,0,0,0,0,0,0
+690665,Robbin Weijenberg,Go Ahead Eagles,1435,Centraal middenveld,mid,0.2,21.0,2026-09-09,Transfermarkt live,29.4,0.0,0.0,0.3061224489795918,305.0,0,0,0,0,0,0,0,0
+158104,Nick Marsman,Go Ahead Eagles,1435,Keeper,gk,0.125,35.0,2026-09-09,Transfermarkt live,81.1,0.0,0.0,0.0,1935.0,0,0,0,0,0,0,0,0
+624698,Pim Saathof,Go Ahead Eagles,1435,Centrale verdediger,def,0.075,22.0,2026-09-09,Transfermarkt live,18.75,0.0,0.0,0.0,571.0,0,0,0,0,0,0,0,0
+1184614,Ofosu Boakye,Go Ahead Eagles,1435,Centrumspits,att,0.075,19.0,2026-09-09,Transfermarkt live,4.0,0.0,0.0,0.0,150.0,0,0,0,0,0,0,0,0
+783017,Nando Verdoni,Go Ahead Eagles,1435,Keeper,gk,0.025,23.0,2026-09-09,Transfermarkt live,0.0,0.0,0.0,0.0,,0,0,0,0,0,0,0,0
+542684,Jacob Trenskow,Heerenveen,306,Rechtsbuiten,att,7.5,25.0,2026-09-09,Transfermarkt live,88.6,0.41357746143472573,0.27667602236048217,0.06701414743112435,108.0,5,443,2,1,1,0,0,1
+869067,Oliver Braude,Heerenveen,306,Rechtervleugelverdediger,def,5.0,22.0,2026-09-09,Transfermarkt live,83.25,0.072992700729927,0.0,0.21897810218978103,108.0,4,333,1,0,0,0,0,1
+899163,Marcus Linday,Heerenveen,306,Centraal middenveld,mid,5.0,23.0,2026-09-09,Transfermarkt live,90.0,0.08022105356983684,0.08022105356983684,0.2373651840627507,108.0,3,270,0,0,1,0,0,1
+577455,Ringo Meerveld,Heerenveen,306,Aanvallend middenveld,mid,5.0,23.0,2026-09-09,Transfermarkt live,73.4,0.22306852724469214,0.0,0.0,108.0,5,367,1,0,0,0,0,1
+805451,Maas Willemsen,Heerenveen,306,Centrale verdediger,def,4.5,23.0,2026-09-09,Transfermarkt live,90.0,0.0,0.0,0.0,108.0,5,450,0,0,0,0,0,1
+725816,Bernt Klaverboer,Heerenveen,306,Keeper,gk,3.0,20.0,2026-09-09,Transfermarkt live,90.0,0.0,0.0,0.13333333333333333,108.0,5,450,0,0,0,0,0,1
+613781,Vasilios Zagaritis,Heerenveen,306,Linkervleugelverdediger,def,3.0,25.0,2026-09-09,Transfermarkt live,90.0,0.0,0.145985401459854,0.0,108.0,5,450,0,0,0,0,0,1
+735700,Maxence Rivera,Heerenveen,306,Linksbuiten,att,3.0,24.0,2026-09-09,Transfermarkt live,62.75,0.3730542787665814,0.19657426867091524,0.29486140300637287,130.0,4,251,1,0,0,0,0,1
+369319,Dylan Vente,Heerenveen,306,Centrumspits,att,2.5,27.0,2026-09-09,Transfermarkt live,85.6,0.12322015334063526,0.1355421686746988,0.0,108.0,5,428,0,2,0,0,0,1
+430797,Sam Kersten,Heerenveen,306,Centrale verdediger,def,2.0,28.0,2026-09-09,Transfermarkt live,88.6,0.0,0.06701414743112435,0.0,108.0,5,443,0,1,0,0,0,1
+485587,Dirk Proper,Heerenveen,306,Defensief middenveld,mid,1.5,24.0,2026-09-09,Transfermarkt live,81.8,0.0,0.06875477463712758,0.06875477463712758,108.0,5,409,0,1,1,0,0,1
+562702,Mees Hilgers,Heerenveen,306,Centrale verdediger,def,3.0,25.0,2026-09-09,Transfermarkt live,82.2,0.0,0.0,0.218978102189781,472.0,0,0,0,0,0,0,0,0
+663153,Marko Farji,Heerenveen,306,Linksbuiten,att,1.7,22.0,2026-09-09,Transfermarkt live,,0.0,0.0,0.0,,0,0,0,0,0,0,0,0
+918365,Levi Smans,Heerenveen,306,Aanvallend middenveld,mid,1.5,23.0,2026-09-09,Transfermarkt live,20.666666666666668,0.0,0.397524711604134,0.0,389.0,3,62,0,1,0,0,0,0
+1096744,Lanroy Machine,Heerenveen,306,Centrumspits,att,1.5,20.0,2026-09-09,Transfermarkt live,28.666666666666668,0.0,0.0,0.0,,3,86,0,0,0,0,0,0
+551085,Luca Oyen,Heerenveen,306,Linksbuiten,att,0.9,23.0,2026-09-09,Transfermarkt live,32.5,0.28300246341109975,0.0,0.08737864077669903,108.0,4,130,1,0,1,0,0,0
+628042,Hristiyan Petrov,Heerenveen,306,Centrale verdediger,def,0.5,24.0,2026-09-09,Transfermarkt live,12.75,0.0,0.0,0.31313787344590827,122.0,4,51,0,0,0,0,0,0
+342152,Roberts Uldrikis,Heerenveen,306,Centrumspits,att,0.5,28.0,2026-09-09,Transfermarkt live,22.0,0.0,0.0,0.0,,1,22,0,0,0,0,0,0
+276853,Andries Noppert,Heerenveen,306,Keeper,gk,0.3,32.0,2026-09-09,Transfermarkt live,82.6,0.0,0.0,0.0,368.0,0,0,0,0,0,0,0,0
+1052283,Darling Bladi,Heerenveen,306,Linkervleugelverdediger,def,0.3,22.0,2026-09-09,Transfermarkt live,7.0,0.0,0.0,0.0,,1,7,0,0,0,0,0,0
+1030525,Mats Egbring,Heerenveen,306,Rechtervleugelverdediger,def,0.3,19.0,2026-09-09,Transfermarkt live,68.0,0.0,0.4450940742043257,0.4450940742043257,143.0,1,68,0,0,0,0,0,0
+952414,Nolhan Courtens,Heerenveen,306,Aanvallend middenveld,mid,0.15,19.0,2026-09-09,Transfermarkt live,64.0,0.08241758241758242,0.0,0.9065934065934066,114.0,3,192,1,0,1,0,0,0
+946616,Timo Schreuder,Heerenveen,306,Keeper,gk,,19.0,2026-09-09,Transfermarkt live,,0.0,0.0,0.0,,0,0,0,0,0,0,0,0
+951101,Jimte Scholten,Heerenveen,306,Rechtervleugelverdediger,def,,20.0,2026-09-09,Transfermarkt live,,0.0,0.0,0.0,,0,0,0,0,0,0,0,0
+631049,Gonzalo Crettaz,NEC,467,Keeper,gk,4.0,26.0,2026-09-09,Transfermarkt live,82.875,0.0,0.0,0.1727447216890595,108.0,8,663,0,0,0,0,1,1
+526566,Darko Nejasmic,NEC,467,Defensief middenveld,mid,4.0,27.0,2026-09-09,Transfermarkt live,77.85714285714286,0.12484552644587243,0.06256178942165097,0.125123578843302,108.0,7,545,1,0,0,0,0,1
+926389,Noé Lebreton,NEC,467,Aanvallend middenveld,mid,4.0,22.0,2026-09-09,Transfermarkt live,74.55555555555556,0.2384107737281554,0.060374140786533435,0.2956991250967104,108.0,9,671,1,0,2,0,0,1
+884820,Almugera Kabar,NEC,467,Centrale verdediger,def,3.0,20.0,2026-09-09,Transfermarkt live,36.8,0.0,0.0,0.08302583025830258,,5,184,0,0,1,0,0,1
+953893,Clement Bischoff,NEC,467,Linksbuiten,att,3.0,20.0,2026-09-09,Transfermarkt live,72.88888888888889,0.05784061696658098,0.05784061696658098,0.0,,9,656,1,1,0,0,0,1
+340460,Philippe Sandler,NEC,467,Centrale verdediger,def,2.0,29.0,2026-09-09,Transfermarkt live,44.75,0.0,0.09121446999325458,0.36485787997301855,108.0,4,179,0,0,0,0,0,1
+315283,Kaj Sierhuis,NEC,467,Centrumspits,att,1.8,28.0,2026-09-09,Transfermarkt live,33.333333333333336,0.5784891165172855,0.18553137003841227,0.08181818181818182,108.0,6,200,2,1,1,0,0,1
+708989,Deveron Fonville,NEC,467,Centrale verdediger,def,1.5,23.0,2026-09-09,Transfermarkt live,84.71428571428571,0.0,0.0,0.1373498266170398,69.0,7,593,0,0,0,0,0,1
+36139,Dusan Tadic,NEC,467,Aanvallend middenveld,mid,1.5,37.0,2026-09-09,Transfermarkt live,80.88888888888889,0.0,0.16584766584766586,0.05528255528255528,,9,728,0,3,1,0,0,1
+715836,Tobias Storm,NEC,467,Centrale verdediger,def,1.2,22.0,2026-09-09,Transfermarkt live,91.25,0.0,0.0,0.11042944785276074,,8,730,0,0,2,0,0,1
+82410,Bryan Linssen,NEC,467,Centrumspits,att,0.3,35.0,2026-09-09,Transfermarkt live,71.375,0.41761818755091734,0.0,0.07381311248936086,108.0,8,571,2,0,0,0,0,1
+662131,Ahmetcan Kaplan,NEC,467,Centrale verdediger,def,7.0,23.0,2026-09-09,Transfermarkt live,74.1,0.0,0.0,0.48582995951417,143.0,0,0,0,0,0,0,0,0
+488063,Nikolas Polster,NEC,467,Keeper,gk,2.0,24.0,2026-09-09,Transfermarkt live,87.5,0.0,0.0,0.0,,2,175,0,0,0,0,0,0
+670715,Gabriel Brás,NEC,467,Centrale verdediger,def,2.0,22.0,2026-09-09,Transfermarkt live,52.5,0.0,0.0,0.0,,2,105,0,0,0,0,0,0
+455127,Willum Thór Willumsson,NEC,467,Aanvallend middenveld,mid,1.5,27.0,2026-09-09,Transfermarkt live,33.6,0.0,0.2859789624671289,0.2859789624671289,136.0,5,168,0,1,1,0,0,0
+251309,Dennis Geiger,NEC,467,Centraal middenveld,mid,1.0,28.0,2026-09-09,Transfermarkt live,40.5,0.0,0.0,0.0,,2,81,0,0,0,0,0,0
+763948,Dele Thomas,NEC,467,Linksbuiten,att,1.0,19.0,2026-09-09,Transfermarkt live,54.0,0.0,0.0,0.0,,2,108,0,0,0,0,0,0
+418543,Perr Schuurs,NEC,467,Centrale verdediger,def,0.85,26.0,2026-09-09,Transfermarkt live,21.666666666666668,0.09326424870466321,0.09326424870466321,0.0,,3,65,1,1,0,0,0,0
+272930,Jamiro Monteiro,NEC,467,Centraal middenveld,mid,0.65,32.0,2026-09-09,Transfermarkt live,59.42857142857143,0.0,0.2313915487807665,0.13677811550151975,67.0,7,416,0,0,2,0,0,0
+670116,Isak Hansen-Aarøen,NEC,467,Centraal middenveld,mid,0.6,22.0,2026-09-09,Transfermarkt live,49.25,0.0,0.0,0.0820419325432999,178.0,4,197,0,0,1,0,0,0
+283223,Emre Mor,NEC,467,Rechtsbuiten,att,0.5,29.0,2026-09-09,Transfermarkt live,36.833333333333336,0.08028545941123996,0.08028545941123996,0.0,,6,221,1,1,0,0,0,0
+827260,Adam Tahaui,NEC,467,Rechtsbuiten,att,0.5,21.0,2026-09-09,Transfermarkt live,55.6,0.15280135823429541,0.0,0.0,,5,278,2,0,0,0,0,0
+76326,Tjaronn Chery,NEC,467,Aanvallend middenveld,mid,0.4,38.0,2026-09-09,Transfermarkt live,83.875,0.34924871086609943,0.17554412254217786,0.0591278855868114,108.0,8,671,3,1,0,0,0,0
+104597,Bram Nuytinck,NEC,467,Centrale verdediger,def,0.2,36.0,2026-09-09,Transfermarkt live,44.333333333333336,0.0,0.0,0.39137052158577534,108.0,6,266,0,0,0,0,0,0
+775984,Merijn van de Wiel,NEC,467,Defensief middenveld,mid,0.1,20.0,2026-09-09,Transfermarkt live,,0.0,0.0,0.0,,0,0,0,0,0,0,0,0
+1052803,Sam de Laat,NEC,467,Centraal middenveld,mid,0.075,20.0,2026-09-09,Transfermarkt live,38.0,0.0,0.0,0.0,260.0,0,0,0,0,0,0,0,0
+953858,Freek Entius,NEC,467,Keeper,gk,,20.0,2026-09-09,Transfermarkt live,,0.0,0.0,0.0,,0,0,0,0,0,0,0,0
+986873,Joep Geneste,NEC,467,Keeper,gk,,19.0,2026-09-09,Transfermarkt live,,0.0,0.0,0.0,,0,0,0,0,0,0,0,0
+1235502,Yassin Moslih,NEC,467,Centrale verdediger,def,,19.0,2026-09-09,Transfermarkt live,,0.0,0.0,0.0,,0,0,0,0,0,0,0,0
+930985,Kevin Kers,NEC,467,Linksbuiten,att,,20.0,2026-09-09,Transfermarkt live,16.666666666666668,0.0,0.0,0.0,,3,50,0,0,0,0,0,0
+361082,Jasper Schendelaar,PEC Zwolle,1269,Keeper,gk,1.5,26.0,2026-09-09,Transfermarkt live,90.0,0.0,0.06666666666666667,0.0,312.0,5,450,0,0,0,0,0,1
+542858,Simon Graves,PEC Zwolle,1269,Centrale verdediger,def,1.5,27.0,2026-09-09,Transfermarkt live,90.0,0.0,0.0,0.07682458386683734,108.0,5,450,0,0,0,0,0,1
+572051,Tobias Sommer,PEC Zwolle,1269,Centraal middenveld,mid,1.5,24.0,2026-09-09,Transfermarkt live,87.8,0.0,0.06721433905899925,0.06721433905899925,,5,439,0,1,1,0,0,1
+453121,Koen Kostons,PEC Zwolle,1269,Centrumspits,att,1.5,26.0,2026-09-09,Transfermarkt live,89.4,0.2721184143813162,0.0,0.20530326961516918,108.0,5,447,3,0,2,0,0,1
+422930,Elias Sørensen,PEC Zwolle,1269,Linksbuiten,att,1.2,26.0,2026-09-09,Transfermarkt live,42.0,0.08108108108108109,0.0,0.0,,5,210,1,0,0,0,0,1
+441216,Thijs Oosting,PEC Zwolle,1269,Aanvallend middenveld,mid,0.9,26.0,2026-09-09,Transfermarkt live,70.6,0.15671479358630191,0.22854240731335695,0.0,108.0,5,353,0,1,0,0,0,1
+502289,Dylan Mbayo,PEC Zwolle,1269,Rechtsbuiten,att,0.9,24.0,2026-09-09,Transfermarkt live,76.8,0.0,0.2803738317757009,0.0,,5,384,0,4,0,0,0,1
+315211,Sherel Floranus,PEC Zwolle,1269,Linkervleugelverdediger,def,0.8,28.0,2026-09-09,Transfermarkt live,74.0,0.0,0.0,0.40224514526523936,69.0,3,222,0,0,1,0,1,1
+720791,Olivier Aertssen,PEC Zwolle,1269,Rechtervleugelverdediger,def,0.65,22.0,2026-09-09,Transfermarkt live,90.0,0.0,0.0,0.06666666666666667,108.0,5,450,0,0,1,0,0,1
+203357,Ryan Thomas,PEC Zwolle,1269,Defensief middenveld,mid,0.65,31.0,2026-09-09,Transfermarkt live,86.6,0.0,0.1166318451013905,0.30078056942258596,67.0,5,433,0,0,1,0,0,1
+93081,Nick Viergever,PEC Zwolle,1269,Centrale verdediger,def,0.3,37.0,2026-09-09,Transfermarkt live,90.0,0.06666666666666667,0.0,0.11278195488721801,108.0,5,450,1,0,0,0,0,1
+1009440,Jan Bürger,PEC Zwolle,1269,Rechtervleugelverdediger,def,3.0,19.0,2026-09-09,Transfermarkt live,,0.0,0.0,0.0,,0,0,0,0,0,0,0,0
+486814,Filip Krastev,PEC Zwolle,1269,Aanvallend middenveld,mid,3.0,24.0,2026-09-09,Transfermarkt live,,0.0,0.0,0.0,,0,0,0,0,0,0,0,0
+1347762,Jadiel Pereira da Gama,PEC Zwolle,1269,Defensief middenveld,mid,1.5,16.0,2026-09-09,Transfermarkt live,19.3,0.0,0.0,1.3989637305699485,108.0,0,0,0,0,0,0,0,0
+575693,Ibrahim Cissoko,PEC Zwolle,1269,Linksbuiten,att,1.2,23.0,2026-09-09,Transfermarkt live,40.4,0.08166969147005444,0.0,0.0,,5,202,1,0,0,0,0,0
+729010,Tom de Graaff,PEC Zwolle,1269,Keeper,gk,1.0,21.0,2026-09-09,Transfermarkt live,90.0,0.0,0.0,0.0,115.0,0,0,0,0,0,0,0,0
+227039,Younes Namli,PEC Zwolle,1269,Rechtsbuiten,att,1.0,32.0,2026-09-09,Transfermarkt live,87.7,0.1026225769669327,0.2052451539338654,0.1026225769669327,143.0,0,0,0,0,0,0,0,0
+439292,Sydney van Hooijdonk,PEC Zwolle,1269,Centrumspits,att,1.0,26.0,2026-09-09,Transfermarkt live,15.0,0.0,0.0,0.0,,1,15,0,0,0,0,0,0
+360520,Odysseus Velanas,PEC Zwolle,1269,Aanvallend middenveld,mid,0.55,28.0,2026-09-09,Transfermarkt live,12.6,0.28805530661887085,0.14402765330943543,0.0,108.0,5,63,0,0,0,0,0,0
+568377,Tijs Velthuis,PEC Zwolle,1269,Centrale verdediger,def,0.5,24.0,2026-09-09,Transfermarkt live,8.333333333333334,0.0,0.0,0.0,108.0,3,25,0,0,0,0,0,0
+640558,Damian van der Haar,PEC Zwolle,1269,Linkervleugelverdediger,def,0.4,22.0,2026-09-09,Transfermarkt live,54.75,0.3789846019959856,0.0,0.3789846019959856,165.0,4,219,0,0,0,0,0,0
+806384,Nick Fichtinger,PEC Zwolle,1269,Defensief middenveld,mid,0.35,22.0,2026-09-09,Transfermarkt live,12.0,0.0,0.0,0.37955465587044535,115.0,1,12,0,0,0,0,0,0
+827711,Gabriël Reiziger,PEC Zwolle,1269,Aanvallend middenveld,mid,0.25,20.0,2026-09-09,Transfermarkt live,23.25,0.45317220543806647,0.0,0.09063444108761329,108.0,4,93,0,0,1,0,0,0
+1146453,Givaro Rahajaän,PEC Zwolle,1269,Centraal middenveld,mid,0.1,18.0,2026-09-09,Transfermarkt live,11.0,0.0,0.0,1.0,309.0,0,0,0,0,0,0,0,0
+933570,Duke Verduin,PEC Zwolle,1269,Keeper,gk,0.025,22.0,2026-09-09,Transfermarkt live,90.0,0.0,0.0,0.0,108.0,0,0,0,0,0,0,0,0
+1146470,Gilles van der Wal,PEC Zwolle,1269,Aanvallend middenveld,mid,,18.0,2026-09-09,Transfermarkt live,,0.0,0.0,0.0,,0,0,0,0,0,0,0,0
+627207,Ricardo Pepi,PSV,383,Centrumspits,att,30.0,23.0,2026-09-09,Transfermarkt live,79.0,0.7921482913706864,0.0,0.0,75.0,5,395,3,0,0,0,0,1
+900909,Paul Wanner,PSV,383,Aanvallend middenveld,mid,22.0,20.0,2026-09-09,Transfermarkt live,45.333333333333336,0.08999040102389079,0.16678220989761092,0.2699712030716723,77.0,6,272,0,1,0,0,0,1
+323910,Mauro Júnior,PSV,383,Linkervleugelverdediger,def,18.0,27.0,2026-09-09,Transfermarkt live,80.16666666666667,0.06517016654598118,0.20822662969569591,0.07152823157485738,123.0,6,481,1,1,0,0,0,1
+361104,Sergiño Dest,PSV,383,Rechtervleugelverdediger,def,18.0,25.0,2026-09-09,Transfermarkt live,89.75,0.14297061159650518,0.42764660813821903,0.09489199884723794,68.0,4,359,2,2,0,0,0,1
+372267,Guus Til,PSV,383,Aanvallend middenveld,mid,15.0,28.0,2026-09-09,Transfermarkt live,84.0,0.28002699055330627,0.15182186234817807,0.15182186234817807,74.0,6,504,2,0,0,0,0,1
+586429,Ryan Flamingo,PSV,383,Centrale verdediger,def,14.0,23.0,2026-09-09,Transfermarkt live,77.83333333333333,0.15375131056549132,0.0,0.15375131056549132,108.0,6,467,1,0,1,0,0,1
+957544,Kodai Sano,PSV,383,Defensief middenveld,mid,12.0,22.0,2026-09-09,Transfermarkt live,74.25,0.0,0.15309767631749052,0.15173680808355727,108.0,4,297,0,0,1,0,0,1
+735701,Ruben van Bommel,PSV,383,Linksbuiten,att,10.0,22.0,2026-09-09,Transfermarkt live,64.83333333333333,0.619333289904595,0.4013407635956627,0.3054027324572572,346.0,6,389,2,3,3,0,0,1
+550829,Matej Kovar,PSV,383,Keeper,gk,8.0,26.0,2026-09-09,Transfermarkt live,90.0,0.0,0.0,0.0,76.0,6,540,0,0,0,0,0,1
+339337,Armando Obispo,PSV,383,Centrale verdediger,def,4.0,27.0,2026-09-09,Transfermarkt live,87.4,0.0,0.0,0.06731488406881077,69.0,5,437,0,0,1,0,0,1
+42460,Ivan Perisic,PSV,383,Rechtsbuiten,att,1.2,37.0,2026-09-09,Transfermarkt live,65.5,0.3062645011600928,0.4872389791183295,0.3062645011600928,67.0,6,393,2,1,2,0,0,1
+420210,Lutsharel Geertruida,PSV,383,Centrale verdediger,def,20.0,26.0,2026-09-09,Transfermarkt live,39.0,0.09202453987730061,0.0,0.09202453987730061,,2,78,1,0,1,0,0,0
+347900,Jerdy Schouten,PSV,383,Defensief middenveld,mid,20.0,29.0,2026-09-09,Transfermarkt live,82.1,0.0,0.0,0.1096224116930572,151.0,0,0,0,0,0,0,0,0
+895334,Yarek Gasiorowski,PSV,383,Centrale verdediger,def,18.0,21.0,2026-09-09,Transfermarkt live,32.666666666666664,0.0,0.11496079978654192,0.0,108.0,3,98,0,0,0,0,0,0
+578804,Sven Mijnans,PSV,383,Aanvallend middenveld,mid,15.0,26.0,2026-09-09,Transfermarkt live,40.8,0.5706521739130436,0.16304347826086957,0.0,108.0,5,204,1,1,0,0,0,0
+397486,Dennis Man,PSV,383,Rechtsbuiten,att,15.0,28.0,2026-09-09,Transfermarkt live,24.5,0.5064731647382127,0.12661829118455312,0.3434169430905492,108.0,4,98,0,0,1,0,0,0
+747016,Sami Ouaissa,PSV,383,Rechtsbuiten,att,8.0,21.0,2026-09-09,Transfermarkt live,87.3,0.1030927835051546,0.4123711340206185,0.1030927835051546,108.0,0,0,0,0,0,0,0,0
+925862,Esmir Bajraktarevic,PSV,383,Rechtsbuiten,att,8.0,21.0,2026-09-09,Transfermarkt live,22.0,0.4312762973352034,0.5071628932077741,0.0,70.0,3,66,1,0,0,0,0,0
+548348,Kiliann Sildillia,PSV,383,Rechtervleugelverdediger,def,7.0,24.0,2026-09-09,Transfermarkt live,33.666666666666664,0.20511807584050923,0.20511807584050923,0.10255903792025459,108.0,3,101,0,0,0,0,0,0
+1095107,Noah Fernandez,PSV,383,Centraal middenveld,mid,4.0,18.0,2026-09-09,Transfermarkt live,70.0,0.20870886075949366,0.0,0.34541772151898736,108.0,5,350,1,0,1,0,0,0
+386914,Sam Lammers,PSV,383,Centrumspits,att,4.0,29.0,2026-09-09,Transfermarkt live,85.2,0.3169014084507042,0.6338028169014086,0.0,108.0,0,0,0,0,0,0,0,0
+800976,Adamo Nagalo,PSV,383,Centrale verdediger,def,2.8,23.0,2026-09-09,Transfermarkt live,,0.0,0.0,0.0,,0,0,0,0,0,0,0,0
+167329,Alassane Pléa,PSV,383,Centrumspits,att,2.5,33.0,2026-09-09,Transfermarkt live,22.0,0.2502920073418989,0.22275988653428996,0.0,381.0,1,22,0,1,0,0,0,0
+215094,Nick Olij,PSV,383,Keeper,gk,2.0,31.0,2026-09-09,Transfermarkt live,90.0,0.0,0.0,0.0,132.0,0,0,0,0,0,0,0,0
+161011,Filip Kostic,PSV,383,Linkervleugelverdediger,def,2.0,33.0,2026-09-09,Transfermarkt live,16.0,0.0,0.0,0.09656652360515021,,2,32,0,0,1,0,0,0
+1064184,Ayoni Santos,PSV,383,Linksbuiten,att,2.0,21.0,2026-09-09,Transfermarkt live,71.7,0.1255230125523012,0.0,0.0,108.0,0,0,0,0,0,0,0,0
+1189915,Mikkel Bro Hansen,PSV,383,Centrumspits,att,0.8,17.0,2026-09-09,Transfermarkt live,,0.0,0.0,0.0,,0,0,0,0,0,0,0,0
+1135623,Fabian Merién,PSV,383,Centrale verdediger,def,0.75,17.0,2026-09-09,Transfermarkt live,,0.0,0.0,0.0,,0,0,0,0,0,0,0,0
+720805,Tijn Smolenaars,PSV,383,Keeper,gk,0.2,21.0,2026-09-09,Transfermarkt live,,0.0,0.0,0.0,,0,0,0,0,0,0,0,0
+1146474,Amir Bouhamdi,PSV,383,Linksbuiten,att,0.15,18.0,2026-09-09,Transfermarkt live,33.8,0.0,0.16838166510757718,0.0,,5,169,0,2,0,0,0,0
+1146761,Khadim Ngom,PSV,383,Keeper,gk,0.05,21.0,2026-09-09,Transfermarkt live,,0.0,0.0,0.0,,0,0,0,0,0,0,0,0
+961050,Ismaël Baouf,SC Cambuur,133,Centrale verdediger,def,3.0,19.0,2026-09-09,Transfermarkt live,80.4,0.0,0.0,0.06912442396313365,,5,402,0,0,1,0,0,1
+514287,Thijs Jansen,SC Cambuur,133,Keeper,gk,0.65,24.0,2026-09-09,Transfermarkt live,90.0,0.0,0.0,0.0,,5,450,0,0,0,0,0,1
+289651,Jamal Amofa,SC Cambuur,133,Centrale verdediger,def,0.6,27.0,2026-09-09,Transfermarkt live,83.4,0.0,0.0,0.0,,5,417,0,0,0,0,0,1
+987355,Lucas Jetten,SC Cambuur,133,Linkervleugelverdediger,def,0.6,19.0,2026-09-09,Transfermarkt live,65.0,0.0,0.0,0.07346938775510205,,5,325,0,0,1,0,0,1
+911990,Ilyes Hamache,SC Cambuur,133,Linksbuiten,att,0.6,23.0,2026-09-09,Transfermarkt live,63.6,0.07389162561576355,0.07389162561576355,0.0,,5,318,1,1,0,0,0,1
+738479,Rafik El Arguioui,SC Cambuur,133,Aanvallend middenveld,mid,0.5,21.0,2026-09-09,Transfermarkt live,90.0,0.26666666666666666,0.0,0.06666666666666667,108.0,5,450,4,0,1,0,0,1
+364246,Nicky Souren,SC Cambuur,133,Defensief middenveld,mid,0.4,26.0,2026-09-09,Transfermarkt live,90.0,0.0,0.06666666666666667,0.13333333333333333,,5,450,0,1,2,0,0,1
+987359,Sami Bouhoudane,SC Cambuur,133,Centrumspits,att,0.4,18.0,2026-09-09,Transfermarkt live,58.0,0.0,0.0,0.07563025210084033,,5,290,0,0,1,0,0,1
+1119911,Morgan Costarelli,SC Cambuur,133,Linkervleugelverdediger,def,0.3,21.0,2026-09-09,Transfermarkt live,50.4,0.0,0.0,0.0,,5,252,0,0,0,0,0,1
+1178714,Ethan Apkakou,SC Cambuur,133,Defensief middenveld,mid,0.25,19.0,2026-09-09,Transfermarkt live,35.0,0.0,0.0,0.0,,2,70,0,0,0,0,0,1
+1177948,Iwan Henstra,SC Cambuur,133,Rechtsbuiten,att,0.225,19.0,2026-09-09,Transfermarkt live,83.75,0.0,0.0,0.0,,4,335,0,0,0,0,0,1
+1008564,Billy van Duijl,SC Cambuur,133,Centrale verdediger,def,1.5,20.0,2026-09-09,Transfermarkt live,45.0,0.13714285714285715,0.0,0.0,132.0,1,45,0,0,0,0,0,0
+390661,Jason Ceka,SC Cambuur,133,Rechtsbuiten,att,0.8,26.0,2026-09-09,Transfermarkt live,22.0,0.0,0.0,0.0,,1,22,0,0,0,0,0,0
+469084,Rik Mulders,SC Cambuur,133,Rechtervleugelverdediger,def,0.6,26.0,2026-09-09,Transfermarkt live,21.666666666666668,0.0,0.0,0.09326424870466321,,3,65,0,0,1,0,0,0
+310131,Mathieu Maertens,SC Cambuur,133,Aanvallend middenveld,mid,0.6,31.0,2026-09-09,Transfermarkt live,22.0,0.0,0.0,0.0,,1,22,0,0,0,0,0,0
+457235,Devid Eugene Bouah,SC Cambuur,133,Rechtervleugelverdediger,def,0.4,25.0,2026-09-09,Transfermarkt live,34.333333333333336,0.0,0.0,0.0,,3,103,0,0,0,0,0,0
+931525,Wout Asselman,SC Cambuur,133,Defensief middenveld,mid,0.4,21.0,2026-09-09,Transfermarkt live,,0.0,0.0,0.0,,0,0,0,0,0,0,0,0
+595937,Jorn Berkhout,SC Cambuur,133,Centrale verdediger,def,0.35,24.0,2026-09-09,Transfermarkt live,77.0,0.0,0.0,0.0,,1,77,0,0,0,0,0,0
+891833,Skye Vink,SC Cambuur,133,Centrumspits,att,0.35,20.0,2026-09-09,Transfermarkt live,53.75,0.0,0.0,0.0,,4,215,0,0,0,0,0,0
+335997,Luca Plogmann,SC Cambuur,133,Keeper,gk,0.3,26.0,2026-09-09,Transfermarkt live,90.0,0.0,0.0,0.0,472.0,0,0,0,0,0,0,0,0
+1242714,Fabian Kvam,SC Cambuur,133,Linksbuiten,att,0.275,20.0,2026-09-09,Transfermarkt live,38.75,0.0,0.0,0.0,,4,155,0,0,0,0,0,0
+963511,Daan Visser,SC Cambuur,133,Defensief middenveld,mid,0.25,21.0,2026-09-09,Transfermarkt live,,0.0,0.0,0.0,,0,0,0,0,0,0,0,0
+1149884,Wiebe Kooistra,SC Cambuur,133,Rechtervleugelverdediger,def,0.2,20.0,2026-09-09,Transfermarkt live,67.5,0.0,0.0,0.0,,2,135,0,0,0,0,0,0
+500584,Nicolas Binder,SC Cambuur,133,Centrumspits,att,0.15,24.0,2026-09-09,Transfermarkt live,38.75,0.08530805687203792,0.17061611374407584,0.0,,4,155,1,2,0,0,0,0
+1177939,Danyello Look,SC Cambuur,133,Linksbuiten,att,0.05,19.0,2026-09-09,Transfermarkt live,,0.0,0.0,0.0,,0,0,0,0,0,0,0,0
+704252,Jasper Meijster,SC Cambuur,133,Keeper,gk,0.025,21.0,2026-09-09,Transfermarkt live,,0.0,0.0,0.0,,0,0,0,0,0,0,0,0
+1197636,Matthijs Kalisvaart,SC Cambuur,133,Keeper,gk,0.025,20.0,2026-09-09,Transfermarkt live,,0.0,0.0,0.0,,0,0,0,0,0,0,0,0
+1177941,Wiebe van der Heide,SC Cambuur,133,Aanvallend middenveld,mid,,20.0,2026-09-09,Transfermarkt live,,0.0,0.0,0.0,,0,0,0,0,0,0,0,0
+928592,Marvin Young,Sparta Rotterdam,468,Centrale verdediger,def,5.0,20.0,2026-09-09,Transfermarkt live,87.8,0.1344286781179985,0.0,0.268857356235997,108.0,5,439,2,0,0,0,0,1
+1255744,Lushendry Martes,Sparta Rotterdam,468,Rechtervleugelverdediger,def,3.0,18.0,2026-09-09,Transfermarkt live,90.0,0.0,0.0,0.31771269177126915,122.0,5,450,0,0,1,0,0,1
+566013,Shunsuke Mito,Sparta Rotterdam,468,Aanvallend middenveld,mid,2.0,23.0,2026-09-09,Transfermarkt live,84.6,0.17173769928728852,0.22192327141235169,0.0,108.0,5,423,0,2,0,0,0,1
+393239,Mitchell van Bergen,Sparta Rotterdam,468,Rechtsbuiten,att,1.5,27.0,2026-09-09,Transfermarkt live,48.4,0.09046963794274275,0.25974838271560813,0.07880910683012259,115.0,5,242,0,1,1,0,0,1
+679597,Casper Terho,Sparta Rotterdam,468,Rechtsbuiten,att,1.0,23.0,2026-09-09,Transfermarkt live,48.4,0.29553415061295973,0.29553415061295973,0.37434325744308233,115.0,5,242,0,0,1,0,0,1
+187188,Bas Kuipers,Sparta Rotterdam,468,Linkervleugelverdediger,def,0.8,32.0,2026-09-09,Transfermarkt live,90.0,0.0,0.13333333333333333,0.06666666666666667,,5,450,0,2,1,0,0,1
+616340,Julian Baas,Sparta Rotterdam,468,Centraal middenveld,mid,0.7,24.0,2026-09-09,Transfermarkt live,84.75,0.0,0.07263922518159806,0.3914688782241812,108.0,4,339,0,1,0,0,0,1
+818445,Milan Zonneveld,Sparta Rotterdam,468,Centrumspits,att,0.45,22.0,2026-09-09,Transfermarkt live,47.4,1.5690577762434346,0.079155672823219,0.0,108.0,5,237,3,1,0,0,0,1
+112052,Bruno Martins Indi,Sparta Rotterdam,468,Centrale verdediger,def,0.3,34.0,2026-09-09,Transfermarkt live,82.0,0.08633627231952519,0.0,0.17267254463905043,115.0,4,328,0,0,0,0,0,1
+155158,Filip Bednarek,Sparta Rotterdam,468,Keeper,gk,0.2,33.0,2026-09-09,Transfermarkt live,90.0,0.0,0.0,0.07142857142857142,230.0,4,360,0,0,0,0,0,1
+134999,Jens Toornstra,Sparta Rotterdam,468,Aanvallend middenveld,mid,0.2,37.0,2026-09-09,Transfermarkt live,58.0,0.0,0.0,0.07950530035335689,108.0,4,232,0,0,1,0,0,1
+987672,Andrej Kostić,Sparta Rotterdam,468,Centrumspits,att,5.0,19.0,2026-09-09,Transfermarkt live,4.0,0.0,0.0,0.0,,1,4,0,0,0,0,0,0
+682568,Cedric Hatenboer,Sparta Rotterdam,468,Defensief middenveld,mid,2.0,21.0,2026-09-09,Transfermarkt live,79.0,0.0,0.3045551677246721,0.0,115.0,1,79,0,0,0,0,0,0
+813437,Isaac Babadi,Sparta Rotterdam,468,Aanvallend middenveld,mid,1.5,21.0,2026-09-09,Transfermarkt live,22.0,0.09761388286334056,0.0,0.0,,1,22,1,0,0,0,0,0
+627069,Teo Quintero,Sparta Rotterdam,468,Centrale verdediger,def,1.3,27.0,2026-09-09,Transfermarkt live,8.0,0.0,0.0982532751091703,0.589519650655022,108.0,2,16,0,0,0,0,0,0
+1175048,Robin van Cruijsen,Sparta Rotterdam,468,Aanvallend middenveld,mid,1.2,20.0,2026-09-09,Transfermarkt live,41.25,0.3210741900860841,0.0,0.0,115.0,4,165,1,0,0,0,0,0
+891835,Nick Verschuren,Sparta Rotterdam,468,Centrale verdediger,def,1.0,21.0,2026-09-09,Transfermarkt live,55.0,0.07659574468085106,0.0,0.3094777562862669,108.0,5,275,1,0,0,0,0,0
+670105,Alwande Roaldsøy,Sparta Rotterdam,468,Centraal middenveld,mid,0.8,22.0,2026-09-09,Transfermarkt live,15.0,0.0,0.0,0.0,115.0,4,60,0,0,0,0,0,0
+393240,Boyd Reith,Sparta Rotterdam,468,Rechtervleugelverdediger,def,0.35,27.0,2026-09-09,Transfermarkt live,,0.0,0.0,0.0,,0,0,0,0,0,0,0,0
+1102425,Giannino Vianello,Sparta Rotterdam,468,Linkervleugelverdediger,def,0.3,19.0,2026-09-09,Transfermarkt live,62.6,0.0,0.0,0.0,108.0,0,0,0,0,0,0,0,0
+760508,Joel Ideho,Sparta Rotterdam,468,Linksbuiten,att,0.3,23.0,2026-09-09,Transfermarkt live,10.333333333333334,0.14821673312021838,0.0966702470461869,0.44465019936065525,145.0,3,31,0,1,0,0,0,0
+231650,Michael Brouwer,Sparta Rotterdam,468,Keeper,gk,0.25,33.0,2026-09-09,Transfermarkt live,90.0,0.0,0.0,0.0,223.0,1,90,0,0,0,0,0,0
+796490,Pascal Kuiper,Sparta Rotterdam,468,Keeper,gk,0.075,22.0,2026-09-09,Transfermarkt live,0.0,0.0,0.0,0.0,,0,0,0,0,0,0,0,0
+804775,Max de Ligt,Sparta Rotterdam,468,Centrale verdediger,def,0.075,22.0,2026-09-09,Transfermarkt live,16.0,0.0,0.0,0.0,623.0,0,0,0,0,0,0,0,0
+1064187,Rik Suur,Sparta Rotterdam,468,Keeper,gk,,19.0,2026-09-09,Transfermarkt live,,0.0,0.0,0.0,,0,0,0,0,0,0,0,0
+593824,Patrick Brouwer,Telstar,1434,Aanvallend middenveld,mid,0.75,25.0,2026-09-09,Transfermarkt live,90.0,0.3140161725067386,0.38544474393531003,0.1617250673854447,108.0,4,360,1,2,0,0,0,1
+271549,Ronald Koeman Jr.,Telstar,1434,Keeper,gk,0.7,31.0,2026-09-09,Transfermarkt live,90.0,0.21428571428571427,0.0,0.2857142857142857,108.0,4,360,2,0,2,0,0,1
+891854,Gerald Alders,Telstar,1434,Rechtervleugelverdediger,def,0.7,21.0,2026-09-09,Transfermarkt live,75.0,0.0,0.0,0.0,108.0,3,225,0,0,0,0,0,1
+694039,Nils Rossen,Telstar,1434,Defensief middenveld,mid,0.7,22.0,2026-09-09,Transfermarkt live,77.5,0.09284625348173449,0.0,0.0,108.0,4,310,0,0,0,0,0,1
+461644,Tyrone Owusu,Telstar,1434,Centraal middenveld,mid,0.6,27.0,2026-09-09,Transfermarkt live,84.25,0.0,0.12059116468733387,0.0,123.0,4,337,0,0,0,0,0,1
+263555,Jeff Hardeveld,Telstar,1434,Linkervleugelverdediger,def,0.45,31.0,2026-09-09,Transfermarkt live,71.25,0.1518987341772152,0.1518987341772152,0.0,108.0,4,285,0,0,0,0,0,1
+381349,Nökkvi Thórisson,Telstar,1434,Centrumspits,att,0.4,27.0,2026-09-09,Transfermarkt live,69.66666666666667,0.32707598983523234,0.32707598983523234,0.0,151.0,3,209,1,1,0,0,0,1
+944694,Abdelnour Soualhia,Telstar,1434,Centrale verdediger,def,0.3,25.0,2026-09-09,Transfermarkt live,90.0,0.07142857142857142,0.07142857142857142,0.14285714285714285,,4,360,1,1,2,0,0,1
+125769,Marvin Peersman,Telstar,1434,Centrale verdediger,def,0.25,35.0,2026-09-09,Transfermarkt live,86.75,0.07751300017416496,0.07751300017416496,0.0,108.0,4,347,0,0,0,0,0,1
+943592,Jelani Seedorf,Telstar,1434,Centrumspits,att,0.25,21.0,2026-09-09,Transfermarkt live,62.25,0.6077248581975331,0.0,0.6077248581975331,108.0,4,249,0,0,0,0,0,1
+387996,Rui Mendes,Telstar,1434,Rechtsbuiten,att,0.2,26.0,2026-09-09,Transfermarkt live,59.25,0.079155672823219,0.0,1.0686015831134565,108.0,4,237,1,0,1,0,0,1
+572519,Ar'jany Martha,Telstar,1434,Rechtsbuiten,att,0.7,23.0,2026-09-09,Transfermarkt live,,0.0,0.0,0.0,,0,0,0,0,0,0,0,0
+936605,Harrie Kuster,Telstar,1434,Aanvallend middenveld,mid,0.65,20.0,2026-09-09,Transfermarkt live,24.0,0.0,0.0,0.0,,1,24,0,0,0,0,0,0
+918445,Emirhan Demircan,Telstar,1434,Linksbuiten,att,0.45,21.0,2026-09-09,Transfermarkt live,27.0,0.49442399604460807,0.0,0.0,259.0,3,81,0,0,0,0,0,0
+612824,Sem Valk,Telstar,1434,Centrale verdediger,def,0.4,24.0,2026-09-09,Transfermarkt live,90.0,0.0,0.0,0.0,,2,180,0,0,0,0,0,0
+648541,Gabi Caschili,Telstar,1434,Rechtervleugelverdediger,def,0.2,23.0,2026-09-09,Transfermarkt live,31.0,0.0,0.0,0.0,,3,93,0,0,0,0,0,0
+646701,Prince Aning,Telstar,1434,Linkervleugelverdediger,def,0.175,22.0,2026-09-09,Transfermarkt live,25.5,0.0,0.0,0.0,,4,102,0,0,0,0,0,0
+1227404,Noach Shenkman,Telstar,1434,Defensief middenveld,mid,0.15,19.0,2026-09-09,Transfermarkt live,18.333333333333332,0.0,0.0,0.0,,3,55,0,0,0,0,0,0
+399350,Nigel Ogidi Nwankwo,Telstar,1434,Linkervleugelverdediger,def,0.125,28.0,2026-09-09,Transfermarkt live,16.833333333333332,0.0,0.0,0.0,209.0,0,0,0,0,0,0,0,0
+886252,Isaiah Ahmed,Telstar,1434,Centraal middenveld,mid,0.125,20.0,2026-09-09,Transfermarkt live,26.0,0.0,0.0,0.09719222462203024,172.0,1,26,0,0,1,0,0,0
+738489,Fabiano Rust,Telstar,1434,Aanvallend middenveld,mid,0.125,21.0,2026-09-09,Transfermarkt live,25.0,0.0,0.0,0.0,,1,25,0,0,0,0,0,0
+412946,Daan Reiziger,Telstar,1434,Keeper,gk,0.1,25.0,2026-09-09,Transfermarkt live,76.2,0.0,0.0,0.1181102362204724,206.0,0,0,0,0,0,0,0,0
+1104231,Rojendro Oudsten,Telstar,1434,Centraal middenveld,mid,0.1,18.0,2026-09-09,Transfermarkt live,18.0,0.0,0.0,0.7726648351648352,115.0,2,36,0,0,0,0,0,0
+671736,Fofin Turay,Telstar,1434,Linksbuiten,att,0.1,22.0,2026-09-09,Transfermarkt live,25.0,0.0,0.0,0.0,,1,25,0,0,0,0,0,0
+1146456,Finn Mulder,Telstar,1434,Keeper,gk,,18.0,2026-09-09,Transfermarkt live,,0.0,0.0,0.0,,0,0,0,0,0,0,0,0
+1086915,Abdelraffie Benzzine,Telstar,1434,Centrale verdediger,def,,20.0,2026-09-09,Transfermarkt live,0.0,0.0,0.0,0.0,,0,0,0,0,0,0,0,0
+1086920,Yamano Olfers,Telstar,1434,Centrale verdediger,def,,20.0,2026-09-09,Transfermarkt live,0.0,0.0,0.0,0.0,,0,0,0,0,0,0,0,0
+988406,Kasper Boogaard,Willem II,403,Defensief middenveld,mid,2.5,20.0,2026-09-09,Transfermarkt live,82.25,0.0,0.1118968449234059,0.07323026851098453,108.0,4,329,0,0,1,0,0,1
+704771,Devin Haen,Willem II,403,Centrumspits,att,1.5,22.0,2026-09-09,Transfermarkt live,90.0,0.14285714285714285,0.0,0.0,,4,360,2,0,0,0,0,1
+258519,Hidde ter Avest,Willem II,403,Rechtervleugelverdediger,def,0.8,29.0,2026-09-09,Transfermarkt live,67.0,0.0,0.08174386920980926,0.0,,3,201,0,1,0,0,0,1
+727480,Jaden Slory,Willem II,403,Linksbuiten,att,0.7,21.0,2026-09-09,Transfermarkt live,88.0,0.0,0.13677903937209976,0.07188498402555911,115.0,4,352,0,0,1,0,0,1
+1130803,Eser Gürbüz,Willem II,403,Rechtsbuiten,att,0.6,19.0,2026-09-09,Transfermarkt live,63.0,0.31815610859728505,0.0,0.0,108.0,4,252,0,0,0,0,0,1
+182581,Tonny Vilhena,Willem II,403,Centraal middenveld,mid,0.5,31.0,2026-09-09,Transfermarkt live,45.0,0.0,0.0,0.0,,1,45,0,0,0,0,0,1
+665541,Finn Stam,Willem II,403,Centrale verdediger,def,0.45,23.0,2026-09-09,Transfermarkt live,90.0,0.0,0.0,0.0,,4,360,0,0,0,0,0,1
+411287,Justin Hoogma,Willem II,403,Centrale verdediger,def,0.45,28.0,2026-09-09,Transfermarkt live,75.0,0.0,0.0,0.0,,3,225,0,0,0,0,0,1
+606023,Nathan Tjoe-A-On,Willem II,403,Linkervleugelverdediger,def,0.45,24.0,2026-09-09,Transfermarkt live,83.5,0.16702339564749397,0.1458670988654781,0.23995694508023302,258.0,4,334,0,2,1,0,0,1
+1052795,Uriël van Aalst,Willem II,403,Aanvallend middenveld,mid,0.35,20.0,2026-09-09,Transfermarkt live,90.0,0.07142857142857142,0.0,0.0,,4,360,1,0,0,0,0,1
+928390,Karst de Leeuw,Willem II,403,Keeper,gk,0.05,22.0,2026-09-09,Transfermarkt live,90.0,0.0,0.0,0.0,,2,180,0,0,0,0,0,1
+1042886,Chido Obi,Willem II,403,Centrumspits,att,5.0,18.0,2026-09-09,Transfermarkt live,8.0,0.0,0.0,0.0,,1,8,0,0,0,0,0,0
+409490,Maxime Delanghe,Willem II,403,Keeper,gk,1.5,25.0,2026-09-09,Transfermarkt live,90.0,0.0,0.0,0.0,,1,90,0,0,0,0,0,0
+312493,Vito van Crooij,Willem II,403,Aanvallend middenveld,mid,0.9,30.0,2026-09-09,Transfermarkt live,74.9,0.0,0.1201602136181575,0.3604806408544727,108.0,0,0,0,0,0,0,0,0
+612758,Calvin Twigt,Willem II,403,Defensief middenveld,mid,0.75,23.0,2026-09-09,Transfermarkt live,12.5,0.0,0.0,0.0,,2,25,0,0,0,0,0,0
+182891,Thomas Didillon-Hödl,Willem II,403,Keeper,gk,0.7,30.0,2026-09-09,Transfermarkt live,68.0,0.0,0.0,0.0,,1,68,0,0,0,0,0,0
+646704,Maxim Dekker,Willem II,403,Centrale verdediger,def,0.65,22.0,2026-09-09,Transfermarkt live,45.0,0.0,0.0,0.0,214.0,1,45,0,0,0,0,0,0
+805696,Mats Lemmens,Willem II,403,Centrale verdediger,def,0.5,24.0,2026-09-09,Transfermarkt live,31.25,0.0,0.0,0.0,,4,125,0,0,0,0,0,0
+928330,Amine Lachkar,Willem II,403,Defensief middenveld,mid,0.5,23.0,2026-09-09,Transfermarkt live,,0.0,0.0,0.0,,0,0,0,0,0,0,0,0
+264857,Jari Schuurman,Willem II,403,Aanvallend middenveld,mid,0.45,29.0,2026-09-09,Transfermarkt live,,0.0,0.0,0.0,,0,0,0,0,0,0,0,0
+565401,Amine Et-Taïbi,Willem II,403,Rechtervleugelverdediger,def,0.4,23.0,2026-09-09,Transfermarkt live,13.5,0.0,0.0,0.0,,2,27,0,0,0,0,0,0
+1101894,Armin Culum,Willem II,403,Linksbuiten,att,0.4,22.0,2026-09-09,Transfermarkt live,,0.0,0.0,0.0,,0,0,0,0,0,0,0,0
+1152029,Thijs Muller,Willem II,403,Aanvallend middenveld,mid,0.35,19.0,2026-09-09,Transfermarkt live,,0.0,0.0,0.0,,0,0,0,0,0,0,0,0
+338680,Alessandro Ciranni,Willem II,403,Rechtervleugelverdediger,def,0.275,30.0,2026-09-09,Transfermarkt live,54.666666666666664,0.0,0.0,0.0,,3,164,0,0,0,0,0,0
+1003716,Per van Loon,Willem II,403,Linkervleugelverdediger,def,0.25,21.0,2026-09-09,Transfermarkt live,62.0,0.0,0.0,0.0,,3,186,0,0,0,0,0,0
+1054634,Anass Zarrouk,Willem II,403,Defensief middenveld,mid,0.25,20.0,2026-09-09,Transfermarkt live,,0.0,0.0,0.0,,0,0,0,0,0,0,0,0
+1175838,Jens Mathijsen,Willem II,403,Centrale verdediger,def,0.225,19.0,2026-09-09,Transfermarkt live,,0.0,0.0,0.0,,0,0,0,0,0,0,0,0
+297365,Thomas Verheydt,Willem II,403,Centrumspits,att,0.125,34.0,2026-09-09,Transfermarkt live,17.0,0.0946372239747634,0.0,0.0,,3,51,1,0,0,0,0,0
+159896,Wouter van der Steen,Willem II,403,Keeper,gk,0.075,36.0,2026-09-09,Transfermarkt live,22.0,0.0,0.0,0.0,,1,22,0,0,0,0,0,0

@@ -1,0 +1,7 @@
+joblib==1.5.3
+beautifulsoup4==4.13.4
+numpy==2.4.4
+pandas==3.0.3
+requests==2.34.0
+scikit-learn==1.8.0
+xgboost==3.2.0
