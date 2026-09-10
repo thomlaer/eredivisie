@@ -116,6 +116,35 @@ h2 { margin: 0; font-size: 21px; }
 }
 .round-toggle::before { content: "+"; font-weight: 900; }
 .round[open] .round-toggle::before { content: "−"; }
+.compact-section {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+}
+.round-index { background: transparent; }
+.round-index > summary, .compact-section > summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  cursor: pointer;
+  list-style: none;
+  padding: 12px 14px;
+  font-size: 13px;
+  font-weight: 900;
+}
+.round-index > summary {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+}
+.round-index > summary::-webkit-details-marker, .compact-section > summary::-webkit-details-marker { display: none; }
+.round-index > summary small, .compact-section > summary small { margin-left: 8px; color: var(--muted); font-weight: 400; }
+.round-index[open] > summary .round-toggle::before, .compact-section[open] > summary .round-toggle::before { content: "−"; }
+.secondary-rounds { display: grid; gap: 7px; padding-top: 8px; }
+.compact-round { box-shadow: none; }
+.compact-round > summary { min-height: 46px; padding: 9px 11px; }
+.compact-round .match { min-height: 78px; padding-block: 9px; }
 .match-list { border-top: 1px solid var(--line); }
 .match {
   display: grid;
@@ -185,6 +214,10 @@ td small { display: block; margin-top: 3px; color: var(--muted); }
 .result.exact { box-shadow: inset 0 0 0 1px #86efac; }
 .result.wrong { background: #fee2e2; color: var(--red); }
 .injury-table td:nth-child(3) { min-width: 190px; }
+.compact-section > summary > span:first-child { display: grid; gap: 3px; }
+.compact-section > summary small { margin-left: 0; }
+.compact-section .table-shell { border: 0; border-top: 1px solid var(--line); border-radius: 0 0 8px 8px; }
+.inline-warning { margin: 0; padding: 10px 12px; }
 
 .standings-grid { display: grid; grid-template-columns: 0.9fr 1.1fr; gap: 14px; }
 .champion-list { overflow: hidden; border: 1px solid var(--line); border-radius: 8px; background: var(--surface); }

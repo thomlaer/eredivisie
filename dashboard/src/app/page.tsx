@@ -1,6 +1,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { ExcelFiller, UpdateControl } from "./controls";
+import { groupByRound, selectFocusRound } from "../lib/round-selection";
 
 type Numberish = number | string | null | undefined;
 
@@ -154,24 +155,6 @@ function pickLabel(row: Prediction): string {
   return "3 · Gelijk";
 }
 
-function groupByRound(rows: Prediction[]): [string, Prediction[]][] {
-  const groups = new Map<string, Prediction[]>();
-  for (const row of rows) {
-    const key = String(row.round || "Later");
-    groups.set(key, [...(groups.get(key) || []), row]);
-  }
-  const firstKickoff = (group: Prediction[]): number => {
-    const timestamps = group
-      .map((row) => new Date(row.kickoff_utc || row.date).getTime())
-      .filter(Number.isFinite);
-    return timestamps.length ? Math.min(...timestamps) : Number.MAX_SAFE_INTEGER;
-  };
-  return [...groups.entries()].sort((a, b) => {
-    const dateDifference = firstKickoff(a[1]) - firstKickoff(b[1]);
-    return dateDifference || number(a[0], 999) - number(b[0], 999);
-  });
-}
-
 function ModelLine({ row }: { row: Prediction }) {
   return (
     <div className="model-line">
@@ -182,11 +165,38 @@ function ModelLine({ row }: { row: Prediction }) {
   );
 }
 
+function MatchList({ rows }: { rows: Prediction[] }) {
+  return (
+    <div className="match-list">
+      {rows.map((row) => (
+        <article className="match" key={row.match_key}>
+          <div className="match-time">{kickoff(row.kickoff_utc)}</div>
+          <div className="teams">
+            <strong>{row.home_team} <span>-</span> {row.away_team}</strong>
+            <small>{row.venue || "Locatie volgt"}</small>
+            <ModelLine row={row} />
+          </div>
+          <div className="pick">
+            <span className={`outcome-pick ${row.predicted_outcome}`}>{pickLabel(row)}</span>
+            <strong>{row.predicted_winner}</strong>
+          </div>
+          <div className="source">
+            <span className={row.probability_source !== "xgboost" ? "badge odds" : "badge"}>
+              {row.probability_source === "xgboost" ? "Model" : "Actuele kansen"}
+            </span>
+            <small>{percent(Math.max(number(row.prob_home_win), number(row.prob_draw), number(row.prob_away_win)))} zekerheid</small>
+          </div>
+        </article>
+      ))}
+    </div>
+  );
+}
+
 export default function Home() {
   const data = loadDashboard();
   const rounds = groupByRound(data.upcoming);
-  const regularRoundSize = Math.max(0, ...rounds.map(([, rows]) => rows.length));
-  const [nextRound = "volgt", focusRows = []] = rounds.find(([, rows]) => rows.length === regularRoundSize) || [];
+  const [nextRound, focusRows] = selectFocusRound(data.upcoming, data.played, data.metadata.generated_at_utc);
+  const otherRounds = rounds.filter(([round]) => round !== nextRound);
   const upcomingOdds = focusRows.filter((row) => row.probability_source !== "xgboost").length;
   const excelPicks = focusRows.map((row) => ({ homeTeam: row.home_team, awayTeam: row.away_team, outcome: row.predicted_outcome }));
 
@@ -213,7 +223,7 @@ export default function Home() {
       <div className="content">
         <section className="summary" aria-label="Samenvatting">
           <div className="summary-main">
-            <p className="eyebrow">Lokaal model · bijgewerkt {data.metadata.generated_at_utc.slice(0, 16).replace("T", " ")} UTC</p>
+            <p className="eyebrow">Bijgewerkt {data.metadata.generated_at_utc.slice(0, 16).replace("T", " ")} UTC</p>
             <h1>Speelronde {nextRound}</h1>
             <p>De {focusRows.length} wedstrijden voor het aankomende invulweekend. Bij {upcomingOdds} wedstrijden zijn actuele kansen gebruikt.</p>
           </div>
@@ -238,26 +248,21 @@ export default function Home() {
                   <span><strong>Speelronde {nextRound}</strong><small>{focusRows.length} wedstrijden</small></span>
                   <span className="round-toggle" aria-hidden="true" />
                 </summary>
-                <div className="match-list">
-                  {focusRows.map((row) => (
-                    <article className="match" key={row.match_key}>
-                      <div className="match-time">{kickoff(row.kickoff_utc)}</div>
-                      <div className="teams">
-                        <strong>{row.home_team} <span>-</span> {row.away_team}</strong>
-                        <small>{row.venue || "Locatie volgt"}</small>
-                        <ModelLine row={row} />
-                      </div>
-                      <div className="pick">
-                        <span className={`outcome-pick ${row.predicted_outcome}`}>{pickLabel(row)}</span>
-                        <strong>{row.predicted_winner}</strong>
-                      </div>
-                      <div className="source">
-                        <span className={row.probability_source !== "xgboost" ? "badge odds" : "badge"}>
-                          {row.probability_source === "xgboost" ? "Model" : "Actuele kansen"}
-                        </span>
-                        <small>{percent(Math.max(number(row.prob_home_win), number(row.prob_draw), number(row.prob_away_win)))} zekerheid</small>
-                      </div>
-                    </article>
+                <MatchList rows={focusRows} />
+              </details>
+            )}
+            {otherRounds.length > 0 && (
+              <details className="round-index">
+                <summary>Andere speelrondes <small>{otherRounds.length} rondes</small><span className="round-toggle" aria-hidden="true" /></summary>
+                <div className="secondary-rounds">
+                  {otherRounds.map(([round, rows]) => (
+                    <details className="round compact-round" key={`other-${round}`}>
+                      <summary>
+                        <span><strong>Speelronde {round}</strong><small>{rows.length} wedstrijd{rows.length === 1 ? "" : "en"}</small></span>
+                        <span className="round-toggle" aria-hidden="true" />
+                      </summary>
+                      <MatchList rows={rows} />
+                    </details>
                   ))}
                 </div>
               </details>
@@ -266,29 +271,25 @@ export default function Home() {
         </section>
 
         <section id="afwezigen" className="section">
-          <div className="section-heading">
-            <div>
-              <h2>Afwezigen</h2>
-              <p>{data.metadata.absences_total || 0} blessures/schorsingen actief; {data.metadata.injuries_matched || 0} aan de live selecties gekoppeld en {data.metadata.likely_starters_unavailable || 0} voorlopige basisspelers geraakt.</p>
-              {number(data.metadata.injuries_unmatched) > 0 && <p className="warning">Controle nodig: {data.metadata.injuries_unmatched} afwezige spelers konden niet aan een actuele selectie worden gekoppeld.</p>}
+          <details className="compact-section">
+            <summary><span><strong>Afwezigen</strong><small>{data.metadata.likely_starters_unavailable || 0} mogelijke basisspelers, {data.metadata.absences_total || 0} spelers totaal</small></span><span className="round-toggle" aria-hidden="true" /></summary>
+            <div className="table-shell">
+              {number(data.metadata.injuries_unmatched) > 0 && <p className="warning inline-warning">Controle nodig: {data.metadata.injuries_unmatched} spelers konden niet worden gekoppeld.</p>}
+              <table className="injury-table">
+                <thead><tr><th>Club</th><th>Speler</th><th>Reden</th><th>Verwachte rol</th></tr></thead>
+                <tbody>
+                  {(data.injuries || []).map((row) => (
+                    <tr key={`injury-${row.team}-${row.player}`}>
+                      <td><strong>{row.team}</strong></td>
+                      <td><strong>{row.player}</strong></td>
+                      <td>{row.injury || "Niet beschikbaar"}<small>{row.expected_return ? `verwacht terug: ${row.expected_return}` : "terugkeer onbekend"}</small></td>
+                      <td>{!number(row.matched_roster) ? "Niet herkend" : number(row.selected_proxy) ? "Waarschijnlijk basisspeler" : "Overige speler"}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
             </div>
-          </div>
-          <div className="table-shell">
-            <table className="injury-table">
-              <thead><tr><th>Club</th><th>Speler</th><th>Status</th><th>Waarde</th><th>Impact</th></tr></thead>
-              <tbody>
-                {(data.injuries || []).map((row) => (
-                  <tr key={`injury-${row.team}-${row.player}`}>
-                    <td><strong>{row.team}</strong></td>
-                    <td><strong>{row.player}</strong><small>{row.absence_type === "suspension" ? "schorsing" : row.source}</small></td>
-                    <td>{row.injury || "Niet beschikbaar"}<small>{row.expected_return ? `terug: ${row.expected_return}` : "terugkeer onbekend"}</small></td>
-                    <td>€{decimal(row.market_value_m, 1)} mln</td>
-                    <td><span className={number(row.selected_proxy) ? "result wrong" : "badge"}>{!number(row.matched_roster) ? "niet gekoppeld" : number(row.selected_proxy) ? "basis geraakt" : "selectie"}</span></td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
+          </details>
         </section>
 
         <section id="gespeeld" className="section">
@@ -304,7 +305,7 @@ export default function Home() {
               <tbody>
                 {data.played.map((row) => (
                   <tr key={`played-${row.match_key}`}>
-                    <td><strong>{row.home_team} - {row.away_team}</strong><small>{row.date}</small></td>
+                    <td><strong>{row.home_team} - {row.away_team}</strong><small>{row.date} · speelronde {row.round || "onbekend"}</small></td>
                     <td><strong>{pickLabel(row)}</strong><small>{row.predicted_winner}</small></td>
                     <td><span className="score actual">{row.actual_score}</span></td>
                     <td><span className={`result ${outcomeClass(row)}`}>{outcomeLabel(row)}</span></td>

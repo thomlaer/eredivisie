@@ -54,6 +54,26 @@ def attach_actuals(predictions: pd.DataFrame, actual: pd.DataFrame) -> pd.DataFr
     return output
 
 
+def attach_fixture_metadata(predictions: pd.DataFrame, fixtures: pd.DataFrame) -> pd.DataFrame:
+    metadata_columns = ["match_number", "round", "kickoff_utc", "venue"]
+    available = [column for column in metadata_columns if column in fixtures]
+    if not available:
+        return predictions.copy()
+
+    fixture_metadata = fixtures[["match_key", *available]].drop_duplicates("match_key", keep="last")
+    output = predictions.merge(fixture_metadata, on="match_key", how="left", suffixes=("", "_fixture"))
+    for column in available:
+        fixture_column = f"{column}_fixture"
+        if fixture_column not in output:
+            continue
+        if column in output:
+            output[column] = output[column].where(output[column].notna(), output[fixture_column])
+        else:
+            output[column] = output[fixture_column]
+        output = output.drop(columns=fixture_column)
+    return output
+
+
 def current_season_metrics(actual_features: pd.DataFrame, predictions: pd.DataFrame) -> dict[str, float | int]:
     probabilities = predictions[["prob_away_win", "prob_draw", "prob_home_win"]].to_numpy(dtype=float)
     y_true = actual_features["target"].to_numpy(dtype=int)
@@ -117,6 +137,7 @@ def main() -> None:
     )
     current_predictions = prediction_frame(preseason_bundle, current_features)
     played = attach_actuals(current_predictions, current_features)
+    played = attach_fixture_metadata(played, fixtures)
     metrics["current_season"] = current_season_metrics(current_features, current_predictions)
 
     final_bundle = fit_bundle(

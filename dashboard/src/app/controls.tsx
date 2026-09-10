@@ -212,7 +212,6 @@ export function ExcelFiller({ picks, round }: { picks: ExcelPick[]; round: strin
         <button className="primary-button" disabled={!file || busy} onClick={processFile} type="button">
           {busy ? "Bezig…" : "Vul Excel in"}
         </button>
-        <p className="tool-note">Het bestand blijft op dit apparaat en wordt niet naar de website gestuurd.</p>
         {status && <p className="tool-status" role="status">{status}</p>}
       </div>
     </section>

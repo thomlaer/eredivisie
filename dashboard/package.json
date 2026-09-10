@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "test": "node --test --experimental-strip-types src/lib/*.test.ts",
     "start": "next start"
   },
   "dependencies": {

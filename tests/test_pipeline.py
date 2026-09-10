@@ -23,6 +23,7 @@ from prediction.modeling import (
     score_feature_columns,
 )
 from prediction.names import canonical_team
+from rebuild import attach_fixture_metadata
 
 
 def match_frame(first_home_shots: float) -> pd.DataFrame:
@@ -69,6 +70,27 @@ class FeatureLeakageTests(unittest.TestCase):
         )
         self.assertEqual(low_stats.loc[1, "home_form5_shots_for"], 5.0)
         self.assertEqual(high_stats.loc[1, "home_form5_shots_for"], 20.0)
+
+    def test_played_predictions_receive_round_without_changing_pick(self) -> None:
+        predictions = pd.DataFrame(
+            [{"match_key": "2026-09-12|ajax|psv", "round": np.nan, "predicted_outcome": "home_win"}]
+        )
+        fixtures = pd.DataFrame(
+            [
+                {
+                    "match_key": "2026-09-12|ajax|psv",
+                    "round": 6,
+                    "kickoff_utc": "2026-09-12T18:00:00Z",
+                    "venue": "Johan Cruijff ArenA",
+                }
+            ]
+        )
+
+        enriched = attach_fixture_metadata(predictions, fixtures)
+
+        self.assertEqual(enriched.loc[0, "round"], 6)
+        self.assertEqual(enriched.loc[0, "venue"], "Johan Cruijff ArenA")
+        self.assertEqual(enriched.loc[0, "predicted_outcome"], "home_win")
 
     def test_fixture_feed_only_appends_missing_completed_results(self) -> None:
         matches = pd.DataFrame(
