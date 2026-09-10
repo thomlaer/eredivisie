@@ -253,7 +253,7 @@ export default function Home() {
             )}
             {otherRounds.length > 0 && (
               <details className="round-index">
-                <summary>Andere speelrondes <small>{otherRounds.length} rondes</small><span className="round-toggle" aria-hidden="true" /></summary>
+                <summary>Alle andere speelrondes <small>{otherRounds.length} rondes</small><span className="round-toggle" aria-hidden="true" /></summary>
                 <div className="secondary-rounds">
                   {otherRounds.map(([round, rows]) => (
                     <details className="round compact-round" key={`other-${round}`}>
@@ -305,7 +305,7 @@ export default function Home() {
               <tbody>
                 {data.played.map((row) => (
                   <tr key={`played-${row.match_key}`}>
-                    <td><strong>{row.home_team} - {row.away_team}</strong><small>{row.date} · speelronde {row.round || "onbekend"}</small></td>
+                    <td><strong>{row.home_team} - {row.away_team}</strong><small>{row.date}{row.round ? ` · speelronde ${row.round}` : ""}</small></td>
                     <td><strong>{pickLabel(row)}</strong><small>{row.predicted_winner}</small></td>
                     <td><span className="score actual">{row.actual_score}</span></td>
                     <td><span className={`result ${outcomeClass(row)}`}>{outcomeLabel(row)}</span></td>
