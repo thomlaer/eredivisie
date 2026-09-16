@@ -7,6 +7,10 @@ on:
       - main
     paths:
       - ".github/workflows/rebuild-predictions.yml"
+      - "prediction/**"
+      - "tests/**"
+      - "rebuild.py"
+      - "requirements.txt"
   schedule:
     # Avoid the start of the hour: GitHub may delay or drop scheduled jobs then.
     - cron: "17 8 * * 3"

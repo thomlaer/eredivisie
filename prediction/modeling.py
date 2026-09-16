@@ -198,7 +198,9 @@ def adjust_draw(probabilities: np.ndarray, multiplier: float) -> np.ndarray:
 
 def market_probabilities(frame: pd.DataFrame) -> tuple[np.ndarray, np.ndarray]:
     columns = ["market_prob_away", "market_prob_draw", "market_prob_home"]
-    market = frame.reindex(columns=columns).apply(pd.to_numeric, errors="coerce").to_numpy(dtype=float)
+    # Pandas 3 may expose a read-only NumPy view here. Normalization below is
+    # intentionally in-place, so request an owned, writable array explicitly.
+    market = frame.reindex(columns=columns).apply(pd.to_numeric, errors="coerce").to_numpy(dtype=float, copy=True)
     available = np.isfinite(market).all(axis=1) & (market.sum(axis=1) > 0)
     if available.any():
         market[available] /= market[available].sum(axis=1, keepdims=True)
