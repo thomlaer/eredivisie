@@ -6,6 +6,7 @@ import numpy as np
 import pandas as pd
 
 from prediction.data import append_fixture_results
+from prediction.dashboard import _json_default
 from prediction.features import build_historical_features
 from prediction.injuries import (
     parse_transfermarkt_clubs,
@@ -24,6 +25,13 @@ from prediction.modeling import (
 )
 from prediction.names import canonical_team
 from rebuild import attach_fixture_metadata
+
+
+class DashboardSerializationTests(unittest.TestCase):
+    def test_mixed_object_timestamp_is_json_serializable(self) -> None:
+        self.assertEqual(_json_default(pd.Timestamp("2026-09-16")), "2026-09-16T00:00:00")
+        self.assertEqual(_json_default(np.int64(6)), 6)
+        self.assertIsNone(_json_default(pd.NaT))
 
 
 def match_frame(first_home_shots: float) -> pd.DataFrame:

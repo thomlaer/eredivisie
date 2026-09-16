@@ -2,7 +2,7 @@ from __future__ import annotations
 
 import json
 import shutil
-from datetime import datetime, timezone
+from datetime import date, datetime, timezone
 from pathlib import Path
 from typing import Any
 
@@ -10,6 +10,16 @@ import numpy as np
 import pandas as pd
 
 from .config import DASHBOARD_PUBLIC, OUTPUT_DIR, RAW_DIR
+
+
+def _json_default(value: Any) -> Any:
+    if value is pd.NaT or value is pd.NA:
+        return None
+    if isinstance(value, (pd.Timestamp, datetime, date)):
+        return value.isoformat()
+    if isinstance(value, np.generic):
+        return value.item()
+    raise TypeError(f"Object of type {value.__class__.__name__} is not JSON serializable")
 
 
 def _records(frame: pd.DataFrame) -> list[dict[str, Any]]:
@@ -100,7 +110,10 @@ def publish_dashboard(
     }
     destination = DASHBOARD_PUBLIC / "data" / "dashboard.json"
     destination.parent.mkdir(parents=True, exist_ok=True)
-    destination.write_text(json.dumps(dashboard, indent=2, ensure_ascii=True), encoding="utf-8")
+    destination.write_text(
+        json.dumps(dashboard, indent=2, ensure_ascii=True, default=_json_default),
+        encoding="utf-8",
+    )
     files = DASHBOARD_PUBLIC / "files"
     files.mkdir(parents=True, exist_ok=True)
     for name in ("upcoming_predictions.csv", "played_predictions.csv", "projected_table.csv"):
