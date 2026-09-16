@@ -3,7 +3,11 @@ name: Update Eredivisie predictions
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 8 * * 3"
+    # Avoid the start of the hour: GitHub may delay or drop scheduled jobs then.
+    - cron: "17 8 * * 3"
+      timezone: "Europe/Amsterdam"
+    # A second weekly run makes the refresh resilient if GitHub drops the first.
+    - cron: "47 10 * * 3"
       timezone: "Europe/Amsterdam"
 
 permissions:
