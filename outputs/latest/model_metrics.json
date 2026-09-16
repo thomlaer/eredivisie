@@ -40,8 +40,8 @@
   },
   "xgboost_without_odds": {
     "rows": 306,
-    "accuracy": 0.5228758169934641,
-    "log_loss": 1.0214945520101877,
+    "accuracy": 0.5130718954248366,
+    "log_loss": 1.0182405129481171,
     "confusion_matrix": [
       [
         53,
@@ -49,17 +49,17 @@
         37
       ],
       [
-        31,
+        32,
         0,
-        49
+        48
       ],
       [
-        29,
-        0,
-        107
+        31,
+        1,
+        104
       ]
     ],
-    "predicted_draw_rate": 0.0,
+    "predicted_draw_rate": 0.0032679738562091504,
     "actual_draw_rate": 0.26143790849673204
   },
   "market_only": {
@@ -90,51 +90,44 @@
     {
       "odds_weight": 0.8,
       "draw_multiplier": 1.15,
-      "accuracy": 0.5751633986928104,
-      "log_loss": 0.9176869767566217,
-      "selection_score": 0.5613980940414611
+      "accuracy": 0.5735294117647058,
+      "log_loss": 0.9174402946318158,
+      "selection_score": 0.5597678073452286
     },
     {
       "odds_weight": 0.8,
       "draw_multiplier": 1.05,
-      "accuracy": 0.5751633986928104,
-      "log_loss": 0.9186129987239919,
-      "selection_score": 0.5613842037119505
+      "accuracy": 0.5735294117647058,
+      "log_loss": 0.9183225783153662,
+      "selection_score": 0.5597545730899753
     },
     {
       "odds_weight": 0.8,
       "draw_multiplier": 1.0,
-      "accuracy": 0.5751633986928104,
-      "log_loss": 0.9197092722333292,
-      "selection_score": 0.5613677596093105
+      "accuracy": 0.5735294117647058,
+      "log_loss": 0.9193961757857804,
+      "selection_score": 0.5597384691279191
     },
     {
       "odds_weight": 0.8,
       "draw_multiplier": 0.95,
-      "accuracy": 0.5751633986928104,
-      "log_loss": 0.9212985354763789,
-      "selection_score": 0.5613439206606647
+      "accuracy": 0.5735294117647058,
+      "log_loss": 0.9209621980906065,
+      "selection_score": 0.5597149787933468
     },
     {
       "odds_weight": 0.8,
       "draw_multiplier": 0.85,
-      "accuracy": 0.5751633986928104,
-      "log_loss": 0.9262249294013859,
-      "selection_score": 0.5612700247517897
+      "accuracy": 0.5735294117647058,
+      "log_loss": 0.9258403282278168,
+      "selection_score": 0.5596418068412886
     },
     {
       "odds_weight": 0.8,
       "draw_multiplier": 0.75,
-      "accuracy": 0.5751633986928104,
-      "log_loss": 0.9340626232740223,
-      "selection_score": 0.5611524593437001
-    },
-    {
-      "odds_weight": 0.8,
-      "draw_multiplier": 1.3,
       "accuracy": 0.5735294117647058,
-      "log_loss": 0.9188426275213317,
-      "selection_score": 0.5597467723518859
+      "log_loss": 0.9336272254223617,
+      "selection_score": 0.5595250033833704
     },
     {
       "odds_weight": 1.0,
@@ -144,209 +137,216 @@
       "selection_score": 0.5581465741067395
     },
     {
+      "odds_weight": 0.8,
+      "draw_multiplier": 1.3,
+      "accuracy": 0.5718954248366013,
+      "log_loss": 0.918657797041061,
+      "selection_score": 0.5581155578809853
+    },
+    {
       "odds_weight": 0.9,
       "draw_multiplier": 1.3,
       "accuracy": 0.5702614379084967,
-      "log_loss": 0.9174692373401779,
-      "selection_score": 0.556499399348394
+      "log_loss": 0.9173748392848794,
+      "selection_score": 0.5565008153192235
     },
     {
       "odds_weight": 0.7000000000000001,
       "draw_multiplier": 1.15,
       "accuracy": 0.5702614379084967,
-      "log_loss": 0.9195618571768591,
-      "selection_score": 0.5564680100508438
+      "log_loss": 0.9191978076658626,
+      "selection_score": 0.5564734707935087
     }
   ],
   "no_odds_tuning_top": [
     {
-      "draw_multiplier": 1.1000000000000003,
-      "accuracy": 0.553921568627451,
-      "log_loss": 0.9481504351539963,
-      "predicted_draw_rate": 0.026143790849673203,
-      "selection_score": 0.5396993121001411
+      "draw_multiplier": 1.0000000000000002,
+      "accuracy": 0.5588235294117647,
+      "log_loss": 0.9485162892359982,
+      "predicted_draw_rate": 0.014705882352941176,
+      "selection_score": 0.5445957850732247
     },
     {
       "draw_multiplier": 0.9500000000000002,
-      "accuracy": 0.553921568627451,
-      "log_loss": 0.9515484432423401,
+      "accuracy": 0.5571895424836601,
+      "log_loss": 0.950000521470906,
       "predicted_draw_rate": 0.008169934640522876,
-      "selection_score": 0.539648341978816
-    },
-    {
-      "draw_multiplier": 0.9000000000000001,
-      "accuracy": 0.553921568627451,
-      "log_loss": 0.9536988421536707,
-      "predicted_draw_rate": 0.008169934640522876,
-      "selection_score": 0.539616085995146
-    },
-    {
-      "draw_multiplier": 0.8500000000000001,
-      "accuracy": 0.553921568627451,
-      "log_loss": 0.956474410517802,
-      "predicted_draw_rate": 0.004901960784313725,
-      "selection_score": 0.5395744524696839
+      "selection_score": 0.5429395346615966
     },
     {
       "draw_multiplier": 0.8,
-      "accuracy": 0.553921568627451,
-      "log_loss": 0.9599646941300871,
+      "accuracy": 0.5571895424836601,
+      "log_loss": 0.9580487354542021,
       "predicted_draw_rate": 0.0016339869281045752,
-      "selection_score": 0.5395220982154997
-    },
-    {
-      "draw_multiplier": 1.2000000000000004,
-      "accuracy": 0.5522875816993464,
-      "log_loss": 0.9478974512755665,
-      "predicted_draw_rate": 0.05065359477124183,
-      "selection_score": 0.5380691199302129
-    },
-    {
-      "draw_multiplier": 1.2500000000000004,
-      "accuracy": 0.5522875816993464,
-      "log_loss": 0.9482514721849563,
-      "predicted_draw_rate": 0.06372549019607843,
-      "selection_score": 0.5380638096165721
+      "selection_score": 0.5428188114518471
     },
     {
       "draw_multiplier": 1.0500000000000003,
-      "accuracy": 0.5506535947712419,
-      "log_loss": 0.9488334379784501,
-      "predicted_draw_rate": 0.016339869281045753,
-      "selection_score": 0.5364210932015652
+      "accuracy": 0.5555555555555556,
+      "log_loss": 0.9475151058122468,
+      "predicted_draw_rate": 0.017973856209150325,
+      "selection_score": 0.5413428289683718
     },
     {
-      "draw_multiplier": 1.0000000000000002,
-      "accuracy": 0.5506535947712419,
-      "log_loss": 0.9499479233386993,
-      "predicted_draw_rate": 0.011437908496732025,
-      "selection_score": 0.5364043759211614
+      "draw_multiplier": 0.9000000000000001,
+      "accuracy": 0.5555555555555556,
+      "log_loss": 0.9520315245555203,
+      "predicted_draw_rate": 0.006535947712418301,
+      "selection_score": 0.5412750826872228
+    },
+    {
+      "draw_multiplier": 0.8500000000000001,
+      "accuracy": 0.5555555555555556,
+      "log_loss": 0.954684459561365,
+      "predicted_draw_rate": 0.0032679738562091504,
+      "selection_score": 0.5412352886621351
+    },
+    {
+      "draw_multiplier": 1.1000000000000003,
+      "accuracy": 0.553921568627451,
+      "log_loss": 0.946942535136848,
+      "predicted_draw_rate": 0.029411764705882353,
+      "selection_score": 0.5397174306003983
     },
     {
       "draw_multiplier": 1.1500000000000004,
-      "accuracy": 0.5490196078431373,
-      "log_loss": 0.9478519823656503,
-      "predicted_draw_rate": 0.032679738562091505,
-      "selection_score": 0.5348018281076525
+      "accuracy": 0.5522875816993464,
+      "log_loss": 0.9467517546034111,
+      "predicted_draw_rate": 0.04084967320261438,
+      "selection_score": 0.5380863053802952
+    },
+    {
+      "draw_multiplier": 1.2000000000000004,
+      "accuracy": 0.5506535947712419,
+      "log_loss": 0.9469022401113804,
+      "predicted_draw_rate": 0.05228758169934641,
+      "selection_score": 0.5364500611695712
+    },
+    {
+      "draw_multiplier": 1.2500000000000004,
+      "accuracy": 0.5506535947712419,
+      "log_loss": 0.9473587209078614,
+      "predicted_draw_rate": 0.058823529411764705,
+      "selection_score": 0.536443213957624
     }
   ],
   "feature_importance": [
     {
-      "feature": "elo_diff",
-      "importance": 0.06503511220216751
+      "feature": "elo_expected_home",
+      "importance": 0.06427963823080063
     },
     {
-      "feature": "elo_expected_home",
-      "importance": 0.06191239878535271
+      "feature": "elo_diff",
+      "importance": 0.06256590038537979
     },
     {
       "feature": "tm_diff_prior_lineup_value_sum_m",
-      "importance": 0.04790294170379639
+      "importance": 0.04030976817011833
     },
     {
       "feature": "tm_diff_prior_lineup_value_avg_m",
-      "importance": 0.027238773182034492
+      "importance": 0.03438039869070053
     },
     {
       "feature": "tm_diff_prior_lineup_value_top3_m",
-      "importance": 0.022784512490034103
+      "importance": 0.021947160363197327
     },
     {
       "feature": "diff_prev_gd_per_match",
-      "importance": 0.013977349735796452
+      "importance": 0.015095207840204239
     },
     {
       "feature": "diff_season_shots_for",
-      "importance": 0.012598114088177681
-    },
-    {
-      "feature": "diff_season_win_rate",
-      "importance": 0.00988837517797947
+      "importance": 0.011589585803449154
     },
     {
       "feature": "diff_form10_shots_for",
-      "importance": 0.00964229367673397
+      "importance": 0.010635362938046455
+    },
+    {
+      "feature": "diff_season_win_rate",
+      "importance": 0.009824969805777073
     },
     {
       "feature": "diff_form10_goal_diff",
-      "importance": 0.008677718229591846
-    },
-    {
-      "feature": "diff_form10_corners_for",
-      "importance": 0.008407638408243656
-    },
-    {
-      "feature": "diff_experience_matches",
-      "importance": 0.00832922849804163
+      "importance": 0.00918944738805294
     },
     {
       "feature": "diff_season_goal_diff",
-      "importance": 0.008177929557859898
-    },
-    {
-      "feature": "diff_prev_ppg",
-      "importance": 0.008032946847379208
-    },
-    {
-      "feature": "diff_season_ppg",
-      "importance": 0.00794721208512783
-    },
-    {
-      "feature": "diff_form10_ppg",
-      "importance": 0.007913601584732533
-    },
-    {
-      "feature": "tm_diff_prior_lineup_att_share",
-      "importance": 0.007566903717815876
-    },
-    {
-      "feature": "away_prev_gd_per_match",
-      "importance": 0.007505903020501137
+      "importance": 0.008653280325233936
     },
     {
       "feature": "home_prev_gd_per_match",
-      "importance": 0.007420200854539871
+      "importance": 0.008525059558451176
     },
     {
-      "feature": "diff_form10_corners_against",
-      "importance": 0.007340946234762669
-    },
-    {
-      "feature": "diff_form5_ppg",
-      "importance": 0.0072657037526369095
-    },
-    {
-      "feature": "home_form5_win_rate",
-      "importance": 0.007073201239109039
-    },
-    {
-      "feature": "home_prev_rank_pct",
-      "importance": 0.00703777652233839
-    },
-    {
-      "feature": "tm_diff_prior_lineup_def_share",
-      "importance": 0.0069749001413583755
+      "feature": "diff_prev_ppg",
+      "importance": 0.008237836882472038
     },
     {
       "feature": "diff_form5_shots_for",
-      "importance": 0.006967892870306969
+      "importance": 0.007743075955659151
+    },
+    {
+      "feature": "diff_form10_ppg",
+      "importance": 0.00773636857047677
+    },
+    {
+      "feature": "diff_experience_matches",
+      "importance": 0.007711100857704878
+    },
+    {
+      "feature": "tm_away_prior_lineup_value_sum_m",
+      "importance": 0.007706120144575834
+    },
+    {
+      "feature": "diff_venue5_ppg",
+      "importance": 0.007670775521546602
+    },
+    {
+      "feature": "home_form5_win_rate",
+      "importance": 0.007646558340638876
+    },
+    {
+      "feature": "diff_season_ppg",
+      "importance": 0.007586844265460968
+    },
+    {
+      "feature": "tm_home_prior_lineup_att_share",
+      "importance": 0.00746686477214098
+    },
+    {
+      "feature": "diff_form5_ppg",
+      "importance": 0.007356551475822926
+    },
+    {
+      "feature": "away_prev_gd_per_match",
+      "importance": 0.007316965144127607
+    },
+    {
+      "feature": "tm_home_prior_lineup_value_sum_m",
+      "importance": 0.007249470334500074
+    },
+    {
+      "feature": "home_prev_ppg",
+      "importance": 0.007176607381552458
     }
   ],
   "data": {
-    "historical_matches": 9778,
-    "model_rows": 4252,
-    "latest_result": "2026-09-08",
-    "historical_odds_rows": 7011,
-    "future_fixtures": 264,
-    "transfermarkt_context_rows": 4246,
-    "current_absences": 74,
-    "current_injuries_matched": 74,
+    "historical_matches": 9789,
+    "model_rows": 4263,
+    "latest_result": "2026-09-13",
+    "historical_odds_rows": 7031,
+    "future_fixtures": 253,
+    "transfermarkt_context_rows": 4256,
+    "current_absences": 71,
+    "current_injuries_matched": 71,
     "current_injuries_unmatched": 0,
-    "likely_starters_unavailable": 12
+    "likely_starters_unavailable": 11
   },
   "current_season": {
-    "rows": 42,
-    "accuracy": 0.6190476190476191,
-    "log_loss": 0.9915110890932992
+    "rows": 53,
+    "accuracy": 0.5660377358490566,
+    "log_loss": 0.9661878899225346
   }
 }
