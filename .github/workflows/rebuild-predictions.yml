@@ -2,6 +2,11 @@ name: Update Eredivisie predictions
 
 on:
   workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - ".github/workflows/rebuild-predictions.yml"
   schedule:
     # Avoid the start of the hour: GitHub may delay or drop scheduled jobs then.
     - cron: "17 8 * * 3"
