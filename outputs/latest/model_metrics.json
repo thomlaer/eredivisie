@@ -333,20 +333,20 @@
     }
   ],
   "data": {
-    "historical_matches": 9789,
-    "model_rows": 4263,
-    "latest_result": "2026-09-13",
-    "historical_odds_rows": 7031,
-    "future_fixtures": 253,
-    "transfermarkt_context_rows": 4256,
-    "current_absences": 71,
-    "current_injuries_matched": 71,
+    "historical_matches": 9799,
+    "model_rows": 4273,
+    "latest_result": "2026-09-20",
+    "historical_odds_rows": 7041,
+    "future_fixtures": 243,
+    "transfermarkt_context_rows": 4266,
+    "current_absences": 70,
+    "current_injuries_matched": 70,
     "current_injuries_unmatched": 0,
     "likely_starters_unavailable": 11
   },
   "current_season": {
-    "rows": 53,
-    "accuracy": 0.5660377358490566,
-    "log_loss": 0.9661878899225346
+    "rows": 63,
+    "accuracy": 0.5396825396825397,
+    "log_loss": 0.9548577706809482
   }
 }
