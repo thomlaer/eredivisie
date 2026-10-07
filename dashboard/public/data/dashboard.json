@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at_utc": "2026-09-30T15:23:21+00:00",
+    "generated_at_utc": "2026-10-07T13:33:32+00:00",
     "season": "2026/27",
     "historical_matches": 9799,
     "latest_result": "2026-09-20",
@@ -13,10 +13,10 @@
     "injury_status": "unavailable:ValueError",
     "suspension_status": "unavailable:ValueError",
     "current_squad_status": "unavailable:ValueError",
-    "absences_total": 69,
-    "injuries_matched": 69,
+    "absences_total": 68,
+    "injuries_matched": 68,
     "injuries_unmatched": 0,
-    "likely_starters_unavailable": 11
+    "likely_starters_unavailable": 10
   },
   "upcoming": [
     {
@@ -7206,20 +7206,6 @@
       "matched_roster": 1,
       "market_value_m": 5.0,
       "estimated_value_impact_m": 5.0,
-      "source": "Transfermarkt"
-    },
-    {
-      "team": "Ajax",
-      "player": "Aaron Bouwman",
-      "injury": "Gekneusde longen",
-      "absence_type": "injury",
-      "since": "6 sep. 2026",
-      "expected_return": "1 okt. 2026",
-      "availability": 0.0,
-      "selected_proxy": 1.0,
-      "matched_roster": 1,
-      "market_value_m": 3.5,
-      "estimated_value_impact_m": 3.5,
       "source": "Transfermarkt"
     },
     {
