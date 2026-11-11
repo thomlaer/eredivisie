@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-11-11T15:20:21.016086+00:00",
+  "updated_at_utc": "2026-11-11T17:28:58.927456+00:00",
   "football_data_downloaded": 1,
   "football_data_reused": 33,
   "fixture_feed_available": true,
@@ -14,5 +14,5 @@
   "suspension_rows": 1,
   "current_squad_status": "unavailable:ValueError",
   "current_squad_rows": 492,
-  "injury_updated_at_utc": "2026-11-11T15:20:21.276643+00:00"
+  "injury_updated_at_utc": "2026-11-11T17:28:59.235425+00:00"
 }
