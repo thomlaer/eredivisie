@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at_utc": "2026-11-18T16:31:38+00:00",
+    "generated_at_utc": "2026-11-18T18:26:30+00:00",
     "season": "2026/27",
     "historical_matches": 9844,
     "latest_result": "2026-11-08",
@@ -10,9 +10,9 @@
     "odds_weight": 1.0,
     "draw_multiplier": 1.3,
     "espn_status": "unavailable:HTTPError",
-    "injury_status": "ok:74",
-    "suspension_status": "ok:3",
-    "current_squad_status": "ok:512:18clubs:performance=ok:579:18clubs",
+    "injury_status": "unavailable:ValueError",
+    "suspension_status": "unavailable:ValueError",
+    "current_squad_status": "unavailable:ValueError",
     "absences_total": 77,
     "injuries_matched": 77,
     "injuries_unmatched": 0,
