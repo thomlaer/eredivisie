@@ -339,10 +339,10 @@
     "historical_odds_rows": 7086,
     "future_fixtures": 198,
     "transfermarkt_context_rows": 4309,
-    "current_absences": 65,
-    "current_injuries_matched": 65,
+    "current_absences": 77,
+    "current_injuries_matched": 77,
     "current_injuries_unmatched": 0,
-    "likely_starters_unavailable": 10
+    "likely_starters_unavailable": 19
   },
   "current_season": {
     "rows": 108,

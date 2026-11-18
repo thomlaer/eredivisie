@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-11-11T17:28:58.927456+00:00",
+  "updated_at_utc": "2026-11-18T16:30:44.412256+00:00",
   "football_data_downloaded": 1,
   "football_data_reused": 33,
   "fixture_feed_available": true,
@@ -8,11 +8,11 @@
   "failures": [
     "espn: 400 Client Error: Bad Request for url: https://site.api.espn.com/apis/site/v2/sports/soccer/ned.1/scoreboard?limit=1000&dates=20260801-20270601"
   ],
-  "injury_status": "unavailable:ValueError",
+  "injury_status": "ok:74",
   "injury_rows": 74,
-  "suspension_status": "unavailable:ValueError",
-  "suspension_rows": 1,
-  "current_squad_status": "unavailable:ValueError",
-  "current_squad_rows": 492,
-  "injury_updated_at_utc": "2026-11-11T17:28:59.235425+00:00"
+  "suspension_status": "ok:3",
+  "suspension_rows": 3,
+  "current_squad_status": "ok:512:18clubs:performance=ok:579:18clubs",
+  "current_squad_rows": 512,
+  "injury_updated_at_utc": "2026-11-18T16:31:11.947355+00:00"
 }
