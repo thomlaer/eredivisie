@@ -20,6 +20,8 @@ from .config import (
     FOOTBALL_DATA_FIXTURES_URL,
     FOOTBALL_DATA_URL,
     MANUAL_DIR,
+    PINNACLE_MARKETS_URL,
+    PINNACLE_MATCHUPS_URL,
     PROCESSED_DIR,
     RAW_DIR,
     ensure_directories,
@@ -28,6 +30,13 @@ from .names import canonical_team, name_key
 
 
 USER_AGENT = "eredivisie-prediction/1.0"
+PINNACLE_ODDS_PATH = RAW_DIR / "pinnacle_eredivisie_odds.csv"
+PINNACLE_HEADERS = {
+    "User-Agent": "Mozilla/5.0 (compatible; EredivisiePrediction/1.0)",
+    "Origin": "https://www.pinnacle.com",
+    "Referer": "https://www.pinnacle.com/",
+    "Accept": "application/json",
+}
 ODDS_PRIORITY = (
     ("AvgCH", "AvgCD", "AvgCA", "closing_average"),
     ("B365CH", "B365CD", "B365CA", "closing_bet365"),
@@ -69,6 +78,121 @@ def _download(url: str, destination: Path, *, timeout: int = 60) -> None:
     temporary.replace(destination)
 
 
+def _request_json(url: str, *, headers: dict[str, str] | None = None) -> Any:
+    last_error: Exception | None = None
+    for attempt in range(3):
+        try:
+            response = requests.get(
+                url,
+                headers=headers or {"User-Agent": USER_AGENT, "Accept": "application/json"},
+                timeout=60,
+            )
+            response.raise_for_status()
+            return response.json()
+        except (requests.RequestException, ValueError) as exc:
+            last_error = exc
+            status = getattr(getattr(exc, "response", None), "status_code", 0)
+            if attempt == 2 or status not in {0, 429, 500, 502, 503, 504}:
+                raise
+            time.sleep(1.5 * (attempt + 1))
+    raise last_error or RuntimeError(f"JSON download failed: {url}")
+
+
+def _american_to_decimal(value: object) -> float:
+    try:
+        price = float(value)
+    except (TypeError, ValueError):
+        return np.nan
+    if price == 0:
+        return np.nan
+    return 1.0 + price / 100.0 if price > 0 else 1.0 + 100.0 / abs(price)
+
+
+def parse_pinnacle_upcoming_odds(
+    matchups: list[dict[str, Any]],
+    markets: list[dict[str, Any]],
+) -> pd.DataFrame:
+    moneylines: dict[int, dict[str, Any]] = {}
+    for market in markets:
+        if (
+            market.get("type") != "moneyline"
+            or market.get("period") != 0
+            or bool(market.get("isAlternate"))
+            or market.get("status") != "open"
+        ):
+            continue
+        prices = {
+            str(item.get("designation")): _american_to_decimal(item.get("price"))
+            for item in market.get("prices", [])
+        }
+        if all(np.isfinite(prices.get(key, np.nan)) for key in ("home", "draw", "away")):
+            moneylines[int(market["matchupId"])] = prices
+
+    rows: list[dict[str, Any]] = []
+    for matchup in matchups:
+        matchup_id = matchup.get("id")
+        if (
+            matchup.get("type") != "matchup"
+            or matchup.get("parentId") is not None
+            or bool(matchup.get("isLive"))
+            or matchup_id not in moneylines
+        ):
+            continue
+        participants = {
+            str(item.get("alignment")): canonical_team(item.get("name"))
+            for item in matchup.get("participants", [])
+        }
+        if not participants.get("home") or not participants.get("away"):
+            continue
+        kickoff = pd.to_datetime(matchup.get("startTime"), utc=True, errors="coerce")
+        if pd.isna(kickoff):
+            continue
+        prices = moneylines[int(matchup_id)]
+        rows.append(
+            {
+                "date": kickoff.tz_convert(None).normalize(),
+                "kickoff_utc": kickoff,
+                "home_team": participants["home"],
+                "away_team": participants["away"],
+                "odds_home": prices["home"],
+                "odds_draw": prices["draw"],
+                "odds_away": prices["away"],
+                "odds_source": "pinnacle_live",
+            }
+        )
+    output = pd.DataFrame(rows)
+    if output.empty:
+        return output
+    output["match_key"] = (
+        output["date"].dt.strftime("%Y-%m-%d")
+        + "|"
+        + output["home_team"].map(name_key)
+        + "|"
+        + output["away_team"].map(name_key)
+    )
+    implied = 1.0 / output[["odds_home", "odds_draw", "odds_away"]]
+    output["odds_overround"] = implied.sum(axis=1)
+    output["market_prob_home"] = implied["odds_home"] / output["odds_overround"]
+    output["market_prob_draw"] = implied["odds_draw"] / output["odds_overround"]
+    output["market_prob_away"] = implied["odds_away"] / output["odds_overround"]
+    output["has_odds"] = 1
+    return output.drop_duplicates("match_key", keep="last").reset_index(drop=True)
+
+
+def refresh_pinnacle_upcoming_odds() -> str:
+    matchups = _request_json(PINNACLE_MATCHUPS_URL, headers=PINNACLE_HEADERS)
+    markets = _request_json(PINNACLE_MARKETS_URL, headers=PINNACLE_HEADERS)
+    if not isinstance(matchups, list) or not isinstance(markets, list):
+        raise ValueError("Pinnacle response has an unexpected JSON shape")
+    odds = parse_pinnacle_upcoming_odds(matchups, markets)
+    if odds.empty:
+        raise ValueError("Pinnacle returned no open Eredivisie 1X2 markets")
+    temporary = PINNACLE_ODDS_PATH.with_suffix(".csv.tmp")
+    odds.to_csv(temporary, index=False)
+    temporary.replace(PINNACLE_ODDS_PATH)
+    return f"ok:{len(odds)}"
+
+
 def update_sources(force: bool = False) -> dict[str, Any]:
     ensure_directories()
     downloaded = 0
@@ -98,17 +222,28 @@ def update_sources(force: bool = False) -> dict[str, Any]:
     weekly_odds_status = "not_requested"
     try:
         _download(FOOTBALL_DATA_FIXTURES_URL, weekly_odds_path)
-        weekly_odds_status = "ok"
+        weekly_raw = _read_csv_flexible(weekly_odds_path)
+        weekly_rows = int(weekly_raw.get("Div", pd.Series(dtype=str)).eq("N1").sum())
+        weekly_odds_status = f"ok:{weekly_rows}" if weekly_rows else "empty:0"
+        if not weekly_rows:
+            failures.append("football_data_weekly_fixtures: no N1 rows")
     except Exception as exc:
         weekly_odds_status = f"unavailable:{type(exc).__name__}"
         failures.append(f"football_data_weekly_fixtures: {exc}")
+
+    pinnacle_status = "not_requested"
+    try:
+        pinnacle_status = refresh_pinnacle_upcoming_odds()
+    except Exception as exc:
+        pinnacle_status = f"unavailable:{type(exc).__name__}"
+        failures.append(f"pinnacle: {exc}")
 
     espn_path = RAW_DIR / "espn_ned1_scoreboard.json"
     espn_status = "not_requested"
     try:
         response = requests.get(
             ESPN_SCOREBOARD_URL,
-            params={"limit": "1000", "dates": "20260801-20270601"},
+            params={"limit": "1000", "dates": "2026"},
             headers={"User-Agent": USER_AGENT, "Accept": "application/json"},
             timeout=30,
         )
@@ -128,6 +263,7 @@ def update_sources(force: bool = False) -> dict[str, Any]:
         "football_data_reused": reused,
         "fixture_feed_available": fixture_path.exists(),
         "weekly_odds_status": weekly_odds_status,
+        "pinnacle_status": pinnacle_status,
         "espn_status": espn_status,
         "failures": failures,
     }
@@ -412,6 +548,66 @@ def load_weekly_upcoming_odds() -> pd.DataFrame:
     return output.dropna(subset=["date", "home_team", "away_team"])
 
 
+def load_pinnacle_upcoming_odds() -> pd.DataFrame:
+    if not PINNACLE_ODDS_PATH.exists():
+        return pd.DataFrame()
+    odds = _read_csv_flexible(PINNACLE_ODDS_PATH)
+    required = {
+        "date",
+        "home_team",
+        "away_team",
+        "odds_home",
+        "odds_draw",
+        "odds_away",
+    }
+    if not required.issubset(odds.columns):
+        return pd.DataFrame()
+    odds["date"] = pd.to_datetime(odds["date"], errors="coerce")
+    odds["home_team"] = odds["home_team"].map(canonical_team)
+    odds["away_team"] = odds["away_team"].map(canonical_team)
+    odds["match_key"] = (
+        odds["date"].dt.strftime("%Y-%m-%d")
+        + "|"
+        + odds["home_team"].map(name_key)
+        + "|"
+        + odds["away_team"].map(name_key)
+    )
+    for column in ("odds_home", "odds_draw", "odds_away"):
+        odds[column] = pd.to_numeric(odds[column], errors="coerce")
+    implied = 1.0 / odds[["odds_home", "odds_draw", "odds_away"]]
+    odds["odds_overround"] = implied.sum(axis=1, min_count=3)
+    odds["market_prob_home"] = implied["odds_home"] / odds["odds_overround"]
+    odds["market_prob_draw"] = implied["odds_draw"] / odds["odds_overround"]
+    odds["market_prob_away"] = implied["odds_away"] / odds["odds_overround"]
+    odds["odds_source"] = "pinnacle_live"
+    odds["has_odds"] = 1
+    return odds.dropna(
+        subset=["date", "home_team", "away_team", "odds_home", "odds_draw", "odds_away"]
+    )
+
+
+def _overlay_upcoming_odds(
+    fixtures: pd.DataFrame,
+    odds: pd.DataFrame,
+    odds_columns: list[str],
+) -> pd.DataFrame:
+    if odds.empty:
+        return fixtures
+    available = [column for column in odds_columns if column in odds.columns]
+    source = odds[["match_key", *available]].drop_duplicates("match_key", keep="last")
+    output = fixtures.merge(source, on="match_key", how="left", suffixes=("", "_source"))
+    for column in available:
+        source_column = f"{column}_source"
+        values = output[source_column]
+        if column == "odds_source":
+            valid = values.fillna("").astype(str).str.strip().ne("")
+        else:
+            valid = values.notna()
+        output[column] = values.where(valid, output[column])
+        output = output.drop(columns=source_column)
+    return output
+
+
 def append_fixture_results(matches: pd.DataFrame, fixtures: pd.DataFrame) -> pd.DataFrame:
     feed_results = fixtures[
         fixtures[["feed_home_goals", "feed_away_goals"]].notna().all(axis=1)
@@ -470,23 +666,20 @@ def build_processed_data() -> tuple[pd.DataFrame, pd.DataFrame]:
         "score_market_has_totals",
         "score_market_has_handicap",
     ]
+    for column in odds_columns:
+        fixtures[column] = "" if column == "odds_source" else np.nan
+
+    # Football-Data is an opening reference; the later live Pinnacle quote takes priority.
     weekly_odds = load_weekly_upcoming_odds()
     if not weekly_odds.empty:
-        fixtures = fixtures.merge(weekly_odds[["match_key", *odds_columns]], on="match_key", how="left")
-    else:
-        for column in odds_columns:
-            fixtures[column] = "" if column == "odds_source" else np.nan
+        weekly_odds = weekly_odds[weekly_odds.get("has_odds", 0).eq(1)].copy()
+        fixtures = _overlay_upcoming_odds(fixtures, weekly_odds, odds_columns)
+    fixtures = _overlay_upcoming_odds(fixtures, load_pinnacle_upcoming_odds(), odds_columns)
 
     manual_odds = load_manual_upcoming_odds()
     if not manual_odds.empty:
         manual_columns = [column for column in odds_columns if column in manual_odds.columns]
-        fixtures = fixtures.merge(
-            manual_odds[["match_key", *manual_columns]], on="match_key", how="left", suffixes=("", "_manual")
-        )
-        for column in manual_columns:
-            manual_column = f"{column}_manual"
-            fixtures[column] = fixtures[manual_column].where(fixtures[manual_column].notna(), fixtures[column])
-            fixtures = fixtures.drop(columns=manual_column)
+        fixtures = _overlay_upcoming_odds(fixtures, manual_odds, manual_columns)
     fixtures["has_odds"] = fixtures["has_odds"].fillna(0).astype(int)
     fixtures["score_market_has_totals"] = fixtures["score_market_has_totals"].fillna(0).astype(int)
     fixtures["score_market_has_handicap"] = fixtures["score_market_has_handicap"].fillna(0).astype(int)

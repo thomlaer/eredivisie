@@ -51,6 +51,7 @@ def publish_dashboard(
             "model_accuracy": metrics.get("selected", {}).get("accuracy"),
             "model_log_loss": metrics.get("selected", {}).get("log_loss"),
             "current_season_accuracy": metrics.get("current_season", {}).get("accuracy"),
+            "current_season_rows": metrics.get("current_season", {}).get("rows", 0),
             "odds_weight": metrics.get("selected", {}).get("odds_weight"),
             "draw_multiplier": metrics.get("selected", {}).get("draw_multiplier"),
             "espn_status": source_report.get("espn_status"),

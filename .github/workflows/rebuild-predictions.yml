@@ -69,7 +69,12 @@ jobs:
           git config user.email "github-actions@github.com"
           git add \
             dashboard/public/data/dashboard.json \
+            data/prediction_history.csv \
+            data/raw/football_data/N1_2627.csv \
+            data/raw/football_data_weekly_fixtures.csv \
+            data/raw/pinnacle_eredivisie_odds.csv \
             data/raw/eredivisie_2026_fixtures.json \
+            data/raw/current_availability_report.json \
             data/raw/source_update_report.json \
             data/raw/transfermarkt_eredivisie_current_performance.csv \
             data/raw/transfermarkt_eredivisie_current_squads.csv \

@@ -156,6 +156,12 @@ def run_season(features: pd.DataFrame, test_season: int) -> list[dict[str, float
     strategies = {
         "xgboost_raw": combine(xgb, market, available, poisson, 0.0, 0.0, 1.0, 1.0),
         "market_only": market,
+        "fixed_market_draw_1.30": combine(
+            xgb, market, available, poisson, 1.0, 0.0, 1.0, 1.30
+        ),
+        "fixed_blend_0.80_draw_1.30": combine(
+            xgb, market, available, poisson, 0.80, 0.0, 1.0, 1.30
+        ),
         "selected_outcome": combine(
             xgb,
             market,

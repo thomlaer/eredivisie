@@ -11,6 +11,7 @@ outputs/**/inspection.json
 outputs/latest/historical_features.csv
 data/processed/
 data/raw/*.html
+data/raw/espn_ned1_scoreboard.json
 dashboard/.next/
 dashboard/node_modules/
 dashboard/.vercel/

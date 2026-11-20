@@ -13,6 +13,7 @@ from prediction.config import (
     MODEL_DIR,
     MODEL_TRAIN_FROM,
     OUTPUT_DIR,
+    PREDICTION_HISTORY,
     TEST_SEASON,
     VALIDATION_SEASONS,
     ensure_directories,
@@ -84,6 +85,60 @@ def current_season_metrics(actual_features: pd.DataFrame, predictions: pd.DataFr
     }
 
 
+def played_prediction_metrics(played: pd.DataFrame) -> dict[str, float | int | None]:
+    if played.empty:
+        return {"rows": 0, "accuracy": None, "log_loss": None}
+    outcome_ids = {"away_win": 0, "draw": 1, "home_win": 2}
+    probabilities = played[["prob_away_win", "prob_draw", "prob_home_win"]].apply(
+        pd.to_numeric, errors="coerce"
+    )
+    targets = played["actual_outcome"].map(outcome_ids)
+    valid = probabilities.notna().all(axis=1) & targets.notna()
+    if not valid.any():
+        return {"rows": 0, "accuracy": None, "log_loss": None}
+    values = probabilities.loc[valid].to_numpy(dtype=float)
+    y_true = targets.loc[valid].to_numpy(dtype=int)
+    return {
+        "rows": int(valid.sum()),
+        "accuracy": float(accuracy_score(y_true, values.argmax(axis=1))),
+        "log_loss": float(log_loss(y_true, values, labels=[0, 1, 2])),
+    }
+
+
+def snapshot_predictions(
+    upcoming: pd.DataFrame,
+    path=PREDICTION_HISTORY,
+    generated_at_utc: pd.Timestamp | str | None = None,
+) -> pd.DataFrame:
+    generated = pd.Timestamp.now(tz="UTC") if generated_at_utc is None else pd.Timestamp(generated_at_utc)
+    generated = generated.tz_localize("UTC") if generated.tzinfo is None else generated.tz_convert("UTC")
+    if path.exists():
+        try:
+            history = pd.read_csv(path)
+        except pd.errors.EmptyDataError:
+            history = pd.DataFrame()
+    else:
+        history = pd.DataFrame()
+
+    candidates = upcoming.copy()
+    kickoff = pd.to_datetime(candidates.get("kickoff_utc"), utc=True, errors="coerce")
+    fallback_date = pd.to_datetime(candidates.get("date"), utc=True, errors="coerce") + pd.Timedelta(days=1)
+    candidates = candidates[(kickoff.fillna(fallback_date) > generated)].copy()
+    if candidates.empty:
+        return history
+    candidates["snapshot_at_utc"] = generated.isoformat()
+    if not history.empty and "match_key" in history:
+        history = history[~history["match_key"].isin(candidates["match_key"])]
+    frames = [frame.dropna(axis=1, how="all") for frame in (history, candidates) if not frame.empty]
+    output = pd.concat(frames, ignore_index=True, sort=False)
+    output = output.drop_duplicates("match_key", keep="last")
+    path.parent.mkdir(parents=True, exist_ok=True)
+    temporary = path.with_suffix(path.suffix + ".tmp")
+    output.to_csv(temporary, index=False)
+    temporary.replace(path)
+    return output
+
+
 def outcome_export(frame: pd.DataFrame) -> pd.DataFrame:
     internal_columns = [
         "expected_home_goals",
@@ -138,7 +193,9 @@ def main() -> None:
     current_predictions = prediction_frame(preseason_bundle, current_features)
     played = attach_actuals(current_predictions, current_features)
     played = attach_fixture_metadata(played, fixtures)
-    metrics["current_season"] = current_season_metrics(current_features, current_predictions)
+    metrics["current_season_reconstructed"] = current_season_metrics(
+        current_features, current_predictions
+    )
 
     final_bundle = fit_bundle(
         features,
@@ -166,7 +223,29 @@ def main() -> None:
     standings = current_table(matches, CURRENT_SEASON)
     projected, champions = simulate_season(matches, upcoming, CURRENT_SEASON, simulations=args.simulations)
     public_upcoming = outcome_export(upcoming)
-    public_played = outcome_export(played)
+    history = snapshot_predictions(public_upcoming)
+    archived = (
+        history[history["match_key"].isin(current_features["match_key"])].copy()
+        if "match_key" in history
+        else pd.DataFrame()
+    )
+    archived_played = attach_actuals(archived, current_features) if not archived.empty else archived
+    archived_played = attach_fixture_metadata(archived_played, fixtures)
+    if not archived_played.empty:
+        archived_played["forecast_status"] = "archived"
+
+    reconstructed_played = outcome_export(played)
+    if not reconstructed_played.empty:
+        reconstructed_played = reconstructed_played[
+            ~reconstructed_played["match_key"].isin(archived_played.get("match_key", []))
+        ].copy()
+        reconstructed_played["forecast_status"] = "reconstructed"
+    public_played = pd.concat(
+        [archived_played, reconstructed_played], ignore_index=True, sort=False
+    )
+    if "date" in public_played:
+        public_played["date"] = pd.to_datetime(public_played["date"], errors="coerce")
+    metrics["current_season"] = played_prediction_metrics(archived_played)
 
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
     public_upcoming.to_csv(OUTPUT_DIR / "upcoming_predictions.csv", index=False)

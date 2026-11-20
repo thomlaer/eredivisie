@@ -27,6 +27,7 @@ type Prediction = {
   actual_score?: string;
   actual_outcome?: string;
   winner_correct?: boolean;
+  forecast_status?: "archived" | "reconstructed";
 };
 
 type Injury = {
@@ -80,6 +81,7 @@ type Dashboard = {
     model_accuracy: Numberish;
     model_log_loss: Numberish;
     current_season_accuracy: Numberish;
+    current_season_rows?: Numberish;
     odds_weight: Numberish;
     draw_multiplier: Numberish;
     espn_status: string;
@@ -228,7 +230,11 @@ export default function Home() {
             <p>De {focusRows.length} wedstrijden voor het aankomende invulweekend. Bij {upcomingOdds} wedstrijden zijn actuele kansen gebruikt.</p>
           </div>
           <div className="metric"><span>Historische controle</span><strong>{percent(data.metadata.model_accuracy)}</strong><small>keuzes goed</small></div>
-          <div className="metric"><span>Dit seizoen</span><strong>{percent(data.metadata.current_season_accuracy)}</strong><small>keuzes goed</small></div>
+          <div className="metric">
+            <span>Dit seizoen</span>
+            <strong>{number(data.metadata.current_season_rows) ? percent(data.metadata.current_season_accuracy) : "Nog geen"}</strong>
+            <small>{number(data.metadata.current_season_rows)} echte weekkeuzes</small>
+          </div>
           <div className="metric"><span>Afwezigen</span><strong>{number(data.metadata.likely_starters_unavailable)}</strong><small>mogelijke basisspelers</small></div>
         </section>
 
@@ -296,7 +302,7 @@ export default function Home() {
           <div className="section-heading">
             <div>
               <h2>Gespeeld</h2>
-              <p>Voorspeld met een model dat alleen eerdere seizoenen kende; beoordeling is uitsluitend thuis, gelijk of uit.</p>
+              <p>Nieuwe keuzes worden voor de aftrap bewaard. Eerdere rondes zijn alleen een achteraf gereconstrueerde controle.</p>
             </div>
           </div>
           <div className="table-shell">
@@ -306,7 +312,7 @@ export default function Home() {
                 {data.played.map((row) => (
                   <tr key={`played-${row.match_key}`}>
                     <td><strong>{row.home_team} - {row.away_team}</strong><small>{row.date}{row.round ? ` · speelronde ${row.round}` : ""}</small></td>
-                    <td><strong>{pickLabel(row)}</strong><small>{row.predicted_winner}</small></td>
+                    <td><strong>{pickLabel(row)}</strong><small>{row.predicted_winner}{row.forecast_status === "reconstructed" ? " · achteraf" : " · vooraf bewaard"}</small></td>
                     <td><span className="score actual">{row.actual_score}</span></td>
                     <td><span className={`result ${outcomeClass(row)}`}>{outcomeLabel(row)}</span></td>
                   </tr>

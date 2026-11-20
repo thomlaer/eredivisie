@@ -412,11 +412,11 @@ def _paged_performance(
     base_url: str,
     parser: Any,
 ) -> pd.DataFrame:
-    first = _get(session, base_url)
-    frames = [parser(first.content)]
+    first, first_frame = _get_parsed(session, base_url, parser)
+    frames = [first_frame]
     for page in range(2, _pagination_pages(first.content) + 1):
-        response = _get(session, f"{base_url}/page/{page}")
-        frames.append(parser(response.content))
+        _, frame = _get_parsed(session, f"{base_url}/page/{page}", parser)
+        frames.append(frame)
         time.sleep(0.12)
     return pd.concat(frames, ignore_index=True).drop_duplicates("player_id", keep="first")
 
@@ -458,9 +458,38 @@ def _cache_is_fresh(path: Path, max_age_hours: float) -> bool:
 
 
 def _get(session: requests.Session, url: str) -> requests.Response:
-    response = session.get(url, timeout=30)
-    response.raise_for_status()
-    return response
+    last_error: Exception | None = None
+    for attempt in range(3):
+        try:
+            response = session.get(url, timeout=30)
+            response.raise_for_status()
+            return response
+        except requests.RequestException as exc:
+            last_error = exc
+            status = getattr(exc.response, "status_code", 0)
+            if attempt == 2 or status not in {0, 429, 500, 502, 503, 504}:
+                raise
+            time.sleep(1.5 * (attempt + 1))
+    raise last_error or RuntimeError(f"Transfermarkt request failed: {url}")
+
+
+def _get_parsed(
+    session: requests.Session,
+    url: str,
+    parser: Any,
+    *parser_args: Any,
+) -> tuple[requests.Response, pd.DataFrame]:
+    last_error: Exception | None = None
+    for attempt in range(3):
+        response = _get(session, url)
+        try:
+            return response, parser(response.content, *parser_args)
+        except ValueError as exc:
+            last_error = exc
+            if attempt == 2:
+                raise
+            time.sleep(1.5 * (attempt + 1))
+    raise last_error or RuntimeError(f"Transfermarkt parser failed: {url}")
 
 
 def _enrich_live_squads(live: pd.DataFrame) -> pd.DataFrame:
@@ -537,23 +566,30 @@ def _enrich_live_squads(live: pd.DataFrame) -> pd.DataFrame:
 def refresh_current_squads(session: requests.Session, force: bool = False) -> str:
     if not force and _cache_is_fresh(LIVE_SQUADS, SQUAD_CACHE_HOURS):
         return f"cached:{_read_row_count(LIVE_SQUADS)}"
-    league = _get(session, TRANSFERMARKT_LEAGUE_URL)
-    clubs = parse_transfermarkt_clubs(league.content)
+    league, clubs = _get_parsed(
+        session, TRANSFERMARKT_LEAGUE_URL, parse_transfermarkt_clubs
+    )
     squad_frames: list[pd.DataFrame] = []
     performance_frames: list[pd.DataFrame] = []
     performance_failures = 0
     for club in clubs.itertuples(index=False):
-        response = _get(session, club.squad_url)
-        squad_frames.append(parse_transfermarkt_squad(response.content, club.team, int(club.club_id)))
+        _, squad = _get_parsed(
+            session,
+            club.squad_url,
+            parse_transfermarkt_squad,
+            club.team,
+            int(club.club_id),
+        )
+        squad_frames.append(squad)
         try:
-            performance_response = _get(session, club.performance_url)
-            performance_frames.append(
-                parse_transfermarkt_club_performance(
-                    performance_response.content,
-                    club.team,
-                    int(club.club_id),
-                )
+            _, performance = _get_parsed(
+                session,
+                club.performance_url,
+                parse_transfermarkt_club_performance,
+                club.team,
+                int(club.club_id),
             )
+            performance_frames.append(performance)
         except Exception:
             performance_failures += 1
         time.sleep(0.12)
@@ -589,29 +625,31 @@ def refresh_injuries(force_squads: bool = False) -> dict[str, Any]:
     suspension_status = "not_requested"
     squad_status = "not_requested"
     try:
-        response = _get(session, TRANSFERMARKT_INJURY_URL)
-        injuries = parse_transfermarkt_injuries(response.content)
+        response, injuries = _get_parsed(
+            session, TRANSFERMARKT_INJURY_URL, parse_transfermarkt_injuries
+        )
         temporary = INJURY_HTML.with_suffix(".html.tmp")
         temporary.write_bytes(response.content)
         temporary.replace(INJURY_HTML)
         injuries.to_csv(INJURY_CSV, index=False)
         injury_status = f"ok:{len(injuries)}"
     except Exception as exc:
-        injury_status = f"unavailable:{type(exc).__name__}"
+        injury_status = f"unavailable:{type(exc).__name__}:{str(exc)[:120]}"
     try:
-        response = _get(session, TRANSFERMARKT_SUSPENSION_URL)
-        suspensions = parse_transfermarkt_suspensions(response.content)
+        response, suspensions = _get_parsed(
+            session, TRANSFERMARKT_SUSPENSION_URL, parse_transfermarkt_suspensions
+        )
         temporary = SUSPENSION_HTML.with_suffix(".html.tmp")
         temporary.write_bytes(response.content)
         temporary.replace(SUSPENSION_HTML)
         suspensions.to_csv(SUSPENSION_CSV, index=False)
         suspension_status = f"ok:{len(suspensions)}"
     except Exception as exc:
-        suspension_status = f"unavailable:{type(exc).__name__}"
+        suspension_status = f"unavailable:{type(exc).__name__}:{str(exc)[:120]}"
     try:
         squad_status = refresh_current_squads(session, force=force_squads)
     except Exception as exc:
-        squad_status = f"unavailable:{type(exc).__name__}"
+        squad_status = f"unavailable:{type(exc).__name__}:{str(exc)[:120]}"
     return {
         "injury_status": injury_status,
         "injury_rows": _read_row_count(INJURY_CSV),

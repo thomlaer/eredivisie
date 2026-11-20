@@ -6,6 +6,7 @@ Lokale, tijdveilige voorspelpipeline voor de Eredivisie. De opzet volgt de bruik
 
 - Football-Data.co.uk: historische uitslagen, pre-match/closing odds en vanaf recente seizoenen xG, schoten, corners en kaarten.
 - Football-Data.co.uk `fixtures.csv`: wekelijkse pre-match 1X2-, total-goals- en Asian-handicapodds. De feed bevat alleen competities die op dat moment zijn gepubliceerd.
+- Pinnacle openbare guest-feed: actuele Eredivisie 1X2-odds als automatische fallback en als recentere quote dan de Football-Data-openingslijn.
 - FixtureDownload: volledig programma van het lopende seizoen.
 - ESPN `ned.1`: optionele live controle voor uitslagen en fixtures. De pipeline blijft werken wanneer ESPN tijdelijk blokkeert.
 - Transfermarkt player-scores extract: historische basisspelers, marktwaarde, posities en recente spelerproductie. Alleen informatie van voor de te voorspellen wedstrijd wordt gebruikt.
@@ -45,7 +46,7 @@ powershell -ExecutionPolicy Bypass -File scripts/weekly_update.ps1
 ```
 
 De GitHub Action `.github/workflows/rebuild-predictions.yml` draait daarnaast iedere woensdag
-om 08:00 Nederlandse/Belgische tijd en kan ook handmatig worden gestart. Op GitHub wordt `--force-live` gebruikt:
+om 08:17 Nederlandse/Belgische tijd, met een tweede reserverun om 10:47, en kan ook handmatig worden gestart. Op GitHub wordt `--force-live` gebruikt:
 actuele selecties en spelerprestaties worden daardoor altijd vernieuwd, terwijl de grote
 historische downloads alleen worden opgehaald wanneer dat nodig is.
 
@@ -64,10 +65,13 @@ bestandsnaam; het bestand wordt niet naar de server geupload.
 - `outputs/latest/model_metrics.json`
 - `data/raw/transfermarkt_eredivisie_injuries.csv`
 - `data/raw/current_availability_report.json`
+- `data/prediction_history.csv`
 - `dashboard/public/data/dashboard.json`
 - `outputs/019e1b53-e36c-7c60-b50f-e3af5765acce/Eredivisie_voorspellingen.xlsx`
 
-De huidige fixturefeed bevat alle 306 competitiewedstrijden. Een rebuild probeert automatisch de wekelijkse Football-Data-odds te koppelen. Handmatige odds hebben voorrang. Als de wekelijkse feed de Eredivisie nog niet bevat, blijft het model zonder odds werken; ontbrekende odds worden nooit achteraf ingevuld.
+De huidige fixturefeed bevat alle 306 competitiewedstrijden. Een rebuild koppelt eerst de wekelijkse Football-Data-odds en vult die automatisch aan met de recentere Pinnacle-quote. Handmatige odds hebben voorrang. Alleen wanneer beide automatische bronnen geen geldige Eredivisie-regel leveren, valt een wedstrijd terug op XGBoost zonder odds.
+
+Elke nog te spelen voorspelling wordt met tijdstip opgeslagen in `data/prediction_history.csv`. De dashboardaccuracy gebruikt alleen zo'n vooraf opgeslagen keuze; oudere rijen zonder snapshot worden herkenbaar als achteraf gereconstrueerde controle getoond. Daardoor kunnen nieuwe uitslagen of odds een oude score niet meer stil achteraf veranderen.
 
 Een normale rebuild ververst blessures en schorsingen iedere keer. De volledige selectie- en minutenlaag wordt maximaal twintig uur gecachet, zodat een wekelijkse run actueel blijft zonder 18 clubpagina's onnodig bij elke lokale test opnieuw op te halen. De huidige beschikbaarheid corrigeert alleen toekomstige voorspellingen: er is geen betrouwbare historische week-voor-week blessurearchieflaag om dit effect zonder leakage te backtesten.
 

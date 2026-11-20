@@ -12,6 +12,7 @@ MANUAL_DIR = DATA_DIR / "manual"
 OUTPUT_DIR = ROOT / "outputs" / "latest"
 MODEL_DIR = ROOT / "models"
 DASHBOARD_PUBLIC = ROOT / "dashboard" / "public"
+PREDICTION_HISTORY = DATA_DIR / "prediction_history.csv"
 
 CURRENT_SEASON_START = 2026
 FIRST_SEASON_START = 1993
@@ -24,6 +25,13 @@ FOOTBALL_DATA_URL = "https://www.football-data.co.uk/mmz4281/{code}/N1.csv"
 FIXTURE_FEED_URL = "https://fixturedownload.azurewebsites.net/feed/json/eredivisie-2026"
 ESPN_SCOREBOARD_URL = "https://site.api.espn.com/apis/site/v2/sports/soccer/ned.1/scoreboard"
 FOOTBALL_DATA_FIXTURES_URL = "https://www.football-data.co.uk/fixtures.csv"
+PINNACLE_LEAGUE_ID = 1928
+PINNACLE_MATCHUPS_URL = (
+    f"https://guest.api.arcadia.pinnacle.com/0.1/leagues/{PINNACLE_LEAGUE_ID}/matchups"
+)
+PINNACLE_MARKETS_URL = (
+    f"https://guest.api.arcadia.pinnacle.com/0.1/leagues/{PINNACLE_LEAGUE_ID}/markets/straight"
+)
 
 RANDOM_SEED = 42
 RECENCY_HALF_LIFE_DAYS = 1460

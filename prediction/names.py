@@ -16,6 +16,8 @@ ALIASES = {
     "almere city": "Almere City",
     "almere city fc": "Almere City",
     "cambuur": "SC Cambuur",
+    "cambuur leeuwarden": "SC Cambuur",
+    "cambuur leeuwaarden": "SC Cambuur",
     "sc cambuur": "SC Cambuur",
     "excelsior": "Excelsior",
     "excelsior rotterdam": "Excelsior",

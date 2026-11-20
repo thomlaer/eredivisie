@@ -1,11 +1,13 @@
 from __future__ import annotations
 
 import unittest
+from pathlib import Path
+from tempfile import TemporaryDirectory
 
 import numpy as np
 import pandas as pd
 
-from prediction.data import append_fixture_results
+from prediction.data import append_fixture_results, parse_pinnacle_upcoming_odds
 from prediction.dashboard import _json_default
 from prediction.features import build_historical_features
 from prediction.injuries import (
@@ -24,7 +26,8 @@ from prediction.modeling import (
     score_feature_columns,
 )
 from prediction.names import canonical_team
-from rebuild import attach_fixture_metadata
+from rebuild import attach_fixture_metadata, played_prediction_metrics, snapshot_predictions
+from scripts.backfill_prediction_history import collect_published_predictions
 
 
 class DashboardSerializationTests(unittest.TestCase):
@@ -151,6 +154,146 @@ class FeatureLeakageTests(unittest.TestCase):
         self.assertEqual(ajax["has_odds"], 1)
         self.assertEqual(nec["source_file"], "fixture_feed_current")
         self.assertEqual(nec["home_goals"], 2)
+
+    def test_prediction_history_keeps_latest_pre_match_snapshot(self) -> None:
+        first = pd.DataFrame(
+            [
+                {
+                    "match_key": "2026-11-21|ajax|psv",
+                    "date": "2026-11-21",
+                    "kickoff_utc": "2026-11-21T19:00:00Z",
+                    "home_team": "Ajax",
+                    "away_team": "PSV",
+                    "predicted_outcome": "home_win",
+                }
+            ]
+        )
+        second = first.copy()
+        second.loc[0, "predicted_outcome"] = "away_win"
+        with TemporaryDirectory() as directory:
+            path = Path(directory) / "history.csv"
+            snapshot_predictions(first, path, "2026-11-18T08:00:00Z")
+            history = snapshot_predictions(second, path, "2026-11-20T08:00:00Z")
+
+        self.assertEqual(len(history), 1)
+        self.assertEqual(history.loc[0, "predicted_outcome"], "away_win")
+        self.assertEqual(history.loc[0, "snapshot_at_utc"], "2026-11-20T08:00:00+00:00")
+
+    def test_git_backfill_uses_last_published_pick_before_kickoff(self) -> None:
+        row = {
+            "match_key": "2026-11-21|ajax|psv",
+            "date": "2026-11-21",
+            "kickoff_utc": "2026-11-21T19:00:00Z",
+            "predicted_outcome": "home_win",
+        }
+        changed = dict(row, predicted_outcome="away_win")
+        too_late = dict(row, predicted_outcome="draw")
+        snapshots = [
+            (pd.Timestamp("2026-11-18T08:00:00Z"), {"upcoming": [row]}),
+            (pd.Timestamp("2026-11-20T08:00:00Z"), {"upcoming": [changed]}),
+            (pd.Timestamp("2026-11-21T20:00:00Z"), {"upcoming": [too_late]}),
+        ]
+
+        history = collect_published_predictions(snapshots)
+
+        self.assertEqual(len(history), 1)
+        self.assertEqual(history.loc[0, "predicted_outcome"], "away_win")
+
+    def test_archived_accuracy_uses_saved_probabilities(self) -> None:
+        played = pd.DataFrame(
+            [
+                {
+                    "actual_outcome": "away_win",
+                    "prob_away_win": 0.6,
+                    "prob_draw": 0.2,
+                    "prob_home_win": 0.2,
+                },
+                {
+                    "actual_outcome": "draw",
+                    "prob_away_win": 0.2,
+                    "prob_draw": 0.3,
+                    "prob_home_win": 0.5,
+                },
+            ]
+        )
+
+        metrics = played_prediction_metrics(played)
+
+        self.assertEqual(metrics["rows"], 2)
+        self.assertEqual(metrics["accuracy"], 0.5)
+
+    def test_archived_and_reconstructed_dates_can_be_normalized_together(self) -> None:
+        combined = pd.DataFrame(
+            {
+                "date": ["2026-09-12", pd.Timestamp("2026-09-19")],
+                "forecast_status": ["archived", "reconstructed"],
+            }
+        )
+
+        combined["date"] = pd.to_datetime(combined["date"], errors="coerce")
+        ordered = combined.sort_values("date", ascending=False)
+
+        self.assertEqual(ordered.iloc[0]["forecast_status"], "reconstructed")
+
+
+class UpcomingOddsTests(unittest.TestCase):
+    def test_pinnacle_main_moneyline_is_converted_and_canonicalized(self) -> None:
+        matchups = [
+            {
+                "id": 123,
+                "type": "matchup",
+                "parentId": None,
+                "startTime": "2026-11-21T15:30:00Z",
+                "participants": [
+                    {"alignment": "home", "name": "NEC Nijmegen"},
+                    {"alignment": "away", "name": "Cambuur Leeuwaarden"},
+                ],
+            },
+            {
+                "id": 124,
+                "type": "special",
+                "parentId": None,
+                "startTime": "2026-11-21T15:30:00Z",
+                "participants": [],
+            },
+        ]
+        markets = [
+            {
+                "matchupId": 123,
+                "type": "moneyline",
+                "period": 0,
+                "isAlternate": False,
+                "status": "open",
+                "prices": [
+                    {"designation": "home", "price": 150},
+                    {"designation": "draw", "price": 250},
+                    {"designation": "away", "price": -125},
+                ],
+            },
+            {
+                "matchupId": 123,
+                "type": "moneyline",
+                "period": 1,
+                "isAlternate": False,
+                "status": "open",
+                "prices": [],
+            },
+        ]
+
+        parsed = parse_pinnacle_upcoming_odds(matchups, markets)
+
+        self.assertEqual(len(parsed), 1)
+        self.assertEqual(parsed.loc[0, "home_team"], "NEC")
+        self.assertEqual(parsed.loc[0, "away_team"], "SC Cambuur")
+        self.assertAlmostEqual(parsed.loc[0, "odds_home"], 2.5)
+        self.assertAlmostEqual(parsed.loc[0, "odds_draw"], 3.5)
+        self.assertAlmostEqual(parsed.loc[0, "odds_away"], 1.8)
+        self.assertEqual(parsed.loc[0, "odds_source"], "pinnacle_live")
+        self.assertEqual(parsed.loc[0, "match_key"], "2026-11-21|nec|sc cambuur")
+        self.assertAlmostEqual(
+            parsed.loc[0, ["market_prob_home", "market_prob_draw", "market_prob_away"]].sum(),
+            1.0,
+        )
 
 
 class ProbabilityLayerTests(unittest.TestCase):
