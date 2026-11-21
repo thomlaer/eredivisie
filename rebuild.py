@@ -19,7 +19,7 @@ from prediction.config import (
     ensure_directories,
 )
 from prediction.dashboard import publish_dashboard
-from prediction.data import build_processed_data, update_sources
+from prediction.data import build_processed_data, update_sources, validate_espn_results
 from prediction.external import attach_transfermarkt_context
 from prediction.features import build_future_features, build_historical_features
 from prediction.injuries import apply_current_availability, refresh_injuries, save_injury_report
@@ -166,6 +166,8 @@ def main() -> None:
         report_path.write_text(json.dumps(source_report, indent=2, ensure_ascii=True), encoding="utf-8")
 
     matches, fixtures = build_processed_data()
+    source_report.update(validate_espn_results(matches))
+    report_path.write_text(json.dumps(source_report, indent=2, ensure_ascii=True), encoding="utf-8")
     features, state_builder = build_historical_features(matches)
     features = attach_transfermarkt_context(features)
     features = features[features["season_start"] >= MODEL_TRAIN_FROM].reset_index(drop=True)

@@ -193,6 +193,73 @@ def refresh_pinnacle_upcoming_odds() -> str:
     return f"ok:{len(odds)}"
 
 
+def parse_espn_completed_results(payload: dict[str, Any]) -> pd.DataFrame:
+    cutoff = pd.Timestamp(year=CURRENT_SEASON_START, month=7, day=1, tz="UTC")
+    rows: list[dict[str, Any]] = []
+    for event in payload.get("events", []):
+        status = event.get("status", {}).get("type", {})
+        kickoff = pd.to_datetime(event.get("date"), utc=True, errors="coerce")
+        if not status.get("completed") or pd.isna(kickoff) or kickoff < cutoff:
+            continue
+        competitions = event.get("competitions") or []
+        competitors = competitions[0].get("competitors", []) if competitions else []
+        home = next((item for item in competitors if item.get("homeAway") == "home"), None)
+        away = next((item for item in competitors if item.get("homeAway") == "away"), None)
+        if home is None or away is None:
+            continue
+        home_goals = pd.to_numeric(home.get("score"), errors="coerce")
+        away_goals = pd.to_numeric(away.get("score"), errors="coerce")
+        home_team = canonical_team(home.get("team", {}).get("displayName"))
+        away_team = canonical_team(away.get("team", {}).get("displayName"))
+        if pd.isna(home_goals) or pd.isna(away_goals) or not home_team or not away_team:
+            continue
+        rows.append(
+            {
+                "date": kickoff.tz_convert(None).normalize(),
+                "home_team": home_team,
+                "away_team": away_team,
+                "home_goals": int(home_goals),
+                "away_goals": int(away_goals),
+            }
+        )
+    output = pd.DataFrame(rows)
+    if output.empty:
+        return output
+    output["pair_key"] = output["home_team"].map(name_key) + "|" + output["away_team"].map(name_key)
+    return output.drop_duplicates("pair_key", keep="last").reset_index(drop=True)
+
+
+def validate_espn_results(matches: pd.DataFrame) -> dict[str, int | str]:
+    path = RAW_DIR / "espn_ned1_scoreboard.json"
+    if not path.exists():
+        return {"espn_result_check": "unavailable"}
+    try:
+        payload = json.loads(path.read_text(encoding="utf-8"))
+        espn = parse_espn_completed_results(payload)
+    except (OSError, ValueError, TypeError, json.JSONDecodeError) as exc:
+        return {"espn_result_check": f"unavailable:{type(exc).__name__}"}
+    if espn.empty:
+        return {"espn_result_check": "empty", "espn_completed_rows": 0}
+
+    current = matches[matches["season_start"].eq(CURRENT_SEASON_START)].copy()
+    current["pair_key"] = current["home_team"].map(name_key) + "|" + current["away_team"].map(name_key)
+    compared = current.merge(espn, on="pair_key", how="inner", suffixes=("_model", "_espn"))
+    score_mismatch = (
+        compared["home_goals_model"].ne(compared["home_goals_espn"])
+        | compared["away_goals_model"].ne(compared["away_goals_espn"])
+    )
+    date_mismatch = pd.to_datetime(compared["date_model"]).dt.normalize().ne(
+        pd.to_datetime(compared["date_espn"]).dt.normalize()
+    )
+    return {
+        "espn_result_check": "ok" if not score_mismatch.any() else "warning",
+        "espn_completed_rows": int(len(espn)),
+        "espn_results_compared": int(len(compared)),
+        "espn_score_mismatches": int(score_mismatch.sum()),
+        "espn_date_mismatches": int(date_mismatch.sum()),
+    }
+
+
 def update_sources(force: bool = False) -> dict[str, Any]:
     ensure_directories()
     downloaded = 0

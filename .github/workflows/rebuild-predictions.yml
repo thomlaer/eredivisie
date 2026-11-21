@@ -18,6 +18,9 @@ on:
     # A second weekly run makes the refresh resilient if GitHub drops the first.
     - cron: "47 10 * * 3"
       timezone: "Europe/Amsterdam"
+    # Refresh once more after most team news and market movement for the weekend.
+    - cron: "17 8 * * 5"
+      timezone: "Europe/Amsterdam"
 
 permissions:
   contents: write

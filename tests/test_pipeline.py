@@ -7,7 +7,11 @@ from tempfile import TemporaryDirectory
 import numpy as np
 import pandas as pd
 
-from prediction.data import append_fixture_results, parse_pinnacle_upcoming_odds
+from prediction.data import (
+    append_fixture_results,
+    parse_espn_completed_results,
+    parse_pinnacle_upcoming_odds,
+)
 from prediction.dashboard import _json_default
 from prediction.features import build_historical_features
 from prediction.injuries import (
@@ -35,6 +39,38 @@ class DashboardSerializationTests(unittest.TestCase):
         self.assertEqual(_json_default(pd.Timestamp("2026-09-16")), "2026-09-16T00:00:00")
         self.assertEqual(_json_default(np.int64(6)), 6)
         self.assertIsNone(_json_default(pd.NaT))
+
+
+class EspnResultTests(unittest.TestCase):
+    def test_completed_result_is_canonicalized_for_cross_check(self) -> None:
+        payload = {
+            "events": [
+                {
+                    "date": "2026-08-30T12:30Z",
+                    "status": {"type": {"completed": True}},
+                    "competitions": [
+                        {
+                            "competitors": [
+                                {
+                                    "homeAway": "home",
+                                    "score": "2",
+                                    "team": {"displayName": "Feyenoord Rotterdam"},
+                                },
+                                {
+                                    "homeAway": "away",
+                                    "score": "1",
+                                    "team": {"displayName": "ADO Den Haag"},
+                                },
+                            ]
+                        }
+                    ],
+                }
+            ]
+        }
+        result = parse_espn_completed_results(payload)
+        self.assertEqual(result.loc[0, "home_team"], "Feyenoord")
+        self.assertEqual(result.loc[0, "away_team"], "ADO Den Haag")
+        self.assertEqual(result.loc[0, "pair_key"], "feyenoord|ado den haag")
 
 
 def match_frame(first_home_shots: float) -> pd.DataFrame:
@@ -332,6 +368,7 @@ class ModelFeatureTests(unittest.TestCase):
         self.assertEqual(canonical_team("FC Volendam"), "Volendam")
         self.assertEqual(canonical_team("AFC Ajax Amsterdam"), "Ajax")
         self.assertEqual(canonical_team("Sparta"), "Sparta Rotterdam")
+        self.assertEqual(canonical_team("Feyenoord Rotterdam"), "Feyenoord")
 
     def test_outcome_and_score_models_use_separate_odds_features(self) -> None:
         frame = pd.DataFrame(

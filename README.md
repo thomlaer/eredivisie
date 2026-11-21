@@ -46,7 +46,9 @@ powershell -ExecutionPolicy Bypass -File scripts/weekly_update.ps1
 ```
 
 De GitHub Action `.github/workflows/rebuild-predictions.yml` draait daarnaast iedere woensdag
-om 08:17 Nederlandse/Belgische tijd, met een tweede reserverun om 10:47, en kan ook handmatig worden gestart. Op GitHub wordt `--force-live` gebruikt:
+om 08:17 Nederlandse/Belgische tijd, met een tweede reserverun om 10:47. Op vrijdag om 08:17
+volgt een laatste verversing dichter bij het speelweekend. De action kan ook handmatig worden
+gestart. Op GitHub wordt `--force-live` gebruikt:
 actuele selecties en spelerprestaties worden daardoor altijd vernieuwd, terwijl de grote
 historische downloads alleen worden opgehaald wanneer dat nodig is.
 

@@ -244,7 +244,7 @@ export function UpdateControl() {
 
   return (
     <section id="bijwerken" className="section update-section">
-      <div className="section-heading"><div><h2>Handmatig bijwerken</h2><p>Gebruik dit alleen wanneer je niet tot woensdag wilt wachten.</p></div></div>
+      <div className="section-heading"><div><h2>Handmatig bijwerken</h2><p>Gebruik dit alleen wanneer je niet op de automatische update wilt wachten.</p></div></div>
       <form className="tool-panel update-tool" onSubmit={submit}>
         <label><span>Code</span><input autoComplete="off" value={code} onChange={(event) => setCode(event.target.value)} type="password" /></label>
         <button className="primary-button" disabled={!code || busy} type="submit">{busy ? "Wordt gestart…" : "Start bijwerken"}</button>

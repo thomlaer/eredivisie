@@ -21,6 +21,8 @@ ALIASES = {
     "sc cambuur": "SC Cambuur",
     "excelsior": "Excelsior",
     "excelsior rotterdam": "Excelsior",
+    "feyenoord": "Feyenoord",
+    "feyenoord rotterdam": "Feyenoord",
     "fc dordrecht": "Dordrecht",
     "dordrecht": "Dordrecht",
     "for sittard": "Fortuna Sittard",
