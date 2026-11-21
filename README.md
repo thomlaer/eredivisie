@@ -45,10 +45,11 @@ Voor de normale wekelijkse update van bronnen, model, dashboarddata en Excel:
 powershell -ExecutionPolicy Bypass -File scripts/weekly_update.ps1
 ```
 
-De GitHub Action `.github/workflows/rebuild-predictions.yml` draait daarnaast iedere woensdag
-om 08:17 Nederlandse/Belgische tijd, met een tweede reserverun om 10:47. Op vrijdag om 08:17
-volgt een laatste verversing dichter bij het speelweekend. De action kan ook handmatig worden
-gestart. Op GitHub wordt `--force-live` gebruikt:
+De GitHub Action `.github/workflows/rebuild-predictions.yml` draait op dinsdag om 15:17 voor
+midweekwedstrijden en iedere woensdag om 08:17 Nederlandse/Belgische tijd, met een tweede
+reserverun om 10:47. Op vrijdag om 18:17 volgt een laatste verversing nadat de marktconsensus
+voor het speelweekend normaal is gepubliceerd. De action kan ook handmatig worden gestart.
+Op GitHub wordt `--force-live` gebruikt:
 actuele selecties en spelerprestaties worden daardoor altijd vernieuwd, terwijl de grote
 historische downloads alleen worden opgehaald wanneer dat nodig is.
 
@@ -71,7 +72,11 @@ bestandsnaam; het bestand wordt niet naar de server geupload.
 - `dashboard/public/data/dashboard.json`
 - `outputs/019e1b53-e36c-7c60-b50f-e3af5765acce/Eredivisie_voorspellingen.xlsx`
 
-De huidige fixturefeed bevat alle 306 competitiewedstrijden. Een rebuild koppelt eerst de wekelijkse Football-Data-odds en vult die automatisch aan met de recentere Pinnacle-quote. Handmatige odds hebben voorrang. Alleen wanneer beide automatische bronnen geen geldige Eredivisie-regel leveren, valt een wedstrijd terug op XGBoost zonder odds.
+De huidige fixturefeed bevat alle 306 competitiewedstrijden. Een rebuild gebruikt de actuele
+Football-Data-marktconsensus als primaire kansbron. De Pinnacle-feed vult alleen wedstrijden aan
+waarvoor die consensus ontbreekt; handmatige odds hebben altijd voorrang. Alleen wanneer beide
+automatische bronnen geen geldige Eredivisie-regel leveren, valt een wedstrijd terug op XGBoost
+zonder odds.
 
 Elke nog te spelen voorspelling wordt met tijdstip opgeslagen in `data/prediction_history.csv`. De dashboardaccuracy gebruikt alleen zo'n vooraf opgeslagen keuze; oudere rijen zonder snapshot worden herkenbaar als achteraf gereconstrueerde controle getoond. Daardoor kunnen nieuwe uitslagen of odds een oude score niet meer stil achteraf veranderen.
 

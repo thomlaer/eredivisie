@@ -605,6 +605,7 @@ def load_weekly_upcoming_odds() -> pd.DataFrame:
         [output, _pick_odds(raw).reset_index(drop=True), _pick_score_markets(raw).reset_index(drop=True)],
         axis=1,
     )
+    output.loc[output["has_odds"].eq(1), "odds_source"] = "weekly_market_consensus"
     output["match_key"] = (
         output["date"].dt.strftime("%Y-%m-%d")
         + "|"
@@ -675,6 +676,26 @@ def _overlay_upcoming_odds(
     return output
 
 
+def apply_upcoming_odds_sources(
+    fixtures: pd.DataFrame,
+    odds_columns: list[str],
+    *,
+    pinnacle_odds: pd.DataFrame,
+    weekly_odds: pd.DataFrame,
+    manual_odds: pd.DataFrame,
+) -> pd.DataFrame:
+    # A broad bookmaker consensus was more stable in historical testing. Pinnacle
+    # remains a useful live fallback when the weekly consensus has no matching row.
+    output = _overlay_upcoming_odds(fixtures, pinnacle_odds, odds_columns)
+    if not weekly_odds.empty:
+        weekly_odds = weekly_odds[weekly_odds.get("has_odds", 0).eq(1)].copy()
+        output = _overlay_upcoming_odds(output, weekly_odds, odds_columns)
+    if not manual_odds.empty:
+        manual_columns = [column for column in odds_columns if column in manual_odds.columns]
+        output = _overlay_upcoming_odds(output, manual_odds, manual_columns)
+    return output
+
+
 def append_fixture_results(matches: pd.DataFrame, fixtures: pd.DataFrame) -> pd.DataFrame:
     feed_results = fixtures[
         fixtures[["feed_home_goals", "feed_away_goals"]].notna().all(axis=1)
@@ -736,17 +757,16 @@ def build_processed_data() -> tuple[pd.DataFrame, pd.DataFrame]:
     for column in odds_columns:
         fixtures[column] = "" if column == "odds_source" else np.nan
 
-    # Football-Data is an opening reference; the later live Pinnacle quote takes priority.
+    pinnacle_odds = load_pinnacle_upcoming_odds()
     weekly_odds = load_weekly_upcoming_odds()
-    if not weekly_odds.empty:
-        weekly_odds = weekly_odds[weekly_odds.get("has_odds", 0).eq(1)].copy()
-        fixtures = _overlay_upcoming_odds(fixtures, weekly_odds, odds_columns)
-    fixtures = _overlay_upcoming_odds(fixtures, load_pinnacle_upcoming_odds(), odds_columns)
-
     manual_odds = load_manual_upcoming_odds()
-    if not manual_odds.empty:
-        manual_columns = [column for column in odds_columns if column in manual_odds.columns]
-        fixtures = _overlay_upcoming_odds(fixtures, manual_odds, manual_columns)
+    fixtures = apply_upcoming_odds_sources(
+        fixtures,
+        odds_columns,
+        pinnacle_odds=pinnacle_odds,
+        weekly_odds=weekly_odds,
+        manual_odds=manual_odds,
+    )
     fixtures["has_odds"] = fixtures["has_odds"].fillna(0).astype(int)
     fixtures["score_market_has_totals"] = fixtures["score_market_has_totals"].fillna(0).astype(int)
     fixtures["score_market_has_handicap"] = fixtures["score_market_has_handicap"].fillna(0).astype(int)

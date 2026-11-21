@@ -8,6 +8,7 @@ import numpy as np
 import pandas as pd
 
 from prediction.data import (
+    apply_upcoming_odds_sources,
     append_fixture_results,
     parse_espn_completed_results,
     parse_pinnacle_upcoming_odds,
@@ -71,6 +72,49 @@ class EspnResultTests(unittest.TestCase):
         self.assertEqual(result.loc[0, "home_team"], "Feyenoord")
         self.assertEqual(result.loc[0, "away_team"], "ADO Den Haag")
         self.assertEqual(result.loc[0, "pair_key"], "feyenoord|ado den haag")
+
+
+class UpcomingOddsPriorityTests(unittest.TestCase):
+    def test_consensus_overrides_pinnacle_and_manual_overrides_both(self) -> None:
+        fixtures = pd.DataFrame(
+            [
+                {
+                    "match_key": "2026-11-21|groningen|heerenveen",
+                    "odds_home": np.nan,
+                    "odds_source": "",
+                    "has_odds": 0,
+                }
+            ]
+        )
+        pinnacle = pd.DataFrame(
+            [{"match_key": fixtures.loc[0, "match_key"], "odds_home": 2.8, "odds_source": "pinnacle_live", "has_odds": 1}]
+        )
+        consensus = pd.DataFrame(
+            [{"match_key": fixtures.loc[0, "match_key"], "odds_home": 2.4, "odds_source": "weekly_market_consensus", "has_odds": 1}]
+        )
+        columns = ["odds_home", "odds_source", "has_odds"]
+        result = apply_upcoming_odds_sources(
+            fixtures,
+            columns,
+            pinnacle_odds=pinnacle,
+            weekly_odds=consensus,
+            manual_odds=pd.DataFrame(),
+        )
+        self.assertEqual(result.loc[0, "odds_source"], "weekly_market_consensus")
+        self.assertEqual(result.loc[0, "odds_home"], 2.4)
+
+        manual = pd.DataFrame(
+            [{"match_key": fixtures.loc[0, "match_key"], "odds_home": 2.2, "odds_source": "manual", "has_odds": 1}]
+        )
+        result = apply_upcoming_odds_sources(
+            fixtures,
+            columns,
+            pinnacle_odds=pinnacle,
+            weekly_odds=consensus,
+            manual_odds=manual,
+        )
+        self.assertEqual(result.loc[0, "odds_source"], "manual")
+        self.assertEqual(result.loc[0, "odds_home"], 2.2)
 
 
 def match_frame(first_home_shots: float) -> pd.DataFrame:
