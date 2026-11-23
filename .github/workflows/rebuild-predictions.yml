@@ -12,14 +12,8 @@ on:
       - "rebuild.py"
       - "requirements.txt"
   schedule:
-    # Football-Data normally publishes midweek market consensus on Tuesday afternoon.
-    - cron: "17 15 * * 2"
-      timezone: "Europe/Amsterdam"
-    # Avoid the start of the hour: GitHub may delay or drop scheduled jobs then.
-    - cron: "17 8 * * 3"
-      timezone: "Europe/Amsterdam"
-    # A second weekly run makes the refresh resilient if GitHub drops the first.
-    - cron: "47 10 * * 3"
+    # A daily refresh prevents completed rounds from remaining visible for days.
+    - cron: "17 8 * * *"
       timezone: "Europe/Amsterdam"
     # Football-Data collects weekend consensus through Friday afternoon.
     - cron: "17 18 * * 5"

@@ -45,11 +45,11 @@ Voor de normale wekelijkse update van bronnen, model, dashboarddata en Excel:
 powershell -ExecutionPolicy Bypass -File scripts/weekly_update.ps1
 ```
 
-De GitHub Action `.github/workflows/rebuild-predictions.yml` draait op dinsdag om 15:17 voor
-midweekwedstrijden en iedere woensdag om 08:17 Nederlandse/Belgische tijd, met een tweede
-reserverun om 10:47. Op vrijdag om 18:17 volgt een laatste verversing nadat de marktconsensus
-voor het speelweekend normaal is gepubliceerd. De action kan ook handmatig worden gestart.
-Op GitHub wordt `--force-live` gebruikt:
+De GitHub Action `.github/workflows/rebuild-predictions.yml` draait dagelijks om 08:17
+Nederlandse/Belgische tijd. Daardoor worden gespeelde wedstrijden en de actieve speelronde ook
+na een weekend automatisch bijgewerkt. Op vrijdag om 18:17 volgt een extra verversing nadat de
+marktconsensus voor het speelweekend normaal is gepubliceerd. De action kan ook handmatig
+worden gestart. Op GitHub wordt `--force-live` gebruikt:
 actuele selecties en spelerprestaties worden daardoor altijd vernieuwd, terwijl de grote
 historische downloads alleen worden opgehaald wanneer dat nodig is.
 
