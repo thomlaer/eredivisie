@@ -213,6 +213,14 @@ def parse_espn_completed_results(payload: dict[str, Any]) -> pd.DataFrame:
         away_team = canonical_team(away.get("team", {}).get("displayName"))
         if pd.isna(home_goals) or pd.isna(away_goals) or not home_team or not away_team:
             continue
+
+        def statistic(competitor: dict[str, Any], name: str) -> float:
+            item = next(
+                (value for value in competitor.get("statistics", []) if value.get("name") == name),
+                None,
+            )
+            return pd.to_numeric(item.get("displayValue"), errors="coerce") if item else np.nan
+
         rows.append(
             {
                 "date": kickoff.tz_convert(None).normalize(),
@@ -220,6 +228,12 @@ def parse_espn_completed_results(payload: dict[str, Any]) -> pd.DataFrame:
                 "away_team": away_team,
                 "home_goals": int(home_goals),
                 "away_goals": int(away_goals),
+                "home_shots": statistic(home, "totalShots"),
+                "away_shots": statistic(away, "totalShots"),
+                "home_shots_target": statistic(home, "shotsOnTarget"),
+                "away_shots_target": statistic(away, "shotsOnTarget"),
+                "home_corners": statistic(home, "wonCorners"),
+                "away_corners": statistic(away, "wonCorners"),
             }
         )
     output = pd.DataFrame(rows)
@@ -227,6 +241,17 @@ def parse_espn_completed_results(payload: dict[str, Any]) -> pd.DataFrame:
         return output
     output["pair_key"] = output["home_team"].map(name_key) + "|" + output["away_team"].map(name_key)
     return output.drop_duplicates("pair_key", keep="last").reset_index(drop=True)
+
+
+def load_espn_completed_results() -> pd.DataFrame:
+    path = RAW_DIR / "espn_ned1_scoreboard.json"
+    if not path.exists():
+        return pd.DataFrame()
+    try:
+        payload = json.loads(path.read_text(encoding="utf-8"))
+    except (OSError, ValueError, TypeError, json.JSONDecodeError):
+        return pd.DataFrame()
+    return parse_espn_completed_results(payload)
 
 
 def validate_espn_results(matches: pd.DataFrame) -> dict[str, int | str]:
@@ -720,10 +745,52 @@ def append_fixture_results(matches: pd.DataFrame, fixtures: pd.DataFrame) -> pd.
     return matches
 
 
+def append_espn_results(
+    matches: pd.DataFrame,
+    fixtures: pd.DataFrame,
+    espn_results: pd.DataFrame | None = None,
+) -> pd.DataFrame:
+    espn = load_espn_completed_results() if espn_results is None else espn_results.copy()
+    if espn.empty:
+        return matches
+
+    schedule = fixtures[
+        ["match_key", "date", "season_start", "season", "home_team", "away_team"]
+    ].copy()
+    schedule["pair_key"] = schedule["home_team"].map(name_key) + "|" + schedule["away_team"].map(name_key)
+    score_columns = [
+        "pair_key",
+        "home_goals",
+        "away_goals",
+        "home_shots",
+        "away_shots",
+        "home_shots_target",
+        "away_shots_target",
+        "home_corners",
+        "away_corners",
+    ]
+    available_scores = [column for column in score_columns if column in espn]
+    additions = schedule.merge(espn[available_scores], on="pair_key", how="inner")
+    additions = additions[~additions["match_key"].isin(matches["match_key"])].copy()
+    if additions.empty:
+        return matches
+
+    additions["source_file"] = "espn_completed_fallback"
+    additions["odds_source"] = ""
+    additions["has_odds"] = 0
+    additions["score_market_has_totals"] = 0
+    additions["score_market_has_handicap"] = 0
+    additions = additions.reindex(columns=matches.columns)
+    output = pd.concat([matches, additions], ignore_index=True)
+    output = output.sort_values(["date", "season_start", "home_team", "away_team"])
+    return output.drop_duplicates("match_key", keep="first").reset_index(drop=True)
+
+
 def build_processed_data() -> tuple[pd.DataFrame, pd.DataFrame]:
     matches = load_historical_matches()
     fixtures = load_fixtures()
     matches = append_fixture_results(matches, fixtures)
+    matches = append_espn_results(matches, fixtures)
     current_results = matches[matches["season_start"] == CURRENT_SEASON_START][
         ["match_key", "home_goals", "away_goals"]
     ]

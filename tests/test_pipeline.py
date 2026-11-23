@@ -9,6 +9,7 @@ import pandas as pd
 
 from prediction.data import (
     apply_upcoming_odds_sources,
+    append_espn_results,
     append_fixture_results,
     parse_espn_completed_results,
     parse_pinnacle_upcoming_odds,
@@ -56,6 +57,11 @@ class EspnResultTests(unittest.TestCase):
                                     "homeAway": "home",
                                     "score": "2",
                                     "team": {"displayName": "Feyenoord Rotterdam"},
+                                    "statistics": [
+                                        {"name": "totalShots", "displayValue": "14"},
+                                        {"name": "shotsOnTarget", "displayValue": "6"},
+                                        {"name": "wonCorners", "displayValue": "7"},
+                                    ],
                                 },
                                 {
                                     "homeAway": "away",
@@ -72,6 +78,79 @@ class EspnResultTests(unittest.TestCase):
         self.assertEqual(result.loc[0, "home_team"], "Feyenoord")
         self.assertEqual(result.loc[0, "away_team"], "ADO Den Haag")
         self.assertEqual(result.loc[0, "pair_key"], "feyenoord|ado den haag")
+        self.assertEqual(result.loc[0, "home_shots"], 14)
+        self.assertEqual(result.loc[0, "home_shots_target"], 6)
+        self.assertEqual(result.loc[0, "home_corners"], 7)
+
+    def test_espn_only_appends_missing_completed_fixture(self) -> None:
+        matches = pd.DataFrame(
+            [
+                {
+                    "date": pd.Timestamp("2026-11-21"),
+                    "season_start": 2026,
+                    "season": "2026/27",
+                    "home_team": "NEC",
+                    "away_team": "PSV",
+                    "home_goals": 1,
+                    "away_goals": 2,
+                    "home_shots": 10.0,
+                    "away_shots": 14.0,
+                    "match_key": "2026-11-21|nec|psv",
+                    "source_file": "N1_2627.csv",
+                    "odds_source": "closing_average",
+                    "has_odds": 1,
+                    "score_market_has_totals": 1,
+                    "score_market_has_handicap": 1,
+                }
+            ]
+        )
+        fixtures = pd.DataFrame(
+            [
+                {
+                    "match_key": "2026-11-21|nec|psv",
+                    "date": pd.Timestamp("2026-11-21"),
+                    "season_start": 2026,
+                    "season": "2026/27",
+                    "home_team": "NEC",
+                    "away_team": "PSV",
+                },
+                {
+                    "match_key": "2026-11-22|ajax|ado den haag",
+                    "date": pd.Timestamp("2026-11-22"),
+                    "season_start": 2026,
+                    "season": "2026/27",
+                    "home_team": "Ajax",
+                    "away_team": "ADO Den Haag",
+                },
+            ]
+        )
+        espn = pd.DataFrame(
+            [
+                {
+                    "pair_key": "nec|psv",
+                    "home_goals": 9,
+                    "away_goals": 9,
+                    "home_shots": 1,
+                    "away_shots": 1,
+                },
+                {
+                    "pair_key": "ajax|ado den haag",
+                    "home_goals": 3,
+                    "away_goals": 0,
+                    "home_shots": 18,
+                    "away_shots": 5,
+                },
+            ]
+        )
+        result = append_espn_results(matches, fixtures, espn)
+        self.assertEqual(len(result), 2)
+        existing = result[result["match_key"].eq("2026-11-21|nec|psv")].iloc[0]
+        self.assertEqual(existing["home_goals"], 1)
+        self.assertEqual(existing["source_file"], "N1_2627.csv")
+        fallback = result[result["match_key"].eq("2026-11-22|ajax|ado den haag")].iloc[0]
+        self.assertEqual(fallback["home_goals"], 3)
+        self.assertEqual(fallback["home_shots"], 18)
+        self.assertEqual(fallback["source_file"], "espn_completed_fallback")
 
 
 class UpcomingOddsPriorityTests(unittest.TestCase):
