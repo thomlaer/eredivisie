@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "generated_at_utc": "2026-11-23T14:38:05+00:00",
+    "generated_at_utc": "2026-11-23T14:46:33+00:00",
     "season": "2026/27",
-    "historical_matches": 9849,
-    "latest_result": "2026-11-21",
+    "historical_matches": 9853,
+    "latest_result": "2026-11-22",
     "model_accuracy": 0.5392156862745098,
     "model_log_loss": 0.9764018501224698,
-    "current_season_accuracy": 0.463768115942029,
-    "current_season_rows": 69,
+    "current_season_accuracy": 0.4794520547945205,
+    "current_season_rows": 73,
     "odds_weight": 1.0,
     "draw_multiplier": 1.3,
     "espn_status": "ok:309",
@@ -20,86 +20,6 @@
     "likely_starters_unavailable": 18
   },
   "upcoming": [
-    {
-      "match_key": "2026-11-22|fc twente|willem ii",
-      "match_number": 117,
-      "round": 13,
-      "date": "2026-11-22",
-      "kickoff_utc": "2026-11-22 11:15:00+00:00",
-      "venue": "De Grolsch Veste",
-      "home_team": "FC Twente",
-      "away_team": "Willem II",
-      "odds_source": "weekly_market_consensus",
-      "odds_home": 1.08,
-      "odds_draw": 10.66,
-      "odds_away": 19.44,
-      "predicted_outcome": "home_win",
-      "predicted_winner": "FC Twente",
-      "prob_away_win": 0.046792969641634326,
-      "prob_draw": 0.11093357680894773,
-      "prob_home_win": 0.842273453549418,
-      "probability_source": "market_calibrated"
-    },
-    {
-      "match_key": "2026-11-22|ajax|ado den haag",
-      "match_number": 109,
-      "round": 13,
-      "date": "2026-11-22",
-      "kickoff_utc": "2026-11-22 13:30:00+00:00",
-      "venue": "Johan Cruyff Arena",
-      "home_team": "Ajax",
-      "away_team": "ADO Den Haag",
-      "odds_source": "weekly_market_consensus",
-      "odds_home": 1.18,
-      "odds_draw": 7.34,
-      "odds_away": 11.78,
-      "predicted_outcome": "home_win",
-      "predicted_winner": "Ajax",
-      "prob_away_win": 0.07651444933307373,
-      "prob_draw": 0.15963791240963093,
-      "prob_home_win": 0.7638476382572954,
-      "probability_source": "market_calibrated"
-    },
-    {
-      "match_key": "2026-11-22|sparta rotterdam|az",
-      "match_number": 115,
-      "round": 13,
-      "date": "2026-11-22",
-      "kickoff_utc": "2026-11-22 13:30:00+00:00",
-      "venue": "Sparta Stadion Het Kasteel",
-      "home_team": "Sparta Rotterdam",
-      "away_team": "AZ",
-      "odds_source": "weekly_market_consensus",
-      "odds_home": 3.98,
-      "odds_draw": 4.08,
-      "odds_away": 1.72,
-      "predicted_outcome": "away_win",
-      "predicted_winner": "AZ",
-      "prob_away_win": 0.5049994899748969,
-      "prob_draw": 0.27675952440781104,
-      "prob_home_win": 0.21824098561729205,
-      "probability_source": "market_calibrated"
-    },
-    {
-      "match_key": "2026-11-22|go ahead eagles|fortuna sittard",
-      "match_number": 114,
-      "round": 13,
-      "date": "2026-11-22",
-      "kickoff_utc": "2026-11-22 15:45:00+00:00",
-      "venue": "De Adelaarshorst",
-      "home_team": "Go Ahead Eagles",
-      "away_team": "Fortuna Sittard",
-      "odds_source": "weekly_market_consensus",
-      "odds_home": 1.62,
-      "odds_draw": 4.18,
-      "odds_away": 4.56,
-      "predicted_outcome": "home_win",
-      "predicted_winner": "Go Ahead Eagles",
-      "prob_away_win": 0.19109509715609313,
-      "prob_draw": 0.2710075923304594,
-      "prob_home_win": 0.5378973105134474,
-      "probability_source": "market_calibrated"
-    },
     {
       "match_key": "2026-11-27|fc groningen|willem ii",
       "match_number": 120,
@@ -295,9 +215,9 @@
       "odds_away": null,
       "predicted_outcome": "away_win",
       "predicted_winner": "FC Groningen",
-      "prob_away_win": 0.5547192125198368,
-      "prob_draw": 0.1971637900480295,
-      "prob_home_win": 0.2481169974321337,
+      "prob_away_win": 0.565525903504935,
+      "prob_draw": 0.19723662470535422,
+      "prob_home_win": 0.23723747178971077,
       "probability_source": "xgboost"
     },
     {
@@ -315,9 +235,9 @@
       "odds_away": null,
       "predicted_outcome": "away_win",
       "predicted_winner": "Feyenoord",
-      "prob_away_win": 0.642438346805301,
-      "prob_draw": 0.19342852884495143,
-      "prob_home_win": 0.16413312434974758,
+      "prob_away_win": 0.6701843266280967,
+      "prob_draw": 0.17431410512606144,
+      "prob_home_win": 0.1555015682458419,
       "probability_source": "xgboost"
     },
     {
@@ -335,9 +255,9 @@
       "odds_away": null,
       "predicted_outcome": "away_win",
       "predicted_winner": "NEC",
-      "prob_away_win": 0.540084602409264,
-      "prob_draw": 0.269849936626396,
-      "prob_home_win": 0.19006546096434,
+      "prob_away_win": 0.5919781959704609,
+      "prob_draw": 0.22876891304723312,
+      "prob_home_win": 0.17925289098230604,
       "probability_source": "xgboost"
     },
     {
@@ -355,9 +275,9 @@
       "odds_away": null,
       "predicted_outcome": "away_win",
       "predicted_winner": "PSV",
-      "prob_away_win": 0.5672406139502628,
-      "prob_draw": 0.23701172699803638,
-      "prob_home_win": 0.1957476590517008,
+      "prob_away_win": 0.5692459832767277,
+      "prob_draw": 0.23326059163678356,
+      "prob_home_win": 0.19749342508648873,
       "probability_source": "xgboost"
     },
     {
@@ -375,9 +295,9 @@
       "odds_away": null,
       "predicted_outcome": "away_win",
       "predicted_winner": "PEC Zwolle",
-      "prob_away_win": 0.36557366592660884,
-      "prob_draw": 0.3088301211103638,
-      "prob_home_win": 0.3255962129630273,
+      "prob_away_win": 0.3816283844499757,
+      "prob_draw": 0.25271899994476926,
+      "prob_home_win": 0.365652615605255,
       "probability_source": "xgboost"
     },
     {
@@ -395,9 +315,9 @@
       "odds_away": null,
       "predicted_outcome": "home_win",
       "predicted_winner": "Heerenveen",
-      "prob_away_win": 0.16996502243703437,
-      "prob_draw": 0.21774839534200627,
-      "prob_home_win": 0.6122865822209593,
+      "prob_away_win": 0.17704923936580538,
+      "prob_draw": 0.20814301742637664,
+      "prob_home_win": 0.614807743207818,
       "probability_source": "xgboost"
     },
     {
@@ -415,9 +335,9 @@
       "odds_away": null,
       "predicted_outcome": "home_win",
       "predicted_winner": "Ajax",
-      "prob_away_win": 0.20607398129204613,
-      "prob_draw": 0.18661921769019066,
-      "prob_home_win": 0.6073068010177632,
+      "prob_away_win": 0.2061908280547141,
+      "prob_draw": 0.1794654501171444,
+      "prob_home_win": 0.6143437218281416,
       "probability_source": "xgboost"
     },
     {
@@ -435,9 +355,9 @@
       "odds_away": null,
       "predicted_outcome": "away_win",
       "predicted_winner": "FC Twente",
-      "prob_away_win": 0.5484373775097391,
-      "prob_draw": 0.2454760324074642,
-      "prob_home_win": 0.20608659008279676,
+      "prob_away_win": 0.6164611334812953,
+      "prob_draw": 0.20692249834661414,
+      "prob_home_win": 0.1766163681720906,
       "probability_source": "xgboost"
     },
     {
@@ -455,9 +375,9 @@
       "odds_away": null,
       "predicted_outcome": "home_win",
       "predicted_winner": "ADO Den Haag",
-      "prob_away_win": 0.3392802222442369,
-      "prob_draw": 0.2680034731383918,
-      "prob_home_win": 0.3927163046173713,
+      "prob_away_win": 0.3734893255553863,
+      "prob_draw": 0.2259970571512206,
+      "prob_home_win": 0.40051361729339313,
       "probability_source": "xgboost"
     },
     {
@@ -475,9 +395,9 @@
       "odds_away": null,
       "predicted_outcome": "home_win",
       "predicted_winner": "FC Utrecht",
-      "prob_away_win": 0.26474098790770434,
-      "prob_draw": 0.28197351523335135,
-      "prob_home_win": 0.4532854968589443,
+      "prob_away_win": 0.2619526634006285,
+      "prob_draw": 0.261781316936263,
+      "prob_home_win": 0.4762660196631085,
       "probability_source": "xgboost"
     },
     {
@@ -495,9 +415,9 @@
       "odds_away": null,
       "predicted_outcome": "home_win",
       "predicted_winner": "Heerenveen",
-      "prob_away_win": 0.20280625740070304,
-      "prob_draw": 0.26774357950678634,
-      "prob_home_win": 0.5294501630925106,
+      "prob_away_win": 0.20960264566070655,
+      "prob_draw": 0.2601570679678713,
+      "prob_home_win": 0.5302402863714222,
       "probability_source": "xgboost"
     },
     {
@@ -515,9 +435,9 @@
       "odds_away": null,
       "predicted_outcome": "home_win",
       "predicted_winner": "PEC Zwolle",
-      "prob_away_win": 0.3705636942025582,
-      "prob_draw": 0.23721114973660212,
-      "prob_home_win": 0.3922251560608397,
+      "prob_away_win": 0.36357353843868867,
+      "prob_draw": 0.23052420549632605,
+      "prob_home_win": 0.40590225606498526,
       "probability_source": "xgboost"
     },
     {
@@ -535,9 +455,9 @@
       "odds_away": null,
       "predicted_outcome": "home_win",
       "predicted_winner": "PSV",
-      "prob_away_win": 0.04727503411131896,
-      "prob_draw": 0.09855255994243456,
-      "prob_home_win": 0.8541724059462464,
+      "prob_away_win": 0.05103810159918122,
+      "prob_draw": 0.10433332827320335,
+      "prob_home_win": 0.8446285701276154,
       "probability_source": "xgboost"
     },
     {
@@ -555,9 +475,9 @@
       "odds_away": null,
       "predicted_outcome": "home_win",
       "predicted_winner": "Willem II",
-      "prob_away_win": 0.38981845108346297,
-      "prob_draw": 0.20157682509640376,
-      "prob_home_win": 0.4086047238201333,
+      "prob_away_win": 0.3905346377862494,
+      "prob_draw": 0.19236732996939834,
+      "prob_home_win": 0.4170980322443522,
       "probability_source": "xgboost"
     },
     {
@@ -575,9 +495,9 @@
       "odds_away": null,
       "predicted_outcome": "away_win",
       "predicted_winner": "Feyenoord",
-      "prob_away_win": 0.5637354340394641,
-      "prob_draw": 0.2194861475359876,
-      "prob_home_win": 0.21677841842454829,
+      "prob_away_win": 0.5537064668147366,
+      "prob_draw": 0.2287732072303356,
+      "prob_home_win": 0.21752032595492787,
       "probability_source": "xgboost"
     },
     {
@@ -595,9 +515,9 @@
       "odds_away": null,
       "predicted_outcome": "home_win",
       "predicted_winner": "AZ",
-      "prob_away_win": 0.238499230144538,
-      "prob_draw": 0.20190821573447393,
-      "prob_home_win": 0.5595925541209881,
+      "prob_away_win": 0.2739976235322057,
+      "prob_draw": 0.18196204014612458,
+      "prob_home_win": 0.5440403363216697,
       "probability_source": "xgboost"
     },
     {
@@ -615,9 +535,9 @@
       "odds_away": null,
       "predicted_outcome": "home_win",
       "predicted_winner": "Ajax",
-      "prob_away_win": 0.10511634763176628,
-      "prob_draw": 0.24482950004604695,
-      "prob_home_win": 0.6500541523221868,
+      "prob_away_win": 0.09816910117227251,
+      "prob_draw": 0.23425589526919066,
+      "prob_home_win": 0.6675750035585368,
       "probability_source": "xgboost"
     },
     {
@@ -635,9 +555,9 @@
       "odds_away": null,
       "predicted_outcome": "home_win",
       "predicted_winner": "Telstar",
-      "prob_away_win": 0.19375922860920167,
-      "prob_draw": 0.22204906062185736,
-      "prob_home_win": 0.5841917107689409,
+      "prob_away_win": 0.16265582637369444,
+      "prob_draw": 0.21870910747010702,
+      "prob_home_win": 0.6186350661561986,
       "probability_source": "xgboost"
     },
     {
@@ -655,9 +575,9 @@
       "odds_away": null,
       "predicted_outcome": "away_win",
       "predicted_winner": "AZ",
-      "prob_away_win": 0.5748750274675232,
-      "prob_draw": 0.15276120956824435,
-      "prob_home_win": 0.2723637629642325,
+      "prob_away_win": 0.573668880612804,
+      "prob_draw": 0.17769469002932367,
+      "prob_home_win": 0.24863642935787234,
       "probability_source": "xgboost"
     },
     {
@@ -675,9 +595,9 @@
       "odds_away": null,
       "predicted_outcome": "away_win",
       "predicted_winner": "Sparta Rotterdam",
-      "prob_away_win": 0.3749416378357774,
-      "prob_draw": 0.3058027325557524,
-      "prob_home_win": 0.3192556296084702,
+      "prob_away_win": 0.3982457266201531,
+      "prob_draw": 0.2506804597656979,
+      "prob_home_win": 0.351073813614149,
       "probability_source": "xgboost"
     },
     {
@@ -695,9 +615,9 @@
       "odds_away": null,
       "predicted_outcome": "away_win",
       "predicted_winner": "Heerenveen",
-      "prob_away_win": 0.4412389146287478,
-      "prob_draw": 0.22599273359817643,
-      "prob_home_win": 0.33276835177307573,
+      "prob_away_win": 0.43544402305493324,
+      "prob_draw": 0.2330799790511891,
+      "prob_home_win": 0.3314759978938777,
       "probability_source": "xgboost"
     },
     {
@@ -715,9 +635,9 @@
       "odds_away": null,
       "predicted_outcome": "home_win",
       "predicted_winner": "NEC",
-      "prob_away_win": 0.09908600329453665,
-      "prob_draw": 0.21926391537341863,
-      "prob_home_win": 0.6816500813320447,
+      "prob_away_win": 0.08461072232016102,
+      "prob_draw": 0.2477734496968875,
+      "prob_home_win": 0.6676158279829515,
       "probability_source": "xgboost"
     },
     {
@@ -735,9 +655,9 @@
       "odds_away": null,
       "predicted_outcome": "away_win",
       "predicted_winner": "FC Groningen",
-      "prob_away_win": 0.5490166819198254,
-      "prob_draw": 0.1848165124547549,
-      "prob_home_win": 0.26616680562541967,
+      "prob_away_win": 0.5449084379627711,
+      "prob_draw": 0.1808089276118993,
+      "prob_home_win": 0.27428263442532963,
       "probability_source": "xgboost"
     },
     {
@@ -755,9 +675,9 @@
       "odds_away": null,
       "predicted_outcome": "away_win",
       "predicted_winner": "FC Twente",
-      "prob_away_win": 0.37792100067781204,
-      "prob_draw": 0.2524930062060289,
-      "prob_home_win": 0.36958599311615903,
+      "prob_away_win": 0.4011078915952701,
+      "prob_draw": 0.2677297807507467,
+      "prob_home_win": 0.3311623276539832,
       "probability_source": "xgboost"
     },
     {
@@ -775,9 +695,9 @@
       "odds_away": null,
       "predicted_outcome": "away_win",
       "predicted_winner": "Ajax",
-      "prob_away_win": 0.6168657357331863,
-      "prob_draw": 0.18773317982933416,
-      "prob_home_win": 0.19540108443747956,
+      "prob_away_win": 0.6536201625856569,
+      "prob_draw": 0.1706721814694067,
+      "prob_home_win": 0.17570765594493643,
       "probability_source": "xgboost"
     },
     {
@@ -795,9 +715,9 @@
       "odds_away": null,
       "predicted_outcome": "home_win",
       "predicted_winner": "PSV",
-      "prob_away_win": 0.046392262228907334,
-      "prob_draw": 0.10795028366972034,
-      "prob_home_win": 0.8456574541013723,
+      "prob_away_win": 0.046320074247116365,
+      "prob_draw": 0.11709802690261535,
+      "prob_home_win": 0.8365818988502682,
       "probability_source": "xgboost"
     },
     {
@@ -815,9 +735,9 @@
       "odds_away": null,
       "predicted_outcome": "home_win",
       "predicted_winner": "FC Twente",
-      "prob_away_win": 0.0884134562589779,
-      "prob_draw": 0.19669307752835186,
-      "prob_home_win": 0.7148934662126702,
+      "prob_away_win": 0.0979286626230239,
+      "prob_draw": 0.21834769399846346,
+      "prob_home_win": 0.6837236433785127,
       "probability_source": "xgboost"
     },
     {
@@ -835,9 +755,9 @@
       "odds_away": null,
       "predicted_outcome": "away_win",
       "predicted_winner": "Excelsior",
-      "prob_away_win": 0.5307593911364813,
-      "prob_draw": 0.22019904935102885,
-      "prob_home_win": 0.2490415595124898,
+      "prob_away_win": 0.5062868463902909,
+      "prob_draw": 0.2088625460787703,
+      "prob_home_win": 0.2848506075309388,
       "probability_source": "xgboost"
     },
     {
@@ -855,9 +775,9 @@
       "odds_away": null,
       "predicted_outcome": "away_win",
       "predicted_winner": "FC Utrecht",
-      "prob_away_win": 0.4936666639799095,
-      "prob_draw": 0.2749686818595439,
-      "prob_home_win": 0.23136465416054666,
+      "prob_away_win": 0.49673489681169547,
+      "prob_draw": 0.2754888092367124,
+      "prob_home_win": 0.22777629395159213,
       "probability_source": "xgboost"
     },
     {
@@ -875,9 +795,9 @@
       "odds_away": null,
       "predicted_outcome": "away_win",
       "predicted_winner": "Ajax",
-      "prob_away_win": 0.725602068525887,
-      "prob_draw": 0.12031169236954427,
-      "prob_home_win": 0.1540862391045687,
+      "prob_away_win": 0.7442309187325055,
+      "prob_draw": 0.11996617677965164,
+      "prob_home_win": 0.13580290448784293,
       "probability_source": "xgboost"
     },
     {
@@ -895,9 +815,9 @@
       "odds_away": null,
       "predicted_outcome": "home_win",
       "predicted_winner": "AZ",
-      "prob_away_win": 0.3932491540429034,
-      "prob_draw": 0.18088728756916614,
-      "prob_home_win": 0.42586355838793044,
+      "prob_away_win": 0.37607975631645574,
+      "prob_draw": 0.15596076887718588,
+      "prob_home_win": 0.46795947480635836,
       "probability_source": "xgboost"
     },
     {
@@ -915,9 +835,9 @@
       "odds_away": null,
       "predicted_outcome": "home_win",
       "predicted_winner": "NEC",
-      "prob_away_win": 0.1547206696255373,
-      "prob_draw": 0.24846015623319032,
-      "prob_home_win": 0.5968191741412724,
+      "prob_away_win": 0.1553148186996766,
+      "prob_draw": 0.24309311179215126,
+      "prob_home_win": 0.6015920695081721,
       "probability_source": "xgboost"
     },
     {
@@ -933,11 +853,11 @@
       "odds_home": null,
       "odds_draw": null,
       "odds_away": null,
-      "predicted_outcome": "home_win",
-      "predicted_winner": "ADO Den Haag",
-      "prob_away_win": 0.35857016297913485,
-      "prob_draw": 0.26066111579891843,
-      "prob_home_win": 0.3807687212219467,
+      "predicted_outcome": "away_win",
+      "predicted_winner": "Telstar",
+      "prob_away_win": 0.38729095615811865,
+      "prob_draw": 0.24263084869948182,
+      "prob_home_win": 0.3700781951423996,
       "probability_source": "xgboost"
     },
     {
@@ -955,9 +875,9 @@
       "odds_away": null,
       "predicted_outcome": "away_win",
       "predicted_winner": "PSV",
-      "prob_away_win": 0.4033085810655747,
-      "prob_draw": 0.31884101297532563,
-      "prob_home_win": 0.2778504059590996,
+      "prob_away_win": 0.4131089532612991,
+      "prob_draw": 0.3172975897274311,
+      "prob_home_win": 0.2695934570112698,
       "probability_source": "xgboost"
     },
     {
@@ -975,9 +895,9 @@
       "odds_away": null,
       "predicted_outcome": "home_win",
       "predicted_winner": "FC Groningen",
-      "prob_away_win": 0.3305388774733067,
-      "prob_draw": 0.28584980474421384,
-      "prob_home_win": 0.3836113177824795,
+      "prob_away_win": 0.24796564649220296,
+      "prob_draw": 0.3084624813543546,
+      "prob_home_win": 0.4435718721534424,
       "probability_source": "xgboost"
     },
     {
@@ -995,9 +915,9 @@
       "odds_away": null,
       "predicted_outcome": "home_win",
       "predicted_winner": "Heerenveen",
-      "prob_away_win": 0.20998046662292089,
-      "prob_draw": 0.2260376584294222,
-      "prob_home_win": 0.563981874947657,
+      "prob_away_win": 0.15966281271850805,
+      "prob_draw": 0.24230385273091187,
+      "prob_home_win": 0.59803333455058,
       "probability_source": "xgboost"
     },
     {
@@ -1015,9 +935,9 @@
       "odds_away": null,
       "predicted_outcome": "away_win",
       "predicted_winner": "NEC",
-      "prob_away_win": 0.5663018510717805,
-      "prob_draw": 0.22347912587781574,
-      "prob_home_win": 0.21021902305040374,
+      "prob_away_win": 0.5772195435938857,
+      "prob_draw": 0.22171917534144292,
+      "prob_home_win": 0.20106128106467133,
       "probability_source": "xgboost"
     },
     {
@@ -1035,9 +955,9 @@
       "odds_away": null,
       "predicted_outcome": "away_win",
       "predicted_winner": "Feyenoord",
-      "prob_away_win": 0.724488923297665,
-      "prob_draw": 0.12365599628918947,
-      "prob_home_win": 0.15185508041314555,
+      "prob_away_win": 0.7103969298584588,
+      "prob_draw": 0.12680176633499884,
+      "prob_home_win": 0.16280130380654234,
       "probability_source": "xgboost"
     },
     {
@@ -1055,9 +975,9 @@
       "odds_away": null,
       "predicted_outcome": "home_win",
       "predicted_winner": "ADO Den Haag",
-      "prob_away_win": 0.3369789256517398,
-      "prob_draw": 0.2839355847406617,
-      "prob_home_win": 0.37908548960759847,
+      "prob_away_win": 0.3518088631765649,
+      "prob_draw": 0.24948523927006475,
+      "prob_home_win": 0.3987058975533703,
       "probability_source": "xgboost"
     },
     {
@@ -1075,9 +995,9 @@
       "odds_away": null,
       "predicted_outcome": "away_win",
       "predicted_winner": "PSV",
-      "prob_away_win": 0.7224178715288092,
-      "prob_draw": 0.15822696078818935,
-      "prob_home_win": 0.11935516768300145,
+      "prob_away_win": 0.7416389772820725,
+      "prob_draw": 0.1188880416056446,
+      "prob_home_win": 0.13947298111228296,
       "probability_source": "xgboost"
     },
     {
@@ -1095,9 +1015,9 @@
       "odds_away": null,
       "predicted_outcome": "away_win",
       "predicted_winner": "FC Twente",
-      "prob_away_win": 0.5575563379239272,
-      "prob_draw": 0.2480702045493678,
-      "prob_home_win": 0.194373457526705,
+      "prob_away_win": 0.5830953264966575,
+      "prob_draw": 0.21014100583137643,
+      "prob_home_win": 0.20676366767196608,
       "probability_source": "xgboost"
     },
     {
@@ -1115,9 +1035,9 @@
       "odds_away": null,
       "predicted_outcome": "home_win",
       "predicted_winner": "Ajax",
-      "prob_away_win": 0.19128157745967178,
-      "prob_draw": 0.16361215647919666,
-      "prob_home_win": 0.6451062660611315,
+      "prob_away_win": 0.19576693959987473,
+      "prob_draw": 0.15320744501121636,
+      "prob_home_win": 0.6510256153889089,
       "probability_source": "xgboost"
     },
     {
@@ -1135,9 +1055,9 @@
       "odds_away": null,
       "predicted_outcome": "away_win",
       "predicted_winner": "AZ",
-      "prob_away_win": 0.5527409001074559,
-      "prob_draw": 0.17428751112174357,
-      "prob_home_win": 0.2729715887708006,
+      "prob_away_win": 0.48665374330159106,
+      "prob_draw": 0.22181186043511453,
+      "prob_home_win": 0.2915343962632944,
       "probability_source": "xgboost"
     },
     {
@@ -1155,9 +1075,9 @@
       "odds_away": null,
       "predicted_outcome": "home_win",
       "predicted_winner": "SC Cambuur",
-      "prob_away_win": 0.24622732689296212,
-      "prob_draw": 0.15445693925870235,
-      "prob_home_win": 0.5993157338483355,
+      "prob_away_win": 0.18978795666457918,
+      "prob_draw": 0.16438720679998406,
+      "prob_home_win": 0.6458248365354368,
       "probability_source": "xgboost"
     },
     {
@@ -1175,9 +1095,9 @@
       "odds_away": null,
       "predicted_outcome": "home_win",
       "predicted_winner": "Excelsior",
-      "prob_away_win": 0.3603654025228012,
-      "prob_draw": 0.17350517987170969,
-      "prob_home_win": 0.46612941760548915,
+      "prob_away_win": 0.3304258327139473,
+      "prob_draw": 0.1720070831034782,
+      "prob_home_win": 0.49756708418257445,
       "probability_source": "xgboost"
     },
     {
@@ -1195,9 +1115,9 @@
       "odds_away": null,
       "predicted_outcome": "home_win",
       "predicted_winner": "Ajax",
-      "prob_away_win": 0.09870083727524316,
-      "prob_draw": 0.19920165118017188,
-      "prob_home_win": 0.702097511544585,
+      "prob_away_win": 0.10611566828989945,
+      "prob_draw": 0.19181594910326932,
+      "prob_home_win": 0.7020683826068312,
       "probability_source": "xgboost"
     },
     {
@@ -1215,9 +1135,9 @@
       "odds_away": null,
       "predicted_outcome": "home_win",
       "predicted_winner": "Feyenoord",
-      "prob_away_win": 0.08060181886734846,
-      "prob_draw": 0.28387938584953554,
-      "prob_home_win": 0.635518795283116,
+      "prob_away_win": 0.07574241332228492,
+      "prob_draw": 0.27654850380541274,
+      "prob_home_win": 0.6477090828723023,
       "probability_source": "xgboost"
     },
     {
@@ -1235,9 +1155,9 @@
       "odds_away": null,
       "predicted_outcome": "home_win",
       "predicted_winner": "FC Twente",
-      "prob_away_win": 0.20749376744666323,
-      "prob_draw": 0.19778961053432642,
-      "prob_home_win": 0.5947166220190103,
+      "prob_away_win": 0.21592817148549745,
+      "prob_draw": 0.2279052770034732,
+      "prob_home_win": 0.5561665515110293,
       "probability_source": "xgboost"
     },
     {
@@ -1255,9 +1175,9 @@
       "odds_away": null,
       "predicted_outcome": "home_win",
       "predicted_winner": "PSV",
-      "prob_away_win": 0.04370276528256848,
-      "prob_draw": 0.07623744180938827,
-      "prob_home_win": 0.8800597929080433,
+      "prob_away_win": 0.04123696849228647,
+      "prob_draw": 0.09025017928767619,
+      "prob_home_win": 0.8685128522200374,
       "probability_source": "xgboost"
     },
     {
@@ -1275,9 +1195,9 @@
       "odds_away": null,
       "predicted_outcome": "home_win",
       "predicted_winner": "Go Ahead Eagles",
-      "prob_away_win": 0.2139060762893853,
-      "prob_draw": 0.2725501722896797,
-      "prob_home_win": 0.513543751420935,
+      "prob_away_win": 0.21834981021765065,
+      "prob_draw": 0.2562403066665776,
+      "prob_home_win": 0.5254098831157717,
       "probability_source": "xgboost"
     },
     {
@@ -1295,9 +1215,9 @@
       "odds_away": null,
       "predicted_outcome": "away_win",
       "predicted_winner": "FC Groningen",
-      "prob_away_win": 0.49712770369594306,
-      "prob_draw": 0.21339899453049738,
-      "prob_home_win": 0.28947330177355957,
+      "prob_away_win": 0.5145690363416445,
+      "prob_draw": 0.1855037561706925,
+      "prob_home_win": 0.29992720748766294,
       "probability_source": "xgboost"
     },
     {
@@ -1315,9 +1235,9 @@
       "odds_away": null,
       "predicted_outcome": "home_win",
       "predicted_winner": "NEC",
-      "prob_away_win": 0.06605494125657703,
-      "prob_draw": 0.16827724345775072,
-      "prob_home_win": 0.7656678152856723,
+      "prob_away_win": 0.051200349286037734,
+      "prob_draw": 0.16673710730217373,
+      "prob_home_win": 0.7820625434117885,
       "probability_source": "xgboost"
     },
     {
@@ -1335,9 +1255,9 @@
       "odds_away": null,
       "predicted_outcome": "home_win",
       "predicted_winner": "AZ",
-      "prob_away_win": 0.23484607932601756,
-      "prob_draw": 0.25643240396115563,
-      "prob_home_win": 0.5087215167128268,
+      "prob_away_win": 0.22603415752186887,
+      "prob_draw": 0.24459895162525933,
+      "prob_home_win": 0.5293668908528718,
       "probability_source": "xgboost"
     },
     {
@@ -1355,9 +1275,9 @@
       "odds_away": null,
       "predicted_outcome": "home_win",
       "predicted_winner": "FC Utrecht",
-      "prob_away_win": 0.2728848460924505,
-      "prob_draw": 0.2557474992635915,
-      "prob_home_win": 0.4713676546439579,
+      "prob_away_win": 0.27074583161956645,
+      "prob_draw": 0.25177472490154906,
+      "prob_home_win": 0.4774794434788845,
       "probability_source": "xgboost"
     },
     {
@@ -1373,11 +1293,11 @@
       "odds_home": null,
       "odds_draw": null,
       "odds_away": null,
-      "predicted_outcome": "home_win",
-      "predicted_winner": "Sparta Rotterdam",
-      "prob_away_win": 0.34233438780196657,
-      "prob_draw": 0.3019804222360238,
-      "prob_home_win": 0.3556851899620097,
+      "predicted_outcome": "away_win",
+      "predicted_winner": "Telstar",
+      "prob_away_win": 0.35543876879992253,
+      "prob_draw": 0.2891669329878155,
+      "prob_home_win": 0.3553942982122619,
       "probability_source": "xgboost"
     },
     {
@@ -1393,11 +1313,11 @@
       "odds_home": null,
       "odds_draw": null,
       "odds_away": null,
-      "predicted_outcome": "home_win",
-      "predicted_winner": "ADO Den Haag",
-      "prob_away_win": 0.344001917472857,
-      "prob_draw": 0.2893512615520551,
-      "prob_home_win": 0.3666468209750879,
+      "predicted_outcome": "away_win",
+      "predicted_winner": "Go Ahead Eagles",
+      "prob_away_win": 0.3657744766429398,
+      "prob_draw": 0.28645281442247866,
+      "prob_home_win": 0.3477727089345815,
       "probability_source": "xgboost"
     },
     {
@@ -1415,9 +1335,9 @@
       "odds_away": null,
       "predicted_outcome": "away_win",
       "predicted_winner": "PSV",
-      "prob_away_win": 0.7082813343850614,
-      "prob_draw": 0.145989372906308,
-      "prob_home_win": 0.14572929270863066,
+      "prob_away_win": 0.7207111045700051,
+      "prob_draw": 0.14412317750827922,
+      "prob_home_win": 0.1351657179217157,
       "probability_source": "xgboost"
     },
     {
@@ -1435,9 +1355,9 @@
       "odds_away": null,
       "predicted_outcome": "home_win",
       "predicted_winner": "PEC Zwolle",
-      "prob_away_win": 0.34326604411431055,
-      "prob_draw": 0.22275132873510825,
-      "prob_home_win": 0.4339826271505812,
+      "prob_away_win": 0.29645877494114475,
+      "prob_draw": 0.21043791933847242,
+      "prob_home_win": 0.4931033057203828,
       "probability_source": "xgboost"
     },
     {
@@ -1455,9 +1375,9 @@
       "odds_away": null,
       "predicted_outcome": "away_win",
       "predicted_winner": "Ajax",
-      "prob_away_win": 0.5224791637737967,
-      "prob_draw": 0.23057255587652958,
-      "prob_home_win": 0.2469482803496738,
+      "prob_away_win": 0.5166368995660781,
+      "prob_draw": 0.23701872023216247,
+      "prob_home_win": 0.24634438020175942,
       "probability_source": "xgboost"
     },
     {
@@ -1475,9 +1395,9 @@
       "odds_away": null,
       "predicted_outcome": "home_win",
       "predicted_winner": "FC Twente",
-      "prob_away_win": 0.05643073096556957,
-      "prob_draw": 0.24545103224841416,
-      "prob_home_win": 0.6981182367860163,
+      "prob_away_win": 0.07075197095797638,
+      "prob_draw": 0.2695985835949364,
+      "prob_home_win": 0.6596494454470873,
       "probability_source": "xgboost"
     },
     {
@@ -1495,9 +1415,9 @@
       "odds_away": null,
       "predicted_outcome": "away_win",
       "predicted_winner": "Feyenoord",
-      "prob_away_win": 0.5322997514853764,
-      "prob_draw": 0.22193379704859129,
-      "prob_home_win": 0.24576645146603224,
+      "prob_away_win": 0.5401357840330853,
+      "prob_draw": 0.22407565087537384,
+      "prob_home_win": 0.23578856509154092,
       "probability_source": "xgboost"
     },
     {
@@ -1515,9 +1435,9 @@
       "odds_away": null,
       "predicted_outcome": "away_win",
       "predicted_winner": "NEC",
-      "prob_away_win": 0.5003096113266645,
-      "prob_draw": 0.24283653891881665,
-      "prob_home_win": 0.25685384975451886,
+      "prob_away_win": 0.501262250122734,
+      "prob_draw": 0.2404438667140549,
+      "prob_home_win": 0.25829388316321117,
       "probability_source": "xgboost"
     },
     {
@@ -1535,9 +1455,9 @@
       "odds_away": null,
       "predicted_outcome": "home_win",
       "predicted_winner": "FC Twente",
-      "prob_away_win": 0.06824731756657752,
-      "prob_draw": 0.16213942570663184,
-      "prob_home_win": 0.7696132567267906,
+      "prob_away_win": 0.06291850231344226,
+      "prob_draw": 0.15491846984385735,
+      "prob_home_win": 0.7821630278427004,
       "probability_source": "xgboost"
     },
     {
@@ -1555,9 +1475,9 @@
       "odds_away": null,
       "predicted_outcome": "away_win",
       "predicted_winner": "FC Utrecht",
-      "prob_away_win": 0.5049005825809313,
-      "prob_draw": 0.21000778551299543,
-      "prob_home_win": 0.2850916319060733,
+      "prob_away_win": 0.49312019745986563,
+      "prob_draw": 0.21284313854878112,
+      "prob_home_win": 0.29403666399135325,
       "probability_source": "xgboost"
     },
     {
@@ -1575,9 +1495,9 @@
       "odds_away": null,
       "predicted_outcome": "away_win",
       "predicted_winner": "Heerenveen",
-      "prob_away_win": 0.6542993917272165,
-      "prob_draw": 0.15462623944629567,
-      "prob_home_win": 0.19107436882648776,
+      "prob_away_win": 0.6636649073864753,
+      "prob_draw": 0.1471492944194364,
+      "prob_home_win": 0.18918579819408834,
       "probability_source": "xgboost"
     },
     {
@@ -1595,9 +1515,9 @@
       "odds_away": null,
       "predicted_outcome": "home_win",
       "predicted_winner": "PSV",
-      "prob_away_win": 0.2557520110511816,
-      "prob_draw": 0.22690117812897806,
-      "prob_home_win": 0.5173468108198404,
+      "prob_away_win": 0.2399446230461387,
+      "prob_draw": 0.23147692071694415,
+      "prob_home_win": 0.5285784562369171,
       "probability_source": "xgboost"
     },
     {
@@ -1615,9 +1535,9 @@
       "odds_away": null,
       "predicted_outcome": "home_win",
       "predicted_winner": "Feyenoord",
-      "prob_away_win": 0.17099271003150932,
-      "prob_draw": 0.2237269480033103,
-      "prob_home_win": 0.6052803419651803,
+      "prob_away_win": 0.17569232573596844,
+      "prob_draw": 0.2244088958004594,
+      "prob_home_win": 0.5998987784635722,
       "probability_source": "xgboost"
     },
     {
@@ -1635,9 +1555,9 @@
       "odds_away": null,
       "predicted_outcome": "home_win",
       "predicted_winner": "Willem II",
-      "prob_away_win": 0.34939780513184293,
-      "prob_draw": 0.2700103376663206,
-      "prob_home_win": 0.38059185720183647,
+      "prob_away_win": 0.32477985605151677,
+      "prob_draw": 0.2640507050723409,
+      "prob_home_win": 0.4111694388761424,
       "probability_source": "xgboost"
     },
     {
@@ -1655,9 +1575,9 @@
       "odds_away": null,
       "predicted_outcome": "home_win",
       "predicted_winner": "Fortuna Sittard",
-      "prob_away_win": 0.3750102492259834,
-      "prob_draw": 0.20596881161926622,
-      "prob_home_win": 0.41902093915475036,
+      "prob_away_win": 0.3036320077481486,
+      "prob_draw": 0.1762262846852981,
+      "prob_home_win": 0.5201417075665533,
       "probability_source": "xgboost"
     },
     {
@@ -1675,9 +1595,9 @@
       "odds_away": null,
       "predicted_outcome": "away_win",
       "predicted_winner": "AZ",
-      "prob_away_win": 0.46825580933862304,
-      "prob_draw": 0.19544819418057197,
-      "prob_home_win": 0.336295996480805,
+      "prob_away_win": 0.49661355946417,
+      "prob_draw": 0.1966886395682116,
+      "prob_home_win": 0.3066978009676184,
       "probability_source": "xgboost"
     },
     {
@@ -1695,9 +1615,9 @@
       "odds_away": null,
       "predicted_outcome": "home_win",
       "predicted_winner": "Go Ahead Eagles",
-      "prob_away_win": 0.21900574678945958,
-      "prob_draw": 0.29369126944509955,
-      "prob_home_win": 0.48730298376544084,
+      "prob_away_win": 0.2128659849416237,
+      "prob_draw": 0.26624285150480703,
+      "prob_home_win": 0.5208911635535692,
       "probability_source": "xgboost"
     },
     {
@@ -1715,9 +1635,9 @@
       "odds_away": null,
       "predicted_outcome": "away_win",
       "predicted_winner": "Ajax",
-      "prob_away_win": 0.7266353310448448,
-      "prob_draw": 0.13152602588405657,
-      "prob_home_win": 0.14183864307109859,
+      "prob_away_win": 0.7312920635320441,
+      "prob_draw": 0.1225197703990236,
+      "prob_home_win": 0.14618816606893228,
       "probability_source": "xgboost"
     },
     {
@@ -1735,9 +1655,9 @@
       "odds_away": null,
       "predicted_outcome": "home_win",
       "predicted_winner": "Feyenoord",
-      "prob_away_win": 0.0871001676167233,
-      "prob_draw": 0.1586306805745096,
-      "prob_home_win": 0.7542691518087671,
+      "prob_away_win": 0.0899717037177888,
+      "prob_draw": 0.15806069455201077,
+      "prob_home_win": 0.7519676017302004,
       "probability_source": "xgboost"
     },
     {
@@ -1755,9 +1675,9 @@
       "odds_away": null,
       "predicted_outcome": "home_win",
       "predicted_winner": "FC Utrecht",
-      "prob_away_win": 0.14679746339540659,
-      "prob_draw": 0.17639556843422002,
-      "prob_home_win": 0.6768069681703734,
+      "prob_away_win": 0.13757490240173498,
+      "prob_draw": 0.18588836583359541,
+      "prob_home_win": 0.6765367317646697,
       "probability_source": "xgboost"
     },
     {
@@ -1775,9 +1695,9 @@
       "odds_away": null,
       "predicted_outcome": "home_win",
       "predicted_winner": "Ajax",
-      "prob_away_win": 0.15966666360565848,
-      "prob_draw": 0.23780553438536914,
-      "prob_home_win": 0.6025278020089724,
+      "prob_away_win": 0.15541574234188335,
+      "prob_draw": 0.2439960665660312,
+      "prob_home_win": 0.6005881910920854,
       "probability_source": "xgboost"
     },
     {
@@ -1795,9 +1715,9 @@
       "odds_away": null,
       "predicted_outcome": "home_win",
       "predicted_winner": "PSV",
-      "prob_away_win": 0.060614837057423855,
-      "prob_draw": 0.16032513881441185,
-      "prob_home_win": 0.7790600241281643,
+      "prob_away_win": 0.05904943164662927,
+      "prob_draw": 0.1538363464808949,
+      "prob_home_win": 0.7871142218724758,
       "probability_source": "xgboost"
     },
     {
@@ -1815,9 +1735,9 @@
       "odds_away": null,
       "predicted_outcome": "home_win",
       "predicted_winner": "Heerenveen",
-      "prob_away_win": 0.06661603812825911,
-      "prob_draw": 0.09546328667227798,
-      "prob_home_win": 0.8379206751994629,
+      "prob_away_win": 0.05659951347548176,
+      "prob_draw": 0.08953302093003573,
+      "prob_home_win": 0.8538674655944825,
       "probability_source": "xgboost"
     },
     {
@@ -1835,9 +1755,9 @@
       "odds_away": null,
       "predicted_outcome": "home_win",
       "predicted_winner": "NEC",
-      "prob_away_win": 0.14068021045294604,
-      "prob_draw": 0.2868124296022403,
-      "prob_home_win": 0.5725073599448136,
+      "prob_away_win": 0.12325037057217995,
+      "prob_draw": 0.25906174487078204,
+      "prob_home_win": 0.617687884557038,
       "probability_source": "xgboost"
     },
     {
@@ -1855,9 +1775,9 @@
       "odds_away": null,
       "predicted_outcome": "home_win",
       "predicted_winner": "FC Twente",
-      "prob_away_win": 0.06827712772228732,
-      "prob_draw": 0.12630072273923726,
-      "prob_home_win": 0.8054221495384755,
+      "prob_away_win": 0.06837458677934485,
+      "prob_draw": 0.10782515077223175,
+      "prob_home_win": 0.8238002624484234,
       "probability_source": "xgboost"
     },
     {
@@ -1875,9 +1795,9 @@
       "odds_away": null,
       "predicted_outcome": "home_win",
       "predicted_winner": "AZ",
-      "prob_away_win": 0.18029414445905992,
-      "prob_draw": 0.22436622901579836,
-      "prob_home_win": 0.5953396265251417,
+      "prob_away_win": 0.16278180231034936,
+      "prob_draw": 0.21816861327088172,
+      "prob_home_win": 0.6190495844187689,
       "probability_source": "xgboost"
     },
     {
@@ -1895,9 +1815,9 @@
       "odds_away": null,
       "predicted_outcome": "away_win",
       "predicted_winner": "FC Groningen",
-      "prob_away_win": 0.5321154433965566,
-      "prob_draw": 0.2205311699512598,
-      "prob_home_win": 0.2473533866521836,
+      "prob_away_win": 0.5296891203500421,
+      "prob_draw": 0.21047684017147644,
+      "prob_home_win": 0.25983403947848144,
       "probability_source": "xgboost"
     },
     {
@@ -1915,9 +1835,9 @@
       "odds_away": null,
       "predicted_outcome": "away_win",
       "predicted_winner": "Feyenoord",
-      "prob_away_win": 0.43564352797150846,
-      "prob_draw": 0.24495893017993586,
-      "prob_home_win": 0.3193975418485556,
+      "prob_away_win": 0.4110155327819797,
+      "prob_draw": 0.27013556406068356,
+      "prob_home_win": 0.3188489031573367,
       "probability_source": "xgboost"
     },
     {
@@ -1935,9 +1855,9 @@
       "odds_away": null,
       "predicted_outcome": "away_win",
       "predicted_winner": "Go Ahead Eagles",
-      "prob_away_win": 0.4669834908896733,
-      "prob_draw": 0.24309788408725816,
-      "prob_home_win": 0.2899186250230686,
+      "prob_away_win": 0.46494848861030846,
+      "prob_draw": 0.2541967592626828,
+      "prob_home_win": 0.2808547521270087,
       "probability_source": "xgboost"
     },
     {
@@ -1955,9 +1875,9 @@
       "odds_away": null,
       "predicted_outcome": "away_win",
       "predicted_winner": "PSV",
-      "prob_away_win": 0.7676003187587086,
-      "prob_draw": 0.14022635256121166,
-      "prob_home_win": 0.09217332868007978,
+      "prob_away_win": 0.7716706170659163,
+      "prob_draw": 0.14879143964681296,
+      "prob_home_win": 0.0795379432872707,
       "probability_source": "xgboost"
     },
     {
@@ -1975,9 +1895,9 @@
       "odds_away": null,
       "predicted_outcome": "away_win",
       "predicted_winner": "PEC Zwolle",
-      "prob_away_win": 0.3634170275642828,
-      "prob_draw": 0.27357790916592184,
-      "prob_home_win": 0.36300506326979537,
+      "prob_away_win": 0.37411615494765393,
+      "prob_draw": 0.25865132537163105,
+      "prob_home_win": 0.3672325196807151,
       "probability_source": "xgboost"
     },
     {
@@ -1995,9 +1915,9 @@
       "odds_away": null,
       "predicted_outcome": "away_win",
       "predicted_winner": "Heerenveen",
-      "prob_away_win": 0.6189623638945442,
-      "prob_draw": 0.1448477352003732,
-      "prob_home_win": 0.23618990090508257,
+      "prob_away_win": 0.6039019953559573,
+      "prob_draw": 0.141777124926901,
+      "prob_home_win": 0.2543208797171416,
       "probability_source": "xgboost"
     },
     {
@@ -2015,9 +1935,9 @@
       "odds_away": null,
       "predicted_outcome": "away_win",
       "predicted_winner": "FC Twente",
-      "prob_away_win": 0.6791845091793225,
-      "prob_draw": 0.16483963361372342,
-      "prob_home_win": 0.15597585720695403,
+      "prob_away_win": 0.7674411110762983,
+      "prob_draw": 0.09702421087355657,
+      "prob_home_win": 0.1355346780501451,
       "probability_source": "xgboost"
     },
     {
@@ -2035,9 +1955,9 @@
       "odds_away": null,
       "predicted_outcome": "away_win",
       "predicted_winner": "FC Groningen",
-      "prob_away_win": 0.4952073136771726,
-      "prob_draw": 0.21273256809600521,
-      "prob_home_win": 0.2920601182268222,
+      "prob_away_win": 0.4991347067935693,
+      "prob_draw": 0.20425489866950977,
+      "prob_home_win": 0.29661039453692095,
       "probability_source": "xgboost"
     },
     {
@@ -2055,9 +1975,9 @@
       "odds_away": null,
       "predicted_outcome": "away_win",
       "predicted_winner": "AZ",
-      "prob_away_win": 0.4351110697222975,
-      "prob_draw": 0.1629701110141459,
-      "prob_home_win": 0.4019188192635566,
+      "prob_away_win": 0.4420965682616723,
+      "prob_draw": 0.1777047602048435,
+      "prob_home_win": 0.3801986715334842,
       "probability_source": "xgboost"
     },
     {
@@ -2075,9 +1995,9 @@
       "odds_away": null,
       "predicted_outcome": "away_win",
       "predicted_winner": "FC Utrecht",
-      "prob_away_win": 0.5529260695684313,
-      "prob_draw": 0.27235305205233423,
-      "prob_home_win": 0.17472087837923445,
+      "prob_away_win": 0.529441903525828,
+      "prob_draw": 0.21454945113267887,
+      "prob_home_win": 0.2560086453414931,
       "probability_source": "xgboost"
     },
     {
@@ -2095,9 +2015,9 @@
       "odds_away": null,
       "predicted_outcome": "home_win",
       "predicted_winner": "PSV",
-      "prob_away_win": 0.08493903728772936,
-      "prob_draw": 0.10585327688163802,
-      "prob_home_win": 0.8092076858306326,
+      "prob_away_win": 0.08383182390076274,
+      "prob_draw": 0.10659730533870239,
+      "prob_home_win": 0.8095708707605349,
       "probability_source": "xgboost"
     },
     {
@@ -2115,9 +2035,9 @@
       "odds_away": null,
       "predicted_outcome": "home_win",
       "predicted_winner": "FC Groningen",
-      "prob_away_win": 0.26137075880849,
-      "prob_draw": 0.24145259523696935,
-      "prob_home_win": 0.4971766459545407,
+      "prob_away_win": 0.260419894374815,
+      "prob_draw": 0.24970975393753525,
+      "prob_home_win": 0.48987035168764975,
       "probability_source": "xgboost"
     },
     {
@@ -2135,9 +2055,9 @@
       "odds_away": null,
       "predicted_outcome": "away_win",
       "predicted_winner": "Ajax",
-      "prob_away_win": 0.7196906192119673,
-      "prob_draw": 0.13919784882496505,
-      "prob_home_win": 0.14111153196306767,
+      "prob_away_win": 0.7354202948197825,
+      "prob_draw": 0.13516881056776095,
+      "prob_home_win": 0.12941089461245656,
       "probability_source": "xgboost"
     },
     {
@@ -2155,9 +2075,9 @@
       "odds_away": null,
       "predicted_outcome": "home_win",
       "predicted_winner": "PEC Zwolle",
-      "prob_away_win": 0.16613806306192716,
-      "prob_draw": 0.1508898838113359,
-      "prob_home_win": 0.6829720531267369,
+      "prob_away_win": 0.16672043742820555,
+      "prob_draw": 0.1529770191718364,
+      "prob_home_win": 0.6803025433999581,
       "probability_source": "xgboost"
     },
     {
@@ -2175,9 +2095,9 @@
       "odds_away": null,
       "predicted_outcome": "home_win",
       "predicted_winner": "Go Ahead Eagles",
-      "prob_away_win": 0.3764550029613704,
-      "prob_draw": 0.17538652640683391,
-      "prob_home_win": 0.44815847063179565,
+      "prob_away_win": 0.3030829550126966,
+      "prob_draw": 0.18823227682429133,
+      "prob_home_win": 0.5086847681630121,
       "probability_source": "xgboost"
     },
     {
@@ -2195,9 +2115,9 @@
       "odds_away": null,
       "predicted_outcome": "home_win",
       "predicted_winner": "Feyenoord",
-      "prob_away_win": 0.2362536442660292,
-      "prob_draw": 0.18171543588421263,
-      "prob_home_win": 0.5820309198497582,
+      "prob_away_win": 0.23333832125125087,
+      "prob_draw": 0.1788557469980242,
+      "prob_home_win": 0.5878059317507249,
       "probability_source": "xgboost"
     },
     {
@@ -2215,9 +2135,9 @@
       "odds_away": null,
       "predicted_outcome": "home_win",
       "predicted_winner": "Sparta Rotterdam",
-      "prob_away_win": 0.2371793736120573,
-      "prob_draw": 0.22934029112659923,
-      "prob_home_win": 0.5334803352613435,
+      "prob_away_win": 0.3268290639530464,
+      "prob_draw": 0.22012057718369826,
+      "prob_home_win": 0.45305035886325534,
       "probability_source": "xgboost"
     },
     {
@@ -2235,9 +2155,9 @@
       "odds_away": null,
       "predicted_outcome": "home_win",
       "predicted_winner": "FC Twente",
-      "prob_away_win": 0.2831911667095855,
-      "prob_draw": 0.16509153027757628,
-      "prob_home_win": 0.5517173030128383,
+      "prob_away_win": 0.3011442149553535,
+      "prob_draw": 0.2117799800211562,
+      "prob_home_win": 0.4870758050234903,
       "probability_source": "xgboost"
     },
     {
@@ -2255,9 +2175,9 @@
       "odds_away": null,
       "predicted_outcome": "away_win",
       "predicted_winner": "NEC",
-      "prob_away_win": 0.6495352085993991,
-      "prob_draw": 0.1486706740888739,
-      "prob_home_win": 0.20179411731172706,
+      "prob_away_win": 0.6740033423268206,
+      "prob_draw": 0.11917344922379948,
+      "prob_home_win": 0.2068232084493799,
       "probability_source": "xgboost"
     },
     {
@@ -2275,9 +2195,9 @@
       "odds_away": null,
       "predicted_outcome": "away_win",
       "predicted_winner": "Feyenoord",
-      "prob_away_win": 0.57736902170356,
-      "prob_draw": 0.19785815646196636,
-      "prob_home_win": 0.2247728218344737,
+      "prob_away_win": 0.6029839805629991,
+      "prob_draw": 0.2063827769171528,
+      "prob_home_win": 0.1906332425198481,
       "probability_source": "xgboost"
     },
     {
@@ -2295,9 +2215,9 @@
       "odds_away": null,
       "predicted_outcome": "home_win",
       "predicted_winner": "Ajax",
-      "prob_away_win": 0.0773208158496121,
-      "prob_draw": 0.2172668731012013,
-      "prob_home_win": 0.7054123110491866,
+      "prob_away_win": 0.06715609844333933,
+      "prob_draw": 0.1689580068933361,
+      "prob_home_win": 0.7638858946633246,
       "probability_source": "xgboost"
     },
     {
@@ -2315,9 +2235,9 @@
       "odds_away": null,
       "predicted_outcome": "home_win",
       "predicted_winner": "FC Utrecht",
-      "prob_away_win": 0.3523420471196884,
-      "prob_draw": 0.1815738131763549,
-      "prob_home_win": 0.4660841397039567,
+      "prob_away_win": 0.31981429639274145,
+      "prob_draw": 0.17766005618293312,
+      "prob_home_win": 0.5025256474243255,
       "probability_source": "xgboost"
     },
     {
@@ -2335,9 +2255,9 @@
       "odds_away": null,
       "predicted_outcome": "home_win",
       "predicted_winner": "SC Cambuur",
-      "prob_away_win": 0.3111295879552519,
-      "prob_draw": 0.1530048742140538,
-      "prob_home_win": 0.5358655378306943,
+      "prob_away_win": 0.28605473439720175,
+      "prob_draw": 0.16978402605123888,
+      "prob_home_win": 0.5441612395515594,
       "probability_source": "xgboost"
     },
     {
@@ -2355,9 +2275,9 @@
       "odds_away": null,
       "predicted_outcome": "away_win",
       "predicted_winner": "PSV",
-      "prob_away_win": 0.7800456346820227,
-      "prob_draw": 0.12822066246102917,
-      "prob_home_win": 0.0917337028569481,
+      "prob_away_win": 0.7984717785784708,
+      "prob_draw": 0.1131965200776336,
+      "prob_home_win": 0.08833170134389559,
       "probability_source": "xgboost"
     },
     {
@@ -2375,9 +2295,9 @@
       "odds_away": null,
       "predicted_outcome": "away_win",
       "predicted_winner": "NEC",
-      "prob_away_win": 0.5783848965196997,
-      "prob_draw": 0.19201254347556665,
-      "prob_home_win": 0.22960256000473364,
+      "prob_away_win": 0.58193581136764,
+      "prob_draw": 0.18813861609256724,
+      "prob_home_win": 0.2299255725397927,
       "probability_source": "xgboost"
     },
     {
@@ -2395,9 +2315,9 @@
       "odds_away": null,
       "predicted_outcome": "home_win",
       "predicted_winner": "Heerenveen",
-      "prob_away_win": 0.17710877302999273,
-      "prob_draw": 0.27007537527076886,
-      "prob_home_win": 0.5528158516992384,
+      "prob_away_win": 0.18073463194330755,
+      "prob_draw": 0.24100600966231528,
+      "prob_home_win": 0.5782593583943771,
       "probability_source": "xgboost"
     },
     {
@@ -2415,9 +2335,9 @@
       "odds_away": null,
       "predicted_outcome": "away_win",
       "predicted_winner": "FC Twente",
-      "prob_away_win": 0.7584305081318252,
-      "prob_draw": 0.10299877515166707,
-      "prob_home_win": 0.13857071671650775,
+      "prob_away_win": 0.7858986107188338,
+      "prob_draw": 0.08664778033696822,
+      "prob_home_win": 0.12745360894419794,
       "probability_source": "xgboost"
     },
     {
@@ -2435,9 +2355,9 @@
       "odds_away": null,
       "predicted_outcome": "home_win",
       "predicted_winner": "AZ",
-      "prob_away_win": 0.1567654412491521,
-      "prob_draw": 0.18484413998387683,
-      "prob_home_win": 0.6583904187669711,
+      "prob_away_win": 0.11061717321354096,
+      "prob_draw": 0.18075137623975646,
+      "prob_home_win": 0.7086314505467026,
       "probability_source": "xgboost"
     },
     {
@@ -2455,9 +2375,9 @@
       "odds_away": null,
       "predicted_outcome": "home_win",
       "predicted_winner": "FC Utrecht",
-      "prob_away_win": 0.23919327035411905,
-      "prob_draw": 0.22904164237921232,
-      "prob_home_win": 0.5317650872666686,
+      "prob_away_win": 0.206853097678474,
+      "prob_draw": 0.2519218270479829,
+      "prob_home_win": 0.5412250752735431,
       "probability_source": "xgboost"
     },
     {
@@ -2475,9 +2395,9 @@
       "odds_away": null,
       "predicted_outcome": "away_win",
       "predicted_winner": "Ajax",
-      "prob_away_win": 0.537473806986138,
-      "prob_draw": 0.1672428376881029,
-      "prob_home_win": 0.29528335532575906,
+      "prob_away_win": 0.5288393834654959,
+      "prob_draw": 0.174728855928352,
+      "prob_home_win": 0.2964317606061522,
       "probability_source": "xgboost"
     },
     {
@@ -2495,9 +2415,9 @@
       "odds_away": null,
       "predicted_outcome": "home_win",
       "predicted_winner": "AZ",
-      "prob_away_win": 0.22307903213116254,
-      "prob_draw": 0.17423374739248693,
-      "prob_home_win": 0.6026872204763505,
+      "prob_away_win": 0.1975997834291882,
+      "prob_draw": 0.16158824327186816,
+      "prob_home_win": 0.6408119732989437,
       "probability_source": "xgboost"
     },
     {
@@ -2515,9 +2435,9 @@
       "odds_away": null,
       "predicted_outcome": "home_win",
       "predicted_winner": "ADO Den Haag",
-      "prob_away_win": 0.2719735398604702,
-      "prob_draw": 0.19311045417540373,
-      "prob_home_win": 0.5349160059641261,
+      "prob_away_win": 0.23440524137596264,
+      "prob_draw": 0.20416698381158388,
+      "prob_home_win": 0.5614277748124534,
       "probability_source": "xgboost"
     },
     {
@@ -2535,9 +2455,9 @@
       "odds_away": null,
       "predicted_outcome": "away_win",
       "predicted_winner": "PSV",
-      "prob_away_win": 0.6940538696655072,
-      "prob_draw": 0.16641084263026856,
-      "prob_home_win": 0.13953528770422427,
+      "prob_away_win": 0.7050589020528125,
+      "prob_draw": 0.16245789164269797,
+      "prob_home_win": 0.1324832063044895,
       "probability_source": "xgboost"
     },
     {
@@ -2555,9 +2475,9 @@
       "odds_away": null,
       "predicted_outcome": "home_win",
       "predicted_winner": "Telstar",
-      "prob_away_win": 0.38459130597744023,
-      "prob_draw": 0.17563659620885635,
-      "prob_home_win": 0.4397720978137034,
+      "prob_away_win": 0.3931665056193522,
+      "prob_draw": 0.1708605432735541,
+      "prob_home_win": 0.4359729511070937,
       "probability_source": "xgboost"
     },
     {
@@ -2575,9 +2495,9 @@
       "odds_away": null,
       "predicted_outcome": "home_win",
       "predicted_winner": "FC Twente",
-      "prob_away_win": 0.06925512600362464,
-      "prob_draw": 0.17759981578983824,
-      "prob_home_win": 0.7531450582065371,
+      "prob_away_win": 0.0765798326174006,
+      "prob_draw": 0.17088829527504007,
+      "prob_home_win": 0.7525318721075593,
       "probability_source": "xgboost"
     },
     {
@@ -2595,9 +2515,9 @@
       "odds_away": null,
       "predicted_outcome": "away_win",
       "predicted_winner": "Heerenveen",
-      "prob_away_win": 0.6078842846167167,
-      "prob_draw": 0.16762068149329346,
-      "prob_home_win": 0.22449503388998987,
+      "prob_away_win": 0.6061510117764412,
+      "prob_draw": 0.16698987103342916,
+      "prob_home_win": 0.22685911719012974,
       "probability_source": "xgboost"
     },
     {
@@ -2615,9 +2535,9 @@
       "odds_away": null,
       "predicted_outcome": "home_win",
       "predicted_winner": "Feyenoord",
-      "prob_away_win": 0.06859706285597313,
-      "prob_draw": 0.20543679815052415,
-      "prob_home_win": 0.7259661389935027,
+      "prob_away_win": 0.07270552899600198,
+      "prob_draw": 0.20052544159091362,
+      "prob_home_win": 0.7267690294130844,
       "probability_source": "xgboost"
     },
     {
@@ -2635,9 +2555,9 @@
       "odds_away": null,
       "predicted_outcome": "away_win",
       "predicted_winner": "FC Utrecht",
-      "prob_away_win": 0.46206005325027777,
-      "prob_draw": 0.27416503169092704,
-      "prob_home_win": 0.2637749150587952,
+      "prob_away_win": 0.4769100924505635,
+      "prob_draw": 0.26915843980320997,
+      "prob_home_win": 0.25393146774622655,
       "probability_source": "xgboost"
     },
     {
@@ -2655,9 +2575,9 @@
       "odds_away": null,
       "predicted_outcome": "home_win",
       "predicted_winner": "Sparta Rotterdam",
-      "prob_away_win": 0.22237776323686403,
-      "prob_draw": 0.20222342373242225,
-      "prob_home_win": 0.5753988130307137,
+      "prob_away_win": 0.23224639926157403,
+      "prob_draw": 0.20354073845080436,
+      "prob_home_win": 0.5642128622876216,
       "probability_source": "xgboost"
     },
     {
@@ -2675,9 +2595,9 @@
       "odds_away": null,
       "predicted_outcome": "away_win",
       "predicted_winner": "PEC Zwolle",
-      "prob_away_win": 0.44935147366033995,
-      "prob_draw": 0.2440329257926043,
-      "prob_home_win": 0.3066156005470557,
+      "prob_away_win": 0.44871876613849393,
+      "prob_draw": 0.24231937935677433,
+      "prob_home_win": 0.30896185450473174,
       "probability_source": "xgboost"
     },
     {
@@ -2695,9 +2615,9 @@
       "odds_away": null,
       "predicted_outcome": "home_win",
       "predicted_winner": "Ajax",
-      "prob_away_win": 0.38092032349248944,
-      "prob_draw": 0.21552555422995867,
-      "prob_home_win": 0.4035541222775519,
+      "prob_away_win": 0.34883003384028893,
+      "prob_draw": 0.21498242712301252,
+      "prob_home_win": 0.43618753903669855,
       "probability_source": "xgboost"
     },
     {
@@ -2715,9 +2635,9 @@
       "odds_away": null,
       "predicted_outcome": "home_win",
       "predicted_winner": "PSV",
-      "prob_away_win": 0.1141967587906496,
-      "prob_draw": 0.1702263437874102,
-      "prob_home_win": 0.7155768974219402,
+      "prob_away_win": 0.14404796536374628,
+      "prob_draw": 0.17346133729091925,
+      "prob_home_win": 0.6824906973453345,
       "probability_source": "xgboost"
     },
     {
@@ -2735,9 +2655,9 @@
       "odds_away": null,
       "predicted_outcome": "home_win",
       "predicted_winner": "Heerenveen",
-      "prob_away_win": 0.255992664135235,
-      "prob_draw": 0.19499278858940208,
-      "prob_home_win": 0.5490145472753629,
+      "prob_away_win": 0.2514698791088022,
+      "prob_draw": 0.18386761326952702,
+      "prob_home_win": 0.5646625076216708,
       "probability_source": "xgboost"
     },
     {
@@ -2755,9 +2675,9 @@
       "odds_away": null,
       "predicted_outcome": "away_win",
       "predicted_winner": "NEC",
-      "prob_away_win": 0.4994478361286471,
-      "prob_draw": 0.24921123020587016,
-      "prob_home_win": 0.2513409336654827,
+      "prob_away_win": 0.4822120080640542,
+      "prob_draw": 0.24005753408142919,
+      "prob_home_win": 0.27773045785451667,
       "probability_source": "xgboost"
     },
     {
@@ -2775,9 +2695,9 @@
       "odds_away": null,
       "predicted_outcome": "home_win",
       "predicted_winner": "SC Cambuur",
-      "prob_away_win": 0.34274208505909476,
-      "prob_draw": 0.25125831547274924,
-      "prob_home_win": 0.405999599468156,
+      "prob_away_win": 0.3438745842333683,
+      "prob_draw": 0.2447368272184464,
+      "prob_home_win": 0.41138858854818533,
       "probability_source": "xgboost"
     },
     {
@@ -2795,9 +2715,9 @@
       "odds_away": null,
       "predicted_outcome": "away_win",
       "predicted_winner": "Feyenoord",
-      "prob_away_win": 0.7348318603410319,
-      "prob_draw": 0.11176379280153748,
-      "prob_home_win": 0.15340434685743068,
+      "prob_away_win": 0.7457912073150553,
+      "prob_draw": 0.09642716447724005,
+      "prob_home_win": 0.15778162820770458,
       "probability_source": "xgboost"
     },
     {
@@ -2815,9 +2735,9 @@
       "odds_away": null,
       "predicted_outcome": "home_win",
       "predicted_winner": "FC Groningen",
-      "prob_away_win": 0.3484646243712653,
-      "prob_draw": 0.21250212203780158,
-      "prob_home_win": 0.43903325359093315,
+      "prob_away_win": 0.35717888083256993,
+      "prob_draw": 0.2021501036604862,
+      "prob_home_win": 0.4406710155069439,
       "probability_source": "xgboost"
     },
     {
@@ -2835,9 +2755,9 @@
       "odds_away": null,
       "predicted_outcome": "home_win",
       "predicted_winner": "NEC",
-      "prob_away_win": 0.38458491199634137,
-      "prob_draw": 0.15359167313670616,
-      "prob_home_win": 0.46182341486695244,
+      "prob_away_win": 0.3933095259810915,
+      "prob_draw": 0.1485189559896153,
+      "prob_home_win": 0.45817151802929323,
       "probability_source": "xgboost"
     },
     {
@@ -2855,9 +2775,9 @@
       "odds_away": null,
       "predicted_outcome": "away_win",
       "predicted_winner": "FC Twente",
-      "prob_away_win": 0.7779250184026404,
-      "prob_draw": 0.12701063245506136,
-      "prob_home_win": 0.0950643491422982,
+      "prob_away_win": 0.8457192495359869,
+      "prob_draw": 0.07065560800070593,
+      "prob_home_win": 0.08362514246330717,
       "probability_source": "xgboost"
     },
     {
@@ -2875,9 +2795,9 @@
       "odds_away": null,
       "predicted_outcome": "away_win",
       "predicted_winner": "PSV",
-      "prob_away_win": 0.7795853227895011,
-      "prob_draw": 0.13265958332285135,
-      "prob_home_win": 0.08775509388764759,
+      "prob_away_win": 0.8055583131903868,
+      "prob_draw": 0.111128453830098,
+      "prob_home_win": 0.0833132329795152,
       "probability_source": "xgboost"
     },
     {
@@ -2895,9 +2815,9 @@
       "odds_away": null,
       "predicted_outcome": "home_win",
       "predicted_winner": "Sparta Rotterdam",
-      "prob_away_win": 0.3577153632087021,
-      "prob_draw": 0.211224171782294,
-      "prob_home_win": 0.43106046500900386,
+      "prob_away_win": 0.37153236123636785,
+      "prob_draw": 0.2213136000580624,
+      "prob_home_win": 0.40715403870556977,
       "probability_source": "xgboost"
     },
     {
@@ -2915,9 +2835,9 @@
       "odds_away": null,
       "predicted_outcome": "away_win",
       "predicted_winner": "AZ",
-      "prob_away_win": 0.6551844562164569,
-      "prob_draw": 0.15819618596927576,
-      "prob_home_win": 0.18661935781426728,
+      "prob_away_win": 0.6404436334524851,
+      "prob_draw": 0.17374248428377287,
+      "prob_home_win": 0.18581388226374204,
       "probability_source": "xgboost"
     },
     {
@@ -2935,9 +2855,9 @@
       "odds_away": null,
       "predicted_outcome": "home_win",
       "predicted_winner": "SC Cambuur",
-      "prob_away_win": 0.34789612700785755,
-      "prob_draw": 0.2245105517579622,
-      "prob_home_win": 0.42759332123418026,
+      "prob_away_win": 0.3208412584675768,
+      "prob_draw": 0.22179507827239606,
+      "prob_home_win": 0.45736366326002714,
       "probability_source": "xgboost"
     },
     {
@@ -2955,9 +2875,9 @@
       "odds_away": null,
       "predicted_outcome": "away_win",
       "predicted_winner": "Feyenoord",
-      "prob_away_win": 0.6433169829248383,
-      "prob_draw": 0.16383441682904615,
-      "prob_home_win": 0.19284860024611553,
+      "prob_away_win": 0.6488474481845824,
+      "prob_draw": 0.16499197089585535,
+      "prob_home_win": 0.1861605809195623,
       "probability_source": "xgboost"
     },
     {
@@ -2975,9 +2895,9 @@
       "odds_away": null,
       "predicted_outcome": "away_win",
       "predicted_winner": "Ajax",
-      "prob_away_win": 0.6340792204236035,
-      "prob_draw": 0.16533735664339155,
-      "prob_home_win": 0.2005834229330049,
+      "prob_away_win": 0.6276099133088672,
+      "prob_draw": 0.1732856609992985,
+      "prob_home_win": 0.19910442569183426,
       "probability_source": "xgboost"
     },
     {
@@ -2995,9 +2915,9 @@
       "odds_away": null,
       "predicted_outcome": "home_win",
       "predicted_winner": "AZ",
-      "prob_away_win": 0.09598482843782341,
-      "prob_draw": 0.1894149489702594,
-      "prob_home_win": 0.7146002225919171,
+      "prob_away_win": 0.09136943384837895,
+      "prob_draw": 0.19006186579698864,
+      "prob_home_win": 0.7185687003546324,
       "probability_source": "xgboost"
     },
     {
@@ -3015,9 +2935,9 @@
       "odds_away": null,
       "predicted_outcome": "home_win",
       "predicted_winner": "FC Twente",
-      "prob_away_win": 0.14416100148441047,
-      "prob_draw": 0.1457947198010564,
-      "prob_home_win": 0.7100442787145331,
+      "prob_away_win": 0.16380324331802973,
+      "prob_draw": 0.14847343425839768,
+      "prob_home_win": 0.6877233224235726,
       "probability_source": "xgboost"
     },
     {
@@ -3035,9 +2955,9 @@
       "odds_away": null,
       "predicted_outcome": "home_win",
       "predicted_winner": "Excelsior",
-      "prob_away_win": 0.21714122486688328,
-      "prob_draw": 0.18501321918327954,
-      "prob_home_win": 0.5978455559498371,
+      "prob_away_win": 0.17650631079471937,
+      "prob_draw": 0.18966681617542047,
+      "prob_home_win": 0.6338268730298602,
       "probability_source": "xgboost"
     },
     {
@@ -3055,9 +2975,9 @@
       "odds_away": null,
       "predicted_outcome": "away_win",
       "predicted_winner": "FC Utrecht",
-      "prob_away_win": 0.4774771984926173,
-      "prob_draw": 0.23620300027111876,
-      "prob_home_win": 0.28631980123626394,
+      "prob_away_win": 0.41081075589969124,
+      "prob_draw": 0.2566682879917945,
+      "prob_home_win": 0.3325209561085143,
       "probability_source": "xgboost"
     },
     {
@@ -3075,9 +2995,9 @@
       "odds_away": null,
       "predicted_outcome": "home_win",
       "predicted_winner": "Heerenveen",
-      "prob_away_win": 0.11529725119489792,
-      "prob_draw": 0.12004891645978152,
-      "prob_home_win": 0.7646538323453206,
+      "prob_away_win": 0.08916418782523132,
+      "prob_draw": 0.12900080687013848,
+      "prob_home_win": 0.7818350053046302,
       "probability_source": "xgboost"
     },
     {
@@ -3095,9 +3015,9 @@
       "odds_away": null,
       "predicted_outcome": "home_win",
       "predicted_winner": "PSV",
-      "prob_away_win": 0.25409234936564895,
-      "prob_draw": 0.19177600781525148,
-      "prob_home_win": 0.5541316428190995,
+      "prob_away_win": 0.2756004279497243,
+      "prob_draw": 0.19234856565931796,
+      "prob_home_win": 0.5320510063909577,
       "probability_source": "xgboost"
     },
     {
@@ -3115,9 +3035,9 @@
       "odds_away": null,
       "predicted_outcome": "home_win",
       "predicted_winner": "PEC Zwolle",
-      "prob_away_win": 0.32109588358907554,
-      "prob_draw": 0.2052473396538045,
-      "prob_home_win": 0.47365677675712,
+      "prob_away_win": 0.3301291192537415,
+      "prob_draw": 0.20548142286803583,
+      "prob_home_win": 0.46438945787822267,
       "probability_source": "xgboost"
     },
     {
@@ -3135,9 +3055,9 @@
       "odds_away": null,
       "predicted_outcome": "home_win",
       "predicted_winner": "Feyenoord",
-      "prob_away_win": 0.09368987881080604,
-      "prob_draw": 0.18073002303666755,
-      "prob_home_win": 0.7255800981525264,
+      "prob_away_win": 0.07859151733645535,
+      "prob_draw": 0.1541582430945228,
+      "prob_home_win": 0.7672502395690218,
       "probability_source": "xgboost"
     },
     {
@@ -3155,9 +3075,9 @@
       "odds_away": null,
       "predicted_outcome": "away_win",
       "predicted_winner": "FC Groningen",
-      "prob_away_win": 0.6313831401118036,
-      "prob_draw": 0.19258557198731963,
-      "prob_home_win": 0.1760312879008767,
+      "prob_away_win": 0.5189228850102959,
+      "prob_draw": 0.18647783320495923,
+      "prob_home_win": 0.29459928178474487,
       "probability_source": "xgboost"
     },
     {
@@ -3175,9 +3095,9 @@
       "odds_away": null,
       "predicted_outcome": "home_win",
       "predicted_winner": "Heerenveen",
-      "prob_away_win": 0.2635877915171816,
-      "prob_draw": 0.23037496082403958,
-      "prob_home_win": 0.5060372476587788,
+      "prob_away_win": 0.25717156463722474,
+      "prob_draw": 0.22562441237859723,
+      "prob_home_win": 0.517204022984178,
       "probability_source": "xgboost"
     },
     {
@@ -3195,9 +3115,9 @@
       "odds_away": null,
       "predicted_outcome": "home_win",
       "predicted_winner": "Ajax",
-      "prob_away_win": 0.14256806703737954,
-      "prob_draw": 0.26733196532489567,
-      "prob_home_win": 0.5900999676377248,
+      "prob_away_win": 0.12086616764713687,
+      "prob_draw": 0.2484537454552161,
+      "prob_home_win": 0.630680086897647,
       "probability_source": "xgboost"
     },
     {
@@ -3215,9 +3135,9 @@
       "odds_away": null,
       "predicted_outcome": "away_win",
       "predicted_winner": "FC Twente",
-      "prob_away_win": 0.6695986392080824,
-      "prob_draw": 0.21169010102526406,
-      "prob_home_win": 0.11871125976665359,
+      "prob_away_win": 0.7391197463140269,
+      "prob_draw": 0.14921583617705586,
+      "prob_home_win": 0.11166441750891722,
       "probability_source": "xgboost"
     },
     {
@@ -3235,9 +3155,9 @@
       "odds_away": null,
       "predicted_outcome": "away_win",
       "predicted_winner": "AZ",
-      "prob_away_win": 0.6582605588871985,
-      "prob_draw": 0.12922387020847523,
-      "prob_home_win": 0.21251557090432632,
+      "prob_away_win": 0.6687875918104608,
+      "prob_draw": 0.14615009799478648,
+      "prob_home_win": 0.18506231019475278,
       "probability_source": "xgboost"
     },
     {
@@ -3255,9 +3175,9 @@
       "odds_away": null,
       "predicted_outcome": "home_win",
       "predicted_winner": "FC Groningen",
-      "prob_away_win": 0.229354920361424,
-      "prob_draw": 0.23062437363769658,
-      "prob_home_win": 0.5400207060008794,
+      "prob_away_win": 0.1973523319536284,
+      "prob_draw": 0.25787491456793504,
+      "prob_home_win": 0.5447727534784366,
       "probability_source": "xgboost"
     },
     {
@@ -3275,9 +3195,9 @@
       "odds_away": null,
       "predicted_outcome": "home_win",
       "predicted_winner": "Feyenoord",
-      "prob_away_win": 0.04497924279592912,
-      "prob_draw": 0.0755742812201503,
-      "prob_home_win": 0.8794464759839206,
+      "prob_away_win": 0.04158784735546821,
+      "prob_draw": 0.07092678369114247,
+      "prob_home_win": 0.8874853689533894,
       "probability_source": "xgboost"
     },
     {
@@ -3295,9 +3215,9 @@
       "odds_away": null,
       "predicted_outcome": "home_win",
       "predicted_winner": "NEC",
-      "prob_away_win": 0.16507532911399475,
-      "prob_draw": 0.245366877386961,
-      "prob_home_win": 0.5895577934990442,
+      "prob_away_win": 0.1667896173727418,
+      "prob_draw": 0.2506617403500353,
+      "prob_home_win": 0.5825486422772228,
       "probability_source": "xgboost"
     },
     {
@@ -3315,9 +3235,9 @@
       "odds_away": null,
       "predicted_outcome": "away_win",
       "predicted_winner": "PSV",
-      "prob_away_win": 0.6765636130938285,
-      "prob_draw": 0.20425928450189942,
-      "prob_home_win": 0.11917710240427212,
+      "prob_away_win": 0.6941689521834683,
+      "prob_draw": 0.1891967375975554,
+      "prob_home_win": 0.11663431021897633,
       "probability_source": "xgboost"
     },
     {
@@ -3335,9 +3255,9 @@
       "odds_away": null,
       "predicted_outcome": "home_win",
       "predicted_winner": "Excelsior",
-      "prob_away_win": 0.2904922441962343,
-      "prob_draw": 0.24531563167157347,
-      "prob_home_win": 0.46419212413219224,
+      "prob_away_win": 0.2893432447210512,
+      "prob_draw": 0.23431538573103833,
+      "prob_home_win": 0.47634136954791045,
       "probability_source": "xgboost"
     },
     {
@@ -3355,9 +3275,9 @@
       "odds_away": null,
       "predicted_outcome": "away_win",
       "predicted_winner": "Ajax",
-      "prob_away_win": 0.5558780495950819,
-      "prob_draw": 0.16869809581198758,
-      "prob_home_win": 0.2754238545929305,
+      "prob_away_win": 0.5329589146249951,
+      "prob_draw": 0.19789868462645552,
+      "prob_home_win": 0.2691424007485494,
       "probability_source": "xgboost"
     },
     {
@@ -3375,9 +3295,9 @@
       "odds_away": null,
       "predicted_outcome": "away_win",
       "predicted_winner": "NEC",
-      "prob_away_win": 0.5410715076333341,
-      "prob_draw": 0.20693212421147547,
-      "prob_home_win": 0.25199636815519044,
+      "prob_away_win": 0.6314817999319038,
+      "prob_draw": 0.15307560461989078,
+      "prob_home_win": 0.2154425954482054,
       "probability_source": "xgboost"
     },
     {
@@ -3393,11 +3313,11 @@
       "odds_home": null,
       "odds_draw": null,
       "odds_away": null,
-      "predicted_outcome": "away_win",
-      "predicted_winner": "Sparta Rotterdam",
-      "prob_away_win": 0.42729294096874926,
-      "prob_draw": 0.25193041516531073,
-      "prob_home_win": 0.32077664386594,
+      "predicted_outcome": "home_win",
+      "predicted_winner": "PEC Zwolle",
+      "prob_away_win": 0.3467345820162445,
+      "prob_draw": 0.2813812050631464,
+      "prob_home_win": 0.3718842129206091,
       "probability_source": "xgboost"
     },
     {
@@ -3415,9 +3335,9 @@
       "odds_away": null,
       "predicted_outcome": "home_win",
       "predicted_winner": "FC Twente",
-      "prob_away_win": 0.123100708336943,
-      "prob_draw": 0.2034761351033736,
-      "prob_home_win": 0.6734231565596834,
+      "prob_away_win": 0.11726271730694095,
+      "prob_draw": 0.19215307021085118,
+      "prob_home_win": 0.6905842124822079,
       "probability_source": "xgboost"
     },
     {
@@ -3435,9 +3355,9 @@
       "odds_away": null,
       "predicted_outcome": "home_win",
       "predicted_winner": "Willem II",
-      "prob_away_win": 0.31882382106327567,
-      "prob_draw": 0.3138320188748585,
-      "prob_home_win": 0.3673441600618658,
+      "prob_away_win": 0.3245912122130074,
+      "prob_draw": 0.2966703089817466,
+      "prob_home_win": 0.37873847880524597,
       "probability_source": "xgboost"
     },
     {
@@ -3455,9 +3375,9 @@
       "odds_away": null,
       "predicted_outcome": "away_win",
       "predicted_winner": "Go Ahead Eagles",
-      "prob_away_win": 0.4656691367792439,
-      "prob_draw": 0.2163616315554036,
-      "prob_home_win": 0.3179692316653525,
+      "prob_away_win": 0.41823203155636884,
+      "prob_draw": 0.17830345011050644,
+      "prob_home_win": 0.40346451833312474,
       "probability_source": "xgboost"
     },
     {
@@ -3475,9 +3395,9 @@
       "odds_away": null,
       "predicted_outcome": "away_win",
       "predicted_winner": "Feyenoord",
-      "prob_away_win": 0.5591822056305286,
-      "prob_draw": 0.22305841599787898,
-      "prob_home_win": 0.21775937837159245,
+      "prob_away_win": 0.5602782250130085,
+      "prob_draw": 0.22551835308233753,
+      "prob_home_win": 0.21420342190465397,
       "probability_source": "xgboost"
     },
     {
@@ -3495,9 +3415,9 @@
       "odds_away": null,
       "predicted_outcome": "away_win",
       "predicted_winner": "Heerenveen",
-      "prob_away_win": 0.6050433225228392,
-      "prob_draw": 0.1439367029714628,
-      "prob_home_win": 0.25101997450569796,
+      "prob_away_win": 0.5934257311374379,
+      "prob_draw": 0.1470733569708073,
+      "prob_home_win": 0.2595009118917548,
       "probability_source": "xgboost"
     },
     {
@@ -3515,9 +3435,9 @@
       "odds_away": null,
       "predicted_outcome": "home_win",
       "predicted_winner": "PSV",
-      "prob_away_win": 0.10132862155178995,
-      "prob_draw": 0.09205998661190434,
-      "prob_home_win": 0.8066113918363057,
+      "prob_away_win": 0.09706051906367708,
+      "prob_draw": 0.0854692173908006,
+      "prob_home_win": 0.8174702635455223,
       "probability_source": "xgboost"
     },
     {
@@ -3535,9 +3455,9 @@
       "odds_away": null,
       "predicted_outcome": "home_win",
       "predicted_winner": "FC Groningen",
-      "prob_away_win": 0.24935765618048647,
-      "prob_draw": 0.26620480496189913,
-      "prob_home_win": 0.4844375388576144,
+      "prob_away_win": 0.24951309215199402,
+      "prob_draw": 0.25935363077277995,
+      "prob_home_win": 0.49113327707522597,
       "probability_source": "xgboost"
     },
     {
@@ -3555,9 +3475,9 @@
       "odds_away": null,
       "predicted_outcome": "home_win",
       "predicted_winner": "FC Utrecht",
-      "prob_away_win": 0.20072329272230338,
-      "prob_draw": 0.27683717826091186,
-      "prob_home_win": 0.5224395290167847,
+      "prob_away_win": 0.20075484701141255,
+      "prob_draw": 0.27881491822037413,
+      "prob_home_win": 0.5204302347682133,
       "probability_source": "xgboost"
     },
     {
@@ -3575,9 +3495,9 @@
       "odds_away": null,
       "predicted_outcome": "home_win",
       "predicted_winner": "Excelsior",
-      "prob_away_win": 0.40544149855312545,
-      "prob_draw": 0.1443051873655064,
-      "prob_home_win": 0.45025331408136815,
+      "prob_away_win": 0.37009259559611024,
+      "prob_draw": 0.1756043030804237,
+      "prob_home_win": 0.4543031013234661,
       "probability_source": "xgboost"
     },
     {
@@ -3595,9 +3515,9 @@
       "odds_away": null,
       "predicted_outcome": "away_win",
       "predicted_winner": "Heerenveen",
-      "prob_away_win": 0.521777047167627,
-      "prob_draw": 0.1824156584519261,
-      "prob_home_win": 0.2958072943804469,
+      "prob_away_win": 0.5627993864347196,
+      "prob_draw": 0.15826501425155307,
+      "prob_home_win": 0.27893559931372736,
       "probability_source": "xgboost"
     },
     {
@@ -3615,9 +3535,9 @@
       "odds_away": null,
       "predicted_outcome": "away_win",
       "predicted_winner": "Feyenoord",
-      "prob_away_win": 0.4493760275302935,
-      "prob_draw": 0.2656893212633307,
-      "prob_home_win": 0.28493465120637573,
+      "prob_away_win": 0.4294956121588532,
+      "prob_draw": 0.256097616595683,
+      "prob_home_win": 0.31440677124546385,
       "probability_source": "xgboost"
     },
     {
@@ -3635,9 +3555,9 @@
       "odds_away": null,
       "predicted_outcome": "home_win",
       "predicted_winner": "Ajax",
-      "prob_away_win": 0.1130891305079427,
-      "prob_draw": 0.2340683695838217,
-      "prob_home_win": 0.6528424999082356,
+      "prob_away_win": 0.08943431158431485,
+      "prob_draw": 0.204672234228207,
+      "prob_home_win": 0.7058934541874782,
       "probability_source": "xgboost"
     },
     {
@@ -3655,9 +3575,9 @@
       "odds_away": null,
       "predicted_outcome": "home_win",
       "predicted_winner": "AZ",
-      "prob_away_win": 0.14891772014724117,
-      "prob_draw": 0.24445667208697103,
-      "prob_home_win": 0.6066256077657878,
+      "prob_away_win": 0.1308405733775101,
+      "prob_draw": 0.23538132461722425,
+      "prob_home_win": 0.6337781020052656,
       "probability_source": "xgboost"
     },
     {
@@ -3675,9 +3595,9 @@
       "odds_away": null,
       "predicted_outcome": "home_win",
       "predicted_winner": "PSV",
-      "prob_away_win": 0.10554570198883356,
-      "prob_draw": 0.11325759709633446,
-      "prob_home_win": 0.781196700914832,
+      "prob_away_win": 0.10335331026189258,
+      "prob_draw": 0.1109028710696327,
+      "prob_home_win": 0.7857438186684748,
       "probability_source": "xgboost"
     },
     {
@@ -3695,9 +3615,9 @@
       "odds_away": null,
       "predicted_outcome": "home_win",
       "predicted_winner": "Fortuna Sittard",
-      "prob_away_win": 0.20131548201927071,
-      "prob_draw": 0.21200674888594148,
-      "prob_home_win": 0.5866777690947879,
+      "prob_away_win": 0.15148220776991622,
+      "prob_draw": 0.1954056071074912,
+      "prob_home_win": 0.6531121851225926,
       "probability_source": "xgboost"
     },
     {
@@ -3715,9 +3635,9 @@
       "odds_away": null,
       "predicted_outcome": "away_win",
       "predicted_winner": "Ajax",
-      "prob_away_win": 0.7036348742172771,
-      "prob_draw": 0.1416562907262699,
-      "prob_home_win": 0.15470883505645297,
+      "prob_away_win": 0.699969936694734,
+      "prob_draw": 0.13969275231840483,
+      "prob_home_win": 0.16033731098686124,
       "probability_source": "xgboost"
     },
     {
@@ -3735,9 +3655,9 @@
       "odds_away": null,
       "predicted_outcome": "home_win",
       "predicted_winner": "NEC",
-      "prob_away_win": 0.20928276985293157,
-      "prob_draw": 0.2504497818954675,
-      "prob_home_win": 0.5402674482516009,
+      "prob_away_win": 0.21625636220462172,
+      "prob_draw": 0.25359406569192244,
+      "prob_home_win": 0.5301495721034558,
       "probability_source": "xgboost"
     },
     {
@@ -3755,9 +3675,9 @@
       "odds_away": null,
       "predicted_outcome": "away_win",
       "predicted_winner": "Go Ahead Eagles",
-      "prob_away_win": 0.4451981315581767,
-      "prob_draw": 0.21599895223082607,
-      "prob_home_win": 0.33880291621099723,
+      "prob_away_win": 0.431478993997939,
+      "prob_draw": 0.2521215027856241,
+      "prob_home_win": 0.31639950321643695,
       "probability_source": "xgboost"
     },
     {
@@ -3775,9 +3695,9 @@
       "odds_away": null,
       "predicted_outcome": "away_win",
       "predicted_winner": "Excelsior",
-      "prob_away_win": 0.4455781889211862,
-      "prob_draw": 0.23399056517463088,
-      "prob_home_win": 0.32043124590418287,
+      "prob_away_win": 0.4514467802319599,
+      "prob_draw": 0.23214383129081206,
+      "prob_home_win": 0.316409388477228,
       "probability_source": "xgboost"
     },
     {
@@ -3795,9 +3715,9 @@
       "odds_away": null,
       "predicted_outcome": "away_win",
       "predicted_winner": "PSV",
-      "prob_away_win": 0.5607747115389777,
-      "prob_draw": 0.26526115387458027,
-      "prob_home_win": 0.17396413458644197,
+      "prob_away_win": 0.5837827113699271,
+      "prob_draw": 0.25000022801883315,
+      "prob_home_win": 0.1662170606112398,
       "probability_source": "xgboost"
     },
     {
@@ -3815,9 +3735,9 @@
       "odds_away": null,
       "predicted_outcome": "home_win",
       "predicted_winner": "Sparta Rotterdam",
-      "prob_away_win": 0.3731183362662749,
-      "prob_draw": 0.20709210594017435,
-      "prob_home_win": 0.41978955779355076,
+      "prob_away_win": 0.35606930451441404,
+      "prob_draw": 0.19712273770067598,
+      "prob_home_win": 0.44680795778491,
       "probability_source": "xgboost"
     },
     {
@@ -3835,9 +3755,9 @@
       "odds_away": null,
       "predicted_outcome": "away_win",
       "predicted_winner": "FC Twente",
-      "prob_away_win": 0.7333711715500641,
-      "prob_draw": 0.14351590918935722,
-      "prob_home_win": 0.12311291926057862,
+      "prob_away_win": 0.7877722087339847,
+      "prob_draw": 0.10828079371609939,
+      "prob_home_win": 0.10394699754991596,
       "probability_source": "xgboost"
     },
     {
@@ -3855,9 +3775,9 @@
       "odds_away": null,
       "predicted_outcome": "home_win",
       "predicted_winner": "Feyenoord",
-      "prob_away_win": 0.18198035548998417,
-      "prob_draw": 0.1542723076125122,
-      "prob_home_win": 0.6637473368975036,
+      "prob_away_win": 0.18029308185344928,
+      "prob_draw": 0.145894599518219,
+      "prob_home_win": 0.6738123186283317,
       "probability_source": "xgboost"
     },
     {
@@ -3875,9 +3795,9 @@
       "odds_away": null,
       "predicted_outcome": "away_win",
       "predicted_winner": "AZ",
-      "prob_away_win": 0.5833014918123803,
-      "prob_draw": 0.20313702409866433,
-      "prob_home_win": 0.2135614840889553,
+      "prob_away_win": 0.625397563507017,
+      "prob_draw": 0.18339116672399006,
+      "prob_home_win": 0.19121126976899297,
       "probability_source": "xgboost"
     }
   ],
@@ -6932,6 +6852,114 @@
       "actual_score": "1-3",
       "winner_correct": false,
       "forecast_status": "archived"
+    },
+    {
+      "match_key": "2026-11-22|fc twente|willem ii",
+      "match_number": 117.0,
+      "round": 13.0,
+      "date": null,
+      "kickoff_utc": "2026-11-22 11:15:00+00:00",
+      "venue": "De Grolsch Veste",
+      "home_team": "FC Twente",
+      "away_team": "Willem II",
+      "odds_source": "weekly_market_consensus",
+      "odds_home": 1.08,
+      "odds_draw": 10.66,
+      "odds_away": 19.44,
+      "predicted_outcome": "home_win",
+      "predicted_winner": "FC Twente",
+      "prob_away_win": 0.0467929696416343,
+      "prob_draw": 0.1109335768089477,
+      "prob_home_win": 0.842273453549418,
+      "probability_source": "market_calibrated",
+      "snapshot_at_utc": "2026-11-21T13:27:08.780743+00:00",
+      "home_goals": 2,
+      "away_goals": 1,
+      "actual_outcome": "home_win",
+      "actual_score": "2-1",
+      "winner_correct": true,
+      "forecast_status": "archived"
+    },
+    {
+      "match_key": "2026-11-22|ajax|ado den haag",
+      "match_number": 109.0,
+      "round": 13.0,
+      "date": null,
+      "kickoff_utc": "2026-11-22 13:30:00+00:00",
+      "venue": "Johan Cruyff Arena",
+      "home_team": "Ajax",
+      "away_team": "ADO Den Haag",
+      "odds_source": "weekly_market_consensus",
+      "odds_home": 1.18,
+      "odds_draw": 7.34,
+      "odds_away": 11.78,
+      "predicted_outcome": "home_win",
+      "predicted_winner": "Ajax",
+      "prob_away_win": 0.0765144493330737,
+      "prob_draw": 0.1596379124096309,
+      "prob_home_win": 0.7638476382572954,
+      "probability_source": "market_calibrated",
+      "snapshot_at_utc": "2026-11-21T13:27:08.780743+00:00",
+      "home_goals": 3,
+      "away_goals": 0,
+      "actual_outcome": "home_win",
+      "actual_score": "3-0",
+      "winner_correct": true,
+      "forecast_status": "archived"
+    },
+    {
+      "match_key": "2026-11-22|sparta rotterdam|az",
+      "match_number": 115.0,
+      "round": 13.0,
+      "date": null,
+      "kickoff_utc": "2026-11-22 13:30:00+00:00",
+      "venue": "Sparta Stadion Het Kasteel",
+      "home_team": "Sparta Rotterdam",
+      "away_team": "AZ",
+      "odds_source": "weekly_market_consensus",
+      "odds_home": 3.98,
+      "odds_draw": 4.08,
+      "odds_away": 1.72,
+      "predicted_outcome": "away_win",
+      "predicted_winner": "AZ",
+      "prob_away_win": 0.5049994899748969,
+      "prob_draw": 0.276759524407811,
+      "prob_home_win": 0.218240985617292,
+      "probability_source": "market_calibrated",
+      "snapshot_at_utc": "2026-11-21T13:27:08.780743+00:00",
+      "home_goals": 1,
+      "away_goals": 5,
+      "actual_outcome": "away_win",
+      "actual_score": "1-5",
+      "winner_correct": true,
+      "forecast_status": "archived"
+    },
+    {
+      "match_key": "2026-11-22|go ahead eagles|fortuna sittard",
+      "match_number": 114.0,
+      "round": 13.0,
+      "date": null,
+      "kickoff_utc": "2026-11-22 15:45:00+00:00",
+      "venue": "De Adelaarshorst",
+      "home_team": "Go Ahead Eagles",
+      "away_team": "Fortuna Sittard",
+      "odds_source": "weekly_market_consensus",
+      "odds_home": 1.62,
+      "odds_draw": 4.18,
+      "odds_away": 4.56,
+      "predicted_outcome": "home_win",
+      "predicted_winner": "Go Ahead Eagles",
+      "prob_away_win": 0.1910950971560931,
+      "prob_draw": 0.2710075923304594,
+      "prob_home_win": 0.5378973105134474,
+      "probability_source": "market_calibrated",
+      "snapshot_at_utc": "2026-11-21T13:27:08.780743+00:00",
+      "home_goals": 0,
+      "away_goals": 1,
+      "actual_outcome": "away_win",
+      "actual_score": "0-1",
+      "winner_correct": false,
+      "forecast_status": "archived"
     }
   ],
   "current_table": [
@@ -6949,6 +6977,42 @@
     },
     {
       "rank": 2,
+      "team": "Ajax",
+      "played": 13,
+      "wins": 8,
+      "draws": 4,
+      "losses": 1,
+      "gf": 35,
+      "ga": 15,
+      "points": 28,
+      "gd": 20
+    },
+    {
+      "rank": 3,
+      "team": "FC Twente",
+      "played": 13,
+      "wins": 8,
+      "draws": 3,
+      "losses": 2,
+      "gf": 32,
+      "ga": 13,
+      "points": 27,
+      "gd": 19
+    },
+    {
+      "rank": 4,
+      "team": "AZ",
+      "played": 13,
+      "wins": 8,
+      "draws": 2,
+      "losses": 3,
+      "gf": 29,
+      "ga": 17,
+      "points": 26,
+      "gd": 12
+    },
+    {
+      "rank": 5,
       "team": "Feyenoord",
       "played": 13,
       "wins": 7,
@@ -6960,31 +7024,7 @@
       "gd": 18
     },
     {
-      "rank": 3,
-      "team": "Ajax",
-      "played": 12,
-      "wins": 7,
-      "draws": 4,
-      "losses": 1,
-      "gf": 32,
-      "ga": 15,
-      "points": 25,
-      "gd": 17
-    },
-    {
-      "rank": 4,
-      "team": "FC Twente",
-      "played": 12,
-      "wins": 7,
-      "draws": 3,
-      "losses": 2,
-      "gf": 30,
-      "ga": 12,
-      "points": 24,
-      "gd": 18
-    },
-    {
-      "rank": 5,
+      "rank": 6,
       "team": "Heerenveen",
       "played": 13,
       "wins": 7,
@@ -6996,28 +7036,16 @@
       "gd": 10
     },
     {
-      "rank": 6,
-      "team": "AZ",
-      "played": 12,
-      "wins": 7,
-      "draws": 2,
-      "losses": 3,
-      "gf": 24,
-      "ga": 16,
-      "points": 23,
-      "gd": 8
-    },
-    {
       "rank": 7,
       "team": "Fortuna Sittard",
-      "played": 12,
-      "wins": 5,
+      "played": 13,
+      "wins": 6,
       "draws": 5,
       "losses": 2,
-      "gf": 20,
+      "gf": 21,
       "ga": 20,
-      "points": 20,
-      "gd": 0
+      "points": 23,
+      "gd": 1
     },
     {
       "rank": 8,
@@ -7034,14 +7062,14 @@
     {
       "rank": 9,
       "team": "Go Ahead Eagles",
-      "played": 12,
+      "played": 13,
       "wins": 4,
       "draws": 5,
-      "losses": 3,
+      "losses": 4,
       "gf": 24,
-      "ga": 27,
+      "ga": 28,
       "points": 17,
-      "gd": -3
+      "gd": -4
     },
     {
       "rank": 10,
@@ -7094,14 +7122,14 @@
     {
       "rank": 14,
       "team": "Sparta Rotterdam",
-      "played": 12,
+      "played": 13,
       "wins": 3,
       "draws": 3,
-      "losses": 6,
-      "gf": 21,
-      "ga": 29,
+      "losses": 7,
+      "gf": 22,
+      "ga": 34,
       "points": 12,
-      "gd": -8
+      "gd": -12
     },
     {
       "rank": 15,
@@ -7130,262 +7158,262 @@
     {
       "rank": 17,
       "team": "ADO Den Haag",
-      "played": 12,
+      "played": 13,
       "wins": 2,
       "draws": 3,
-      "losses": 7,
+      "losses": 8,
       "gf": 16,
-      "ga": 25,
+      "ga": 28,
       "points": 9,
-      "gd": -9
+      "gd": -12
     },
     {
       "rank": 18,
       "team": "Willem II",
-      "played": 12,
+      "played": 13,
       "wins": 0,
       "draws": 3,
-      "losses": 9,
-      "gf": 11,
-      "ga": 40,
+      "losses": 10,
+      "gf": 12,
+      "ga": 42,
       "points": 3,
-      "gd": -29
+      "gd": -30
     }
   ],
   "projected_table": [
     {
       "projected_rank": 1,
       "team": "PSV",
-      "expected_points": 77.2318,
-      "expected_gd": 47.4504,
-      "expected_rank": 1.3483,
-      "champion_prob": 0.7564,
-      "top2_prob": 0.9234,
-      "top3_prob": 0.9777,
-      "top5_prob": 0.999,
+      "expected_points": 77.3384,
+      "expected_gd": 47.6955,
+      "expected_rank": 1.3937,
+      "champion_prob": 0.7334,
+      "top2_prob": 0.9094,
+      "top3_prob": 0.9707,
+      "top5_prob": 0.9989,
       "bottom3_prob": 0.0,
       "relegation_prob": 0.0
     },
     {
       "projected_rank": 2,
       "team": "FC Twente",
-      "expected_points": 69.1004,
-      "expected_gd": 34.1065,
-      "expected_rank": 2.9283,
-      "champion_prob": 0.1053,
-      "top2_prob": 0.4223,
-      "top3_prob": 0.6983,
-      "top5_prob": 0.9656,
+      "expected_points": 69.9388,
+      "expected_gd": 33.1665,
+      "expected_rank": 2.923,
+      "champion_prob": 0.1157,
+      "top2_prob": 0.42569999999999997,
+      "top3_prob": 0.6980999999999999,
+      "top5_prob": 0.9645999999999999,
       "bottom3_prob": 0.0,
       "relegation_prob": 0.0
     },
     {
       "projected_rank": 3,
       "team": "Ajax",
-      "expected_points": 68.1074,
-      "expected_gd": 29.0368,
-      "expected_rank": 3.2030999999999996,
-      "champion_prob": 0.0793,
-      "top2_prob": 0.3319,
-      "top3_prob": 0.6073999999999999,
-      "top5_prob": 0.9499,
+      "expected_points": 69.3367,
+      "expected_gd": 31.3367,
+      "expected_rank": 3.0772,
+      "champion_prob": 0.0964,
+      "top2_prob": 0.3695,
+      "top3_prob": 0.6483,
+      "top5_prob": 0.9563,
       "bottom3_prob": 0.0,
       "relegation_prob": 0.0
     },
     {
       "projected_rank": 4,
       "team": "Feyenoord",
-      "expected_points": 66.782,
-      "expected_gd": 30.5932,
-      "expected_rank": 3.4673000000000003,
-      "champion_prob": 0.0514,
-      "top2_prob": 0.2605,
-      "top3_prob": 0.5169,
-      "top5_prob": 0.9306,
+      "expected_points": 66.8467,
+      "expected_gd": 30.7047,
+      "expected_rank": 3.6342,
+      "champion_prob": 0.0421,
+      "top2_prob": 0.2245,
+      "top3_prob": 0.46140000000000003,
+      "top5_prob": 0.9132,
       "bottom3_prob": 0.0,
       "relegation_prob": 0.0
     },
     {
       "projected_rank": 5,
       "team": "AZ",
-      "expected_points": 59.7397,
-      "expected_gd": 14.6464,
-      "expected_rank": 5.1988,
-      "champion_prob": 0.0049,
-      "top2_prob": 0.0351,
-      "top3_prob": 0.1036,
-      "top5_prob": 0.5564,
+      "expected_points": 61.7214,
+      "expected_gd": 18.7225,
+      "expected_rank": 4.9345,
+      "champion_prob": 0.0076,
+      "top2_prob": 0.046400000000000004,
+      "top3_prob": 0.1385,
+      "top5_prob": 0.6424000000000001,
       "bottom3_prob": 0.0,
       "relegation_prob": 0.0
     },
     {
       "projected_rank": 6,
       "team": "Heerenveen",
-      "expected_points": 59.5575,
-      "expected_gd": 16.4216,
-      "expected_rank": 5.2259,
-      "champion_prob": 0.0027,
-      "top2_prob": 0.0267,
-      "top3_prob": 0.0947,
-      "top5_prob": 0.5589000000000001,
+      "expected_points": 59.9896,
+      "expected_gd": 17.0246,
+      "expected_rank": 5.336600000000001,
+      "champion_prob": 0.0048,
+      "top2_prob": 0.024399999999999998,
+      "top3_prob": 0.0827,
+      "top5_prob": 0.4889,
       "bottom3_prob": 0.0,
       "relegation_prob": 0.0
     },
     {
       "projected_rank": 7,
       "team": "NEC",
-      "expected_points": 47.4869,
-      "expected_gd": -0.5206,
-      "expected_rank": 8.3498,
+      "expected_points": 47.9261,
+      "expected_gd": 0.0086,
+      "expected_rank": 8.265899999999998,
       "champion_prob": 0.0,
       "top2_prob": 0.0001,
-      "top3_prob": 0.0011,
-      "top5_prob": 0.0216,
-      "bottom3_prob": 0.0028,
-      "relegation_prob": 0.0006
+      "top3_prob": 0.00030000000000000003,
+      "top5_prob": 0.0194,
+      "bottom3_prob": 0.0021,
+      "relegation_prob": 0.0002
     },
     {
       "projected_rank": 8,
-      "team": "FC Groningen",
-      "expected_points": 44.3283,
-      "expected_gd": -0.8094,
-      "expected_rank": 9.482299999999999,
+      "team": "Fortuna Sittard",
+      "expected_points": 45.639,
+      "expected_gd": -6.2959,
+      "expected_rank": 9.155199999999999,
       "champion_prob": 0.0,
       "top2_prob": 0.0,
-      "top3_prob": 0.0002,
-      "top5_prob": 0.0079,
-      "bottom3_prob": 0.0122,
-      "relegation_prob": 0.0034
+      "top3_prob": 0.0,
+      "top5_prob": 0.008,
+      "bottom3_prob": 0.0036999999999999997,
+      "relegation_prob": 0.0006
     },
     {
       "projected_rank": 9,
-      "team": "Fortuna Sittard",
-      "expected_points": 42.6418,
-      "expected_gd": -8.3719,
-      "expected_rank": 10.3322,
+      "team": "FC Groningen",
+      "expected_points": 43.9203,
+      "expected_gd": -0.9725,
+      "expected_rank": 9.6683,
       "champion_prob": 0.0,
       "top2_prob": 0.0,
-      "top3_prob": 0.0001,
-      "top5_prob": 0.0038,
-      "bottom3_prob": 0.027800000000000002,
-      "relegation_prob": 0.007
+      "top3_prob": 0.0,
+      "top5_prob": 0.0054,
+      "bottom3_prob": 0.012700000000000001,
+      "relegation_prob": 0.0027
     },
     {
       "projected_rank": 10,
       "team": "Go Ahead Eagles",
-      "expected_points": 42.295,
-      "expected_gd": -8.4948,
-      "expected_rank": 10.4495,
+      "expected_points": 40.3093,
+      "expected_gd": -10.1499,
+      "expected_rank": 11.287899999999999,
       "champion_prob": 0.0,
       "top2_prob": 0.0,
       "top3_prob": 0.0,
-      "top5_prob": 0.0035,
-      "bottom3_prob": 0.0327,
-      "relegation_prob": 0.0077
+      "top5_prob": 0.0012000000000000001,
+      "bottom3_prob": 0.0457,
+      "relegation_prob": 0.013600000000000001
     },
     {
       "projected_rank": 11,
       "team": "FC Utrecht",
-      "expected_points": 40.6551,
-      "expected_gd": -14.2836,
-      "expected_rank": 11.2826,
+      "expected_points": 40.4998,
+      "expected_gd": -14.4584,
+      "expected_rank": 11.3018,
       "champion_prob": 0.0,
       "top2_prob": 0.0,
       "top3_prob": 0.0,
-      "top5_prob": 0.0017,
-      "bottom3_prob": 0.0668,
-      "relegation_prob": 0.019899999999999998
+      "top5_prob": 0.001,
+      "bottom3_prob": 0.053099999999999994,
+      "relegation_prob": 0.0178
     },
     {
       "projected_rank": 12,
       "team": "SC Cambuur",
-      "expected_points": 38.7298,
-      "expected_gd": -9.0301,
-      "expected_rank": 11.973700000000001,
+      "expected_points": 39.3096,
+      "expected_gd": -8.5323,
+      "expected_rank": 11.639199999999999,
       "champion_prob": 0.0,
       "top2_prob": 0.0,
       "top3_prob": 0.0,
-      "top5_prob": 0.0005,
-      "bottom3_prob": 0.0919,
-      "relegation_prob": 0.0324
+      "top5_prob": 0.00039999999999999996,
+      "bottom3_prob": 0.0603,
+      "relegation_prob": 0.0183
     },
     {
       "projected_rank": 13,
       "team": "Excelsior",
-      "expected_points": 38.3992,
-      "expected_gd": -17.1804,
-      "expected_rank": 12.3383,
-      "champion_prob": 0.0,
-      "top2_prob": 0.0,
-      "top3_prob": 0.0,
-      "top5_prob": 0.0005,
-      "bottom3_prob": 0.1298,
-      "relegation_prob": 0.0528
-    },
-    {
-      "projected_rank": 14,
-      "team": "PEC Zwolle",
-      "expected_points": 36.7294,
-      "expected_gd": -16.6182,
-      "expected_rank": 13.048400000000003,
+      "expected_points": 38.5243,
+      "expected_gd": -17.198,
+      "expected_rank": 12.202599999999999,
       "champion_prob": 0.0,
       "top2_prob": 0.0,
       "top3_prob": 0.0,
       "top5_prob": 0.0001,
-      "bottom3_prob": 0.1828,
-      "relegation_prob": 0.0673
+      "bottom3_prob": 0.1036,
+      "relegation_prob": 0.0363
+    },
+    {
+      "projected_rank": 14,
+      "team": "PEC Zwolle",
+      "expected_points": 36.7495,
+      "expected_gd": -16.7194,
+      "expected_rank": 12.9183,
+      "champion_prob": 0.0,
+      "top2_prob": 0.0,
+      "top3_prob": 0.0,
+      "top5_prob": 0.0001,
+      "bottom3_prob": 0.1468,
+      "relegation_prob": 0.0526
     },
     {
       "projected_rank": 15,
       "team": "Sparta Rotterdam",
-      "expected_points": 34.8359,
-      "expected_gd": -15.7678,
-      "expected_rank": 13.7811,
+      "expected_points": 32.7576,
+      "expected_gd": -20.4963,
+      "expected_rank": 14.537499999999998,
       "champion_prob": 0.0,
       "top2_prob": 0.0,
       "top3_prob": 0.0,
       "top5_prob": 0.0,
-      "bottom3_prob": 0.2802,
-      "relegation_prob": 0.12279999999999999
+      "bottom3_prob": 0.3933,
+      "relegation_prob": 0.1804
     },
     {
       "projected_rank": 16,
-      "team": "ADO Den Haag",
-      "expected_points": 30.6634,
-      "expected_gd": -18.6762,
-      "expected_rank": 15.3633,
+      "team": "Telstar",
+      "expected_points": 30.48,
+      "expected_gd": -18.6684,
+      "expected_rank": 15.2666,
       "champion_prob": 0.0,
       "top2_prob": 0.0,
       "top3_prob": 0.0,
       "top5_prob": 0.0,
-      "bottom3_prob": 0.5868,
-      "relegation_prob": 0.3617
+      "bottom3_prob": 0.5486,
+      "relegation_prob": 0.30939999999999995
     },
     {
       "projected_rank": 17,
-      "team": "Telstar",
-      "expected_points": 30.4442,
-      "expected_gd": -18.5871,
-      "expected_rank": 15.486400000000001,
+      "team": "ADO Den Haag",
+      "expected_points": 29.2863,
+      "expected_gd": -21.4673,
+      "expected_rank": 15.683100000000001,
       "champion_prob": 0.0,
       "top2_prob": 0.0,
       "top3_prob": 0.0,
-      "top5_prob": 0.0,
-      "bottom3_prob": 0.6062,
-      "relegation_prob": 0.381
+      "top5_prob": 0.0001,
+      "bottom3_prob": 0.6455,
+      "relegation_prob": 0.4161
     },
     {
       "projected_rank": 18,
       "team": "Willem II",
-      "expected_points": 20.4649,
-      "expected_gd": -43.9148,
-      "expected_rank": 17.7407,
+      "expected_points": 19.4363,
+      "expected_gd": -43.7007,
+      "expected_rank": 17.7744,
       "champion_prob": 0.0,
       "top2_prob": 0.0,
       "top3_prob": 0.0,
       "top5_prob": 0.0,
-      "bottom3_prob": 0.98,
-      "relegation_prob": 0.9434
+      "bottom3_prob": 0.9846,
+      "relegation_prob": 0.952
     }
   ],
   "champions": [
@@ -7393,13 +7421,13 @@
       "champion_rank": 1,
       "projected_rank": 1,
       "team": "PSV",
-      "expected_points": 77.2318,
-      "expected_gd": 47.4504,
-      "expected_rank": 1.3483,
-      "champion_prob": 0.7564,
-      "top2_prob": 0.9234,
-      "top3_prob": 0.9777,
-      "top5_prob": 0.999,
+      "expected_points": 77.3384,
+      "expected_gd": 47.6955,
+      "expected_rank": 1.3937,
+      "champion_prob": 0.7334,
+      "top2_prob": 0.9094,
+      "top3_prob": 0.9707,
+      "top5_prob": 0.9989,
       "bottom3_prob": 0.0,
       "relegation_prob": 0.0
     },
@@ -7407,13 +7435,13 @@
       "champion_rank": 2,
       "projected_rank": 2,
       "team": "FC Twente",
-      "expected_points": 69.1004,
-      "expected_gd": 34.1065,
-      "expected_rank": 2.9283,
-      "champion_prob": 0.1053,
-      "top2_prob": 0.4223,
-      "top3_prob": 0.6983,
-      "top5_prob": 0.9656,
+      "expected_points": 69.9388,
+      "expected_gd": 33.1665,
+      "expected_rank": 2.923,
+      "champion_prob": 0.1157,
+      "top2_prob": 0.42569999999999997,
+      "top3_prob": 0.6980999999999999,
+      "top5_prob": 0.9645999999999999,
       "bottom3_prob": 0.0,
       "relegation_prob": 0.0
     },
@@ -7421,13 +7449,13 @@
       "champion_rank": 3,
       "projected_rank": 3,
       "team": "Ajax",
-      "expected_points": 68.1074,
-      "expected_gd": 29.0368,
-      "expected_rank": 3.2030999999999996,
-      "champion_prob": 0.0793,
-      "top2_prob": 0.3319,
-      "top3_prob": 0.6073999999999999,
-      "top5_prob": 0.9499,
+      "expected_points": 69.3367,
+      "expected_gd": 31.3367,
+      "expected_rank": 3.0772,
+      "champion_prob": 0.0964,
+      "top2_prob": 0.3695,
+      "top3_prob": 0.6483,
+      "top5_prob": 0.9563,
       "bottom3_prob": 0.0,
       "relegation_prob": 0.0
     },
@@ -7435,13 +7463,13 @@
       "champion_rank": 4,
       "projected_rank": 4,
       "team": "Feyenoord",
-      "expected_points": 66.782,
-      "expected_gd": 30.5932,
-      "expected_rank": 3.4673000000000003,
-      "champion_prob": 0.0514,
-      "top2_prob": 0.2605,
-      "top3_prob": 0.5169,
-      "top5_prob": 0.9306,
+      "expected_points": 66.8467,
+      "expected_gd": 30.7047,
+      "expected_rank": 3.6342,
+      "champion_prob": 0.0421,
+      "top2_prob": 0.2245,
+      "top3_prob": 0.46140000000000003,
+      "top5_prob": 0.9132,
       "bottom3_prob": 0.0,
       "relegation_prob": 0.0
     },
@@ -7449,13 +7477,13 @@
       "champion_rank": 5,
       "projected_rank": 5,
       "team": "AZ",
-      "expected_points": 59.7397,
-      "expected_gd": 14.6464,
-      "expected_rank": 5.1988,
-      "champion_prob": 0.0049,
-      "top2_prob": 0.0351,
-      "top3_prob": 0.1036,
-      "top5_prob": 0.5564,
+      "expected_points": 61.7214,
+      "expected_gd": 18.7225,
+      "expected_rank": 4.9345,
+      "champion_prob": 0.0076,
+      "top2_prob": 0.046400000000000004,
+      "top3_prob": 0.1385,
+      "top5_prob": 0.6424000000000001,
       "bottom3_prob": 0.0,
       "relegation_prob": 0.0
     },
@@ -7463,13 +7491,13 @@
       "champion_rank": 6,
       "projected_rank": 6,
       "team": "Heerenveen",
-      "expected_points": 59.5575,
-      "expected_gd": 16.4216,
-      "expected_rank": 5.2259,
-      "champion_prob": 0.0027,
-      "top2_prob": 0.0267,
-      "top3_prob": 0.0947,
-      "top5_prob": 0.5589000000000001,
+      "expected_points": 59.9896,
+      "expected_gd": 17.0246,
+      "expected_rank": 5.336600000000001,
+      "champion_prob": 0.0048,
+      "top2_prob": 0.024399999999999998,
+      "top3_prob": 0.0827,
+      "top5_prob": 0.4889,
       "bottom3_prob": 0.0,
       "relegation_prob": 0.0
     },
@@ -7477,169 +7505,169 @@
       "champion_rank": 7,
       "projected_rank": 7,
       "team": "NEC",
-      "expected_points": 47.4869,
-      "expected_gd": -0.5206,
-      "expected_rank": 8.3498,
+      "expected_points": 47.9261,
+      "expected_gd": 0.0086,
+      "expected_rank": 8.265899999999998,
       "champion_prob": 0.0,
       "top2_prob": 0.0001,
-      "top3_prob": 0.0011,
-      "top5_prob": 0.0216,
-      "bottom3_prob": 0.0028,
-      "relegation_prob": 0.0006
+      "top3_prob": 0.00030000000000000003,
+      "top5_prob": 0.0194,
+      "bottom3_prob": 0.0021,
+      "relegation_prob": 0.0002
     },
     {
       "champion_rank": 8,
       "projected_rank": 8,
-      "team": "FC Groningen",
-      "expected_points": 44.3283,
-      "expected_gd": -0.8094,
-      "expected_rank": 9.482299999999999,
+      "team": "Fortuna Sittard",
+      "expected_points": 45.639,
+      "expected_gd": -6.2959,
+      "expected_rank": 9.155199999999999,
       "champion_prob": 0.0,
       "top2_prob": 0.0,
-      "top3_prob": 0.0002,
-      "top5_prob": 0.0079,
-      "bottom3_prob": 0.0122,
-      "relegation_prob": 0.0034
+      "top3_prob": 0.0,
+      "top5_prob": 0.008,
+      "bottom3_prob": 0.0036999999999999997,
+      "relegation_prob": 0.0006
     },
     {
       "champion_rank": 9,
       "projected_rank": 9,
-      "team": "Fortuna Sittard",
-      "expected_points": 42.6418,
-      "expected_gd": -8.3719,
-      "expected_rank": 10.3322,
+      "team": "FC Groningen",
+      "expected_points": 43.9203,
+      "expected_gd": -0.9725,
+      "expected_rank": 9.6683,
       "champion_prob": 0.0,
       "top2_prob": 0.0,
-      "top3_prob": 0.0001,
-      "top5_prob": 0.0038,
-      "bottom3_prob": 0.027800000000000002,
-      "relegation_prob": 0.007
+      "top3_prob": 0.0,
+      "top5_prob": 0.0054,
+      "bottom3_prob": 0.012700000000000001,
+      "relegation_prob": 0.0027
     },
     {
       "champion_rank": 10,
       "projected_rank": 10,
       "team": "Go Ahead Eagles",
-      "expected_points": 42.295,
-      "expected_gd": -8.4948,
-      "expected_rank": 10.4495,
+      "expected_points": 40.3093,
+      "expected_gd": -10.1499,
+      "expected_rank": 11.287899999999999,
       "champion_prob": 0.0,
       "top2_prob": 0.0,
       "top3_prob": 0.0,
-      "top5_prob": 0.0035,
-      "bottom3_prob": 0.0327,
-      "relegation_prob": 0.0077
+      "top5_prob": 0.0012000000000000001,
+      "bottom3_prob": 0.0457,
+      "relegation_prob": 0.013600000000000001
     },
     {
       "champion_rank": 11,
       "projected_rank": 11,
       "team": "FC Utrecht",
-      "expected_points": 40.6551,
-      "expected_gd": -14.2836,
-      "expected_rank": 11.2826,
+      "expected_points": 40.4998,
+      "expected_gd": -14.4584,
+      "expected_rank": 11.3018,
       "champion_prob": 0.0,
       "top2_prob": 0.0,
       "top3_prob": 0.0,
-      "top5_prob": 0.0017,
-      "bottom3_prob": 0.0668,
-      "relegation_prob": 0.019899999999999998
+      "top5_prob": 0.001,
+      "bottom3_prob": 0.053099999999999994,
+      "relegation_prob": 0.0178
     },
     {
       "champion_rank": 12,
       "projected_rank": 12,
       "team": "SC Cambuur",
-      "expected_points": 38.7298,
-      "expected_gd": -9.0301,
-      "expected_rank": 11.973700000000001,
+      "expected_points": 39.3096,
+      "expected_gd": -8.5323,
+      "expected_rank": 11.639199999999999,
       "champion_prob": 0.0,
       "top2_prob": 0.0,
       "top3_prob": 0.0,
-      "top5_prob": 0.0005,
-      "bottom3_prob": 0.0919,
-      "relegation_prob": 0.0324
+      "top5_prob": 0.00039999999999999996,
+      "bottom3_prob": 0.0603,
+      "relegation_prob": 0.0183
     },
     {
       "champion_rank": 13,
       "projected_rank": 13,
       "team": "Excelsior",
-      "expected_points": 38.3992,
-      "expected_gd": -17.1804,
-      "expected_rank": 12.3383,
+      "expected_points": 38.5243,
+      "expected_gd": -17.198,
+      "expected_rank": 12.202599999999999,
       "champion_prob": 0.0,
       "top2_prob": 0.0,
       "top3_prob": 0.0,
-      "top5_prob": 0.0005,
-      "bottom3_prob": 0.1298,
-      "relegation_prob": 0.0528
+      "top5_prob": 0.0001,
+      "bottom3_prob": 0.1036,
+      "relegation_prob": 0.0363
     },
     {
       "champion_rank": 14,
       "projected_rank": 14,
       "team": "PEC Zwolle",
-      "expected_points": 36.7294,
-      "expected_gd": -16.6182,
-      "expected_rank": 13.048400000000003,
+      "expected_points": 36.7495,
+      "expected_gd": -16.7194,
+      "expected_rank": 12.9183,
       "champion_prob": 0.0,
       "top2_prob": 0.0,
       "top3_prob": 0.0,
       "top5_prob": 0.0001,
-      "bottom3_prob": 0.1828,
-      "relegation_prob": 0.0673
+      "bottom3_prob": 0.1468,
+      "relegation_prob": 0.0526
     },
     {
       "champion_rank": 15,
       "projected_rank": 15,
       "team": "Sparta Rotterdam",
-      "expected_points": 34.8359,
-      "expected_gd": -15.7678,
-      "expected_rank": 13.7811,
+      "expected_points": 32.7576,
+      "expected_gd": -20.4963,
+      "expected_rank": 14.537499999999998,
       "champion_prob": 0.0,
       "top2_prob": 0.0,
       "top3_prob": 0.0,
       "top5_prob": 0.0,
-      "bottom3_prob": 0.2802,
-      "relegation_prob": 0.12279999999999999
+      "bottom3_prob": 0.3933,
+      "relegation_prob": 0.1804
     },
     {
       "champion_rank": 16,
       "projected_rank": 16,
-      "team": "ADO Den Haag",
-      "expected_points": 30.6634,
-      "expected_gd": -18.6762,
-      "expected_rank": 15.3633,
+      "team": "Telstar",
+      "expected_points": 30.48,
+      "expected_gd": -18.6684,
+      "expected_rank": 15.2666,
       "champion_prob": 0.0,
       "top2_prob": 0.0,
       "top3_prob": 0.0,
       "top5_prob": 0.0,
-      "bottom3_prob": 0.5868,
-      "relegation_prob": 0.3617
+      "bottom3_prob": 0.5486,
+      "relegation_prob": 0.30939999999999995
     },
     {
       "champion_rank": 17,
       "projected_rank": 17,
-      "team": "Telstar",
-      "expected_points": 30.4442,
-      "expected_gd": -18.5871,
-      "expected_rank": 15.486400000000001,
+      "team": "ADO Den Haag",
+      "expected_points": 29.2863,
+      "expected_gd": -21.4673,
+      "expected_rank": 15.683100000000001,
       "champion_prob": 0.0,
       "top2_prob": 0.0,
       "top3_prob": 0.0,
-      "top5_prob": 0.0,
-      "bottom3_prob": 0.6062,
-      "relegation_prob": 0.381
+      "top5_prob": 0.0001,
+      "bottom3_prob": 0.6455,
+      "relegation_prob": 0.4161
     },
     {
       "champion_rank": 18,
       "projected_rank": 18,
       "team": "Willem II",
-      "expected_points": 20.4649,
-      "expected_gd": -43.9148,
-      "expected_rank": 17.7407,
+      "expected_points": 19.4363,
+      "expected_gd": -43.7007,
+      "expected_rank": 17.7744,
       "champion_prob": 0.0,
       "top2_prob": 0.0,
       "top3_prob": 0.0,
       "top5_prob": 0.0,
-      "bottom3_prob": 0.98,
-      "relegation_prob": 0.9434
+      "bottom3_prob": 0.9846,
+      "relegation_prob": 0.952
     }
   ],
   "injuries": [
@@ -8832,9 +8860,9 @@
       "actual_draw_rate": 0.26143790849673204
     },
     "current_season": {
-      "rows": 69,
-      "accuracy": 0.463768115942029,
-      "log_loss": 1.0665850127420984
+      "rows": 73,
+      "accuracy": 0.4794520547945205,
+      "log_loss": 1.046213497392918
     }
   },
   "downloads": {
