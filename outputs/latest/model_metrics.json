@@ -336,18 +336,18 @@
     "historical_matches": 9853,
     "model_rows": 4327,
     "latest_result": "2026-11-22",
-    "historical_odds_rows": 7086,
+    "historical_odds_rows": 7095,
     "future_fixtures": 189,
     "transfermarkt_context_rows": 4314,
-    "current_absences": 72,
-    "current_injuries_matched": 72,
+    "current_absences": 71,
+    "current_injuries_matched": 71,
     "current_injuries_unmatched": 0,
-    "likely_starters_unavailable": 18
+    "likely_starters_unavailable": 15
   },
   "current_season_reconstructed": {
     "rows": 117,
-    "accuracy": 0.5042735042735043,
-    "log_loss": 1.0060320243684526
+    "accuracy": 0.5128205128205128,
+    "log_loss": 1.0027488122055257
   },
   "current_season": {
     "rows": 73,

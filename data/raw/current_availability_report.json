@@ -1,10 +1,10 @@
 {
-  "updated_at_utc": "2026-11-23T14:46:31.971450+00:00",
-  "active_absences": 72,
-  "unavailable_players_matched": 72,
+  "updated_at_utc": "2026-11-24T18:58:39.499342+00:00",
+  "active_absences": 71,
+  "unavailable_players_matched": 71,
   "unavailable_players_unmatched": 0,
-  "likely_starters_affected": 18,
-  "teams_affected": 17,
-  "live_squad_players": 512,
+  "likely_starters_affected": 15,
+  "teams_affected": 18,
+  "live_squad_players": 511,
   "live_squad_teams": 18
 }
