@@ -1,10 +1,10 @@
 {
-  "updated_at_utc": "2026-11-27T17:30:30.053140+00:00",
+  "updated_at_utc": "2026-11-28T00:33:17.429812+00:00",
   "football_data_downloaded": 1,
   "football_data_reused": 33,
   "fixture_feed_available": true,
   "weekly_odds_status": "ok:9",
-  "pinnacle_status": "ok:9",
+  "pinnacle_status": "ok:8",
   "espn_status": "ok:309",
   "failures": [],
   "injury_status": "unavailable:ValueError:Transfermarkt injury table was not found",
@@ -13,10 +13,10 @@
   "suspension_rows": 2,
   "current_squad_status": "unavailable:ValueError:Transfermarkt Eredivisie club table was not found",
   "current_squad_rows": 511,
-  "injury_updated_at_utc": "2026-11-27T17:30:43.947412+00:00",
+  "injury_updated_at_utc": "2026-11-28T00:33:31.240928+00:00",
   "espn_result_check": "ok",
-  "espn_completed_rows": 117,
-  "espn_results_compared": 117,
+  "espn_completed_rows": 118,
+  "espn_results_compared": 118,
   "espn_score_mismatches": 0,
   "espn_date_mismatches": 0
 }

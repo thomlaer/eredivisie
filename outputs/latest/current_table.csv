@@ -8,7 +8,7 @@ rank,team,played,wins,draws,losses,gf,ga,points,gd
 7,Fortuna Sittard,13,6,5,2,21,20,23,1
 8,SC Cambuur,13,5,3,5,28,29,18,-1
 9,Go Ahead Eagles,13,4,5,4,24,28,17,-4
-10,FC Groningen,13,4,3,6,30,31,15,-1
+10,FC Groningen,14,4,4,6,31,32,16,-1
 11,PEC Zwolle,13,4,3,6,16,25,15,-9
 12,NEC,13,3,5,5,21,25,14,-4
 13,Excelsior,13,4,2,7,19,31,14,-12
@@ -16,4 +16,4 @@ rank,team,played,wins,draws,losses,gf,ga,points,gd
 15,FC Utrecht,13,3,3,7,23,37,12,-14
 16,Telstar,13,2,4,7,19,28,10,-9
 17,ADO Den Haag,13,2,3,8,16,28,9,-12
-18,Willem II,13,0,3,10,12,42,3,-30
+18,Willem II,14,0,4,10,13,43,4,-30
